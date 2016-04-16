@@ -1,2 +1,74 @@
-<tw-storydata name="ld35" startnode="1" creator="Twine" creator-version="2.0.11" ifid="EF4AC3EE-D840-4376-B311-A35BDBF479C0" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="501.5,277">Double-click this passage to edit it.</tw-passagedata>
+<tw-storydata name="ld35" startnode="1" creator="Twine" creator-version="2.0.11" ifid="EF4AC3EE-D840-4376-B311-A35BDBF479C0" format="SugarCube" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">//raining
+// number of drops created.
+var nbDrop = 858; 
+
+// function to generate a random number range.
+function randRange( minNum, maxNum) {
+  return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+}
+
+// function to generate drops
+function createRain() {
+
+	for( i=1;i<nbDrop;i++) {
+	var dropLeft = randRange(0,1600);
+	var dropTop = randRange(-1000,1400);
+
+	$('.rain').append('<div class="drop" id="drop'+i+'"></div>');
+	$('#drop'+i).css('left',dropLeft);
+	$('#drop'+i).css('top',dropTop);
+	}
+
+}</script><tw-passagedata pid="1" name="Start" tags="" position="706,95">&lt;&lt;set $evidence = [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]&gt;&gt;
+&lt;&lt;set $profile = [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]&gt;&gt;
+&lt;center&gt;
+This is the [[prologue]].
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="2" name="prologue" tags="forest" position="1002,97">&lt;center&gt;
+More text perhaps pictures.....
+
+&lt;&lt;if $evidence.indexOf(&quot;4&quot;)&lt;=-1 &gt;&gt;
+Oh wow, [[New Evidence! | Evidence4]]
+&lt;&lt;endif&gt;&gt;
+&lt;/center&gt;
+</tw-passagedata>
+<tw-passagedata pid="3" name="StoryMenu" tags="" position="101,695">[[Evidence]]
+[[Character Profiles]]</tw-passagedata>
+<tw-passagedata pid="4" name="Evidence" tags="" position="901,430">&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;center&gt;
+
+&lt;&lt;if $evidence.indexOf(&quot;1&quot;)&gt;-1 &gt;&gt;
+[[&quot;1&quot; | Evidence1]]
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.indexOf(&quot;2&quot;)&gt;-1 &gt;&gt;
+[[&quot;2&quot; | Evidence2]]
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.indexOf(&quot;3&quot;)&gt;-1 &gt;&gt;
+[[&quot;3&quot; | Evidence3]]
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.indexOf(&quot;4&quot;)&gt;-1 &gt;&gt;
+[[&quot;4&quot; | Evidence4s]]
+&lt;&lt;endif&gt;&gt;
+
+
+
+&lt;/center&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="5" name="Character Profiles" tags="" position="303,808">&lt;&lt;back &quot;Back&quot;&gt;&gt;
+
+This contains character profiles.</tw-passagedata>
+<tw-passagedata pid="6" name=" Evidence4" tags="" position="1002,247">&lt;center&gt;
+This is a new piece of evidence, it is now in your possession.
+&lt;&lt;set $evidence += [&quot;4&quot;] &gt;&gt;
+&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="7" name=" Evidence1" tags="" position="667,617">&lt;&lt;back &quot;Back&quot;&gt;&gt;
+I exist.</tw-passagedata>
+<tw-passagedata pid="8" name=" Evidence2" tags="" position="817,617">&lt;&lt;back &quot;Back&quot;&gt;&gt;
+I exist.</tw-passagedata>
+<tw-passagedata pid="9" name=" Evidence3" tags="" position="967,617">&lt;&lt;back &quot;Back&quot;&gt;&gt;
+I exist.</tw-passagedata>
+<tw-passagedata pid="10" name=" Evidence4s" tags="" position="1096,620">&lt;&lt;back &quot;Back&quot;&gt;&gt;
+I exist.</tw-passagedata>
 </tw-storydata>
