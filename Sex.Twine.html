@@ -2,6 +2,7 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//raining
 // number of drops created.
 var nbDrop = 858; 
@@ -28,7 +29,13 @@ function createRain() {
 //prevent use of browser's back button
 config.disableHistoryControls = true;
 
-</script><tw-passagedata pid="1" name="Start" tags="" position="706,95">&lt;&lt;set $evidence = [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]&gt;&gt;
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="706,95">%fetch audio from github URL%
+&lt;&lt;cacheaudio &quot;ambientLoop&quot; &quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/music/654155_Silence.mp3&quot;&gt;&gt;
+&lt;&lt;audio &quot;ambientLoop&quot; play&gt;&gt;
+%%
+//end load audio
+&lt;&lt;set $evidence = [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]&gt;&gt;
 &lt;&lt;set $profile = [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]&gt;&gt;
 &lt;center&gt;
 This is the [[prologue]].
