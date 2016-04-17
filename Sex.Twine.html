@@ -1,6 +1,8 @@
 <tw-storydata name="Sex.Twine" startnode="1" creator="Twine" creator-version="2.0.11" ifid="EF4AC3EE-D840-4376-B311-A35BDBF479C0" format="SugarCube" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body .passage{
 	font-size:200%	
 }
+body.alfie a {color:#98ea65;}
+
 
 
 
@@ -78,9 +80,11 @@ A woman is wiping the dust off a vase. [[Madison|Pro5]].</tw-passagedata>
 [[Good afternoon|dialogue2]]
 [[Mmm|dialogue2][$HP-=1]]
 [[So... Did you kill rachel?|bad1][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="8" name="Pro5" tags="Prologue Alfie" position="1468,285">Mikayla would be busy today. More likely to be someone unemployed.
+<tw-passagedata pid="8" name="Pro5" tags="Prologue Alfie" position="1467,285">Mikayla would be busy today. More likely to be someone unemployed.
 
-&lt;center&gt;@@color:red;[[Alfie|dialogue1]]@@&lt;/center&gt;</tw-passagedata>
+
+&lt;center&gt;[[Alfie|dialogue1]]&lt;/center&gt;
+</tw-passagedata>
 <tw-passagedata pid="9" name="dialogue2" tags="Prologue Interview1 AlphieShape" position="1927,242">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|dialogue3]]
