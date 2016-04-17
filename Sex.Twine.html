@@ -15,8 +15,10 @@ body.alfie a {color:#98ea65;}
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//prevent use of browser's back button
 config.disableHistoryControls = true;
+
 
 
 
@@ -41,7 +43,7 @@ Rachel MacCormack was the shining star of our community.
 She was [[beautiful|Pro1b]].
 
 </tw-passagedata>
-<tw-passagedata pid="3" name="StoryMenu" tags="" position="101,695">&lt;&lt;if tags().contains(&quot;Prologue&quot;)&gt;&gt;
+<tw-passagedata pid="3" name="StoryMenu" tags="" position="4,699">&lt;&lt;if tags().contains(&quot;Prologue&quot;)&gt;&gt;
 [[Evidence|EvidencePrologue]]
 
 [[Character Profiles|ProfilesPrologue]]
@@ -74,7 +76,7 @@ The town labelled Rachel MacCormack’s death a tragic drunk driving accident, a
 <tw-passagedata pid="6" name="Pro4" tags="Prologue" position="1467,130">There is a yard sale down the road. There are people perusing the clutter, talking.
 
 A woman is wiping the dust off a vase. [[Madison|Pro5]].</tw-passagedata>
-<tw-passagedata pid="7" name="dialogue1" tags="Prologue Interview1 Alfie" position="1623,288">Hi Alfie!
+<tw-passagedata pid="7" name="dialogue1" tags="Prologue Interview1 Alfie" position="1603,251">Hi Alfie!
 &lt;&lt;set $HP to 5&gt;&gt;
 
 [[Good afternoon|dialogue2]]
@@ -85,12 +87,12 @@ A woman is wiping the dust off a vase. [[Madison|Pro5]].</tw-passagedata>
 
 &lt;center&gt;[[Alfie|dialogue1]]&lt;/center&gt;
 </tw-passagedata>
-<tw-passagedata pid="9" name="dialogue2" tags="Prologue Interview1 AlphieShape" position="1927,242">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+<tw-passagedata pid="9" name="dialogue2" tags="Prologue Interview1 AlphieShape" position="1953,241">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|dialogue3]]
 [[Bad Option|dialogue3][$HP-=1]]
 [[Worst Option|Bad2][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="10" name="bad1" tags="Prologue" position="1621,145">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="10" name="bad1" tags="Prologue" position="1601,108">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
@@ -111,49 +113,49 @@ I can take their face, their voice, and their body. And as long as I can walk an
 
 I don’t do it often. It takes a lot of preparation, but it can be worth it. People will tell you anything if you can be [[the right person|Pro4]] at the right time.</tw-passagedata>
 <tw-passagedata pid="16" name="EvidencePrologue" tags="" position="332,588">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="17" name="ProfilesPrologue" tags="" position="324,940">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="18" name="EvidenceAct1" tags="" position="534,579">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="19" name="ProfilesAct1" tags="" position="541,942">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="20" name="EvidenceAct2" tags="" position="790,580">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="21" name="ProfilesAct2" tags="" position="794,939">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="22" name="EvidenceAct3" tags="" position="1012,579">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="23" name="ProfilesAct3" tags="" position="1011,934">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="17" name="ProfilesPrologue" tags="" position="334,1204">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="18" name="EvidenceAct1" tags="" position="798,593">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="19" name="ProfilesAct1" tags="" position="805,1204">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="20" name="EvidenceAct2" tags="" position="1307,594">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="21" name="ProfilesAct2" tags="" position="1318,1193">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="22" name="EvidenceAct3" tags="" position="1790,593">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="23" name="ProfilesAct3" tags="" position="1796,1188">&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="24" name="FailedMadison" tags="" position="1466,3">You&#39;ve failed.
 
 [[Try again?|Pro4]]
 </tw-passagedata>
-<tw-passagedata pid="25" name="dialogue3" tags="" position="2278,243">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+<tw-passagedata pid="25" name="dialogue3" tags="" position="2304,242">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|dialogue4]]
 [[Bad Option|dialogue4][$HP-=1]]
 [[Worst Option|Bad3][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="26" name="Bad2" tags="" position="1907,112">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="26" name="Bad2" tags="" position="1933,111">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
 [[&gt;|dialogue3]]</tw-passagedata>
-<tw-passagedata pid="27" name="dialogue4" tags="" position="2649,241">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+<tw-passagedata pid="27" name="dialogue4" tags="" position="2675,240">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|dialogue5]]
 [[Bad Option|dialogue5][$HP-=1]]
 [[Worst Option|Bad4][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="28" name="Bad3" tags="" position="2288,111">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="28" name="Bad3" tags="" position="2314,110">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
 [[&gt;|dialogue4]]</tw-passagedata>
-<tw-passagedata pid="29" name="dialogue5" tags="" position="2942,245">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+<tw-passagedata pid="29" name="dialogue5" tags="" position="2968,244">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|Act11]]
 [[Bad Option|Act11][$HP-=1]]
 [[Worst Option|Bad5][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="30" name="Bad4" tags="" position="2666,97">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="30" name="Bad4" tags="" position="2692,96">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
 [[&gt;|dialogue5]]</tw-passagedata>
 <tw-passagedata pid="31" name="Act11" tags="" position="3182,250">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="32" name="Bad5" tags="" position="2942,91">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="32" name="Bad5" tags="" position="2968,90">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
