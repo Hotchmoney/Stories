@@ -16,8 +16,10 @@ body.alfie a {color:#98ea65;}
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//prevent use of browser's back button
 config.disableHistoryControls = true;
+
 
 
 
@@ -87,12 +89,12 @@ A woman is wiping the dust off a vase. [[Madison|Pro5]].</tw-passagedata>
 
 &lt;center&gt;[[Alfie|dialogue1]]&lt;/center&gt;
 </tw-passagedata>
-<tw-passagedata pid="9" name="dialogue2" tags="Prologue Interview1 AlphieShape" position="1953,241">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+<tw-passagedata pid="9" name="dialogue2" tags="Prologue Interview1 Alfie" position="1953,241">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|dialogue3]]
 [[Bad Option|dialogue3][$HP-=1]]
 [[Worst Option|Bad2][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="10" name="bad1" tags="Prologue" position="1601,108">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="10" name="bad1" tags="Prologue Alfie Interview1" position="1601,108">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
@@ -124,38 +126,38 @@ I don’t do it often. It takes a lot of preparation, but it can be worth it. Pe
 
 [[Try again?|Pro4]]
 </tw-passagedata>
-<tw-passagedata pid="25" name="dialogue3" tags="" position="2304,242">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+<tw-passagedata pid="25" name="dialogue3" tags="Prologue Interview1 Alfie" position="2304,242">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|dialogue4]]
 [[Bad Option|dialogue4][$HP-=1]]
 [[Worst Option|Bad3][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="26" name="Bad2" tags="" position="1933,111">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="26" name="Bad2" tags="Prologue Alfie Interview1" position="1933,111">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
 [[&gt;|dialogue3]]</tw-passagedata>
-<tw-passagedata pid="27" name="dialogue4" tags="" position="2675,240">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+<tw-passagedata pid="27" name="dialogue4" tags="Interview1 Alfie Prologue" position="2675,240">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|dialogue5]]
 [[Bad Option|dialogue5][$HP-=1]]
 [[Worst Option|Bad4][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="28" name="Bad3" tags="" position="2314,110">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="28" name="Bad3" tags="Alfie Prologue Interview1" position="2314,110">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
 [[&gt;|dialogue4]]</tw-passagedata>
-<tw-passagedata pid="29" name="dialogue5" tags="" position="2968,244">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+<tw-passagedata pid="29" name="dialogue5" tags="Interview1 Prologue Alfie" position="2968,244">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 [[Right Option|Act11]]
 [[Bad Option|Act11][$HP-=1]]
 [[Worst Option|Bad5][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="30" name="Bad4" tags="" position="2692,96">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="30" name="Bad4" tags="Prologue Alfie Interview1" position="2692,96">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
 [[&gt;|dialogue5]]</tw-passagedata>
-<tw-passagedata pid="31" name="Act11" tags="" position="3182,250">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="32" name="Bad5" tags="" position="2968,90">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
+<tw-passagedata pid="31" name="Act11" tags="Act1" position="3182,250">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="32" name="Bad5" tags="Prologue Interview1 Alfie" position="2968,90">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She recoils.
 
 &quot;You&#39;re drunk.&quot;
 
