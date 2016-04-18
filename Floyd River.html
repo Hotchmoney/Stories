@@ -160,13 +160,26 @@ I don’t do it often. It takes a lot of preparation, but it can be worth it. Pe
 &lt;&lt;if $evidence.includes(&quot;Pro3&quot;)&gt;&gt;[[Clipping of obituary for Martha Larssen|EvidenceAct13]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act11&quot;)&gt;&gt;[[Prescription From Dr. Wolfe|Prescription]]&lt;&lt;endif&gt;&gt;
 
-</tw-passagedata>
+//AcceptanceLetter.png
+&lt;&lt;if $evidence.includes(&quot;&quot;Act12&quot;)&gt;&gt;
+
+//Newsletter.png</tw-passagedata>
 <tw-passagedata pid="18" name="EvidenceAct2" tags="" position="1179,989">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
 
 &lt;&lt;if $evidence.includes(&quot;Pro1&quot;)&gt;&gt;[[Clipping from the Des Moines Register|EvidenceAct21]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Pro2&quot;)&gt;&gt;[[Clipping of obituary for Rachel Maccormack|EvidenceAct22]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Pro3&quot;)&gt;&gt;[[Clipping of obituary for Martha Larssen|EvidenceAct23]]&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $evidence.includes(&quot;Act1&quot;)&gt;&gt;[[Prescription From Dr. Wolfe|Prescription2]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
+&lt;&lt;if $evidence.includes(&quot;Act1&quot;)&gt;&gt;[[Prescription From Dr. Wolfe|Prescription2]]&lt;&lt;endif&gt;&gt;
+
+//acceptance.png
+
+//newletter.png
+
+//tweets1-8.jpg
+
+//perf review.png
+
+//</tw-passagedata>
 <tw-passagedata pid="19" name="EvidenceAct3" tags="" position="1722,969">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="20" name="FailedMadison" tags="Alfie Interview1 Prologue" position="1466,3">Madison leans in and glares at you. Her bright green eyes scrutinize your face.
 
@@ -362,7 +375,7 @@ I subconsciously start adjusting
 [[Hmpf, that man! You know I saw him today drive past the MacCormack family garage sale on that bike of his, dressed like some sort of urbanite. Some people, I tell you.|goodC4]]
 
 </tw-passagedata>
-<tw-passagedata pid="65" name="worstC4" tags="Interview2 Act1 Catherine" position="5059,658">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Haven’t you seen the man? He’s such a brute. [[You can’t tell me you don’t remember what he did to that poor dog of hers.&quot;|predialogueC14]]</tw-passagedata>
+<tw-passagedata pid="65" name="worstC4" tags="Interview2 Act1 Catherine" position="5059,658">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Haven’t you seen the man? He’s such a brute. [[You can’t tell me you don’t remember what he did to that poor dog of hers.|predialogueC14]]</tw-passagedata>
 <tw-passagedata pid="66" name="badC4" tags="Act1 Interview Catherine" position="5061,813">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;hmm, yes.&quot;
 
 [[&gt;|predialogueC14]]</tw-passagedata>
@@ -675,7 +688,7 @@ The bar is fairly empty on this Tuesday night. No one looks up as Tyler enters t
 <tw-passagedata pid="133" name="badP2" tags="Act2 Paulsen Interview" position="3191,2012">&quot;I’m not sure why you think that, Doug says. After five years, really?&quot;
 
 [[&gt;|dialogueP6]]</tw-passagedata>
-<tw-passagedata pid="134" name="dialogueP6" tags="Paulsen Act2 Interview" position="3360,2020">@@color:.paulsen;Really. What do you remember about the party?@@
+<tw-passagedata pid="134" name="dialogueP6" tags="Paulsen Act2 Interview" position="3360,2020">Really. What do you remember about the party?
 
 “What, the night she died?” Doug sighs, and tips his chair momentarily back on two legs, before letting it fall back to thud on the sticky floor.
 
@@ -770,9 +783,9 @@ What doug showed me is evidence. I need evidence to prove what happened to Rache
 
 [[Sorry, but I have to ask. Who was she fucking?|dialogue16]]
 </tw-passagedata>
-<tw-passagedata pid="153" name="endAct2" tags="Act2" position="5520,2293">End of Act 2.
+<tw-passagedata pid="153" name="endAct2" tags="Act2" position="5636,2698">End of Act 2.
 
-</tw-passagedata>
+Start [[Act 3|Act3Start]].</tw-passagedata>
 <tw-passagedata pid="154" name="FailPaulsen" tags="Act2 Paulsen Interview" position="2451.0001,1877">“Y’know, I don’t know how much I want to talk about this shit with my boss. Especially when you’re being weird about this. I’ll see you at work tomorrow.” Doug turns back to the bartender and refuses to talk.
 
 
@@ -853,5 +866,81 @@ Before you slip out, you take the picture from his wallet, and the phone from hi
 </tw-passagedata>
 <tw-passagedata pid="179" name="dialogue2T5" tags="Tyler Interview Act2" position="3383,2634">“What to say about Rachel.” He tips his chair back on two legs, and then lets the chair thud back onto the sticky floor. “You’ve probably heard all the glowing reviews, right? Not that she wasn’t great, but people make her sound like a saint now.”
 
+[[[She wasn’t?|dialogue2T6]]</tw-passagedata>
+<tw-passagedata pid="180" name="dialogue2T6" tags="Interview Act2 Tyler" position="3383,2784">“No one’s a saint. Me included, obviously. But me and Rachel used to get drunk nearly every weekend of high school out in her backyard. She was the first person I came out to. Hang on, I actually have-“
+
+He pulls his wallet out of his pocket, and produces a picture of Rachel. She’s young, beautiful, laughing. Alive. “This was taken that night. Fuck, I wish I’d been at that party. Rachel loved them, you know? Loved being the centre of attention.”
+
+[[You don’t?|badT3][$HP-=1]]
+
+[[You should have been there with her, she was your best friend.|worstT3][$HP-=2]]
+
+[[It’s not your fault; you hate parties there was no reason to think anything would have happened.|goodT3]]</tw-passagedata>
+<tw-passagedata pid="181" name="badT3" tags="Interview Act2 Tyler" position="3542,2481">Nope. I still don’t actually. Stop tweeting at me.
+
+[[&gt;|dialogue2T7]]</tw-passagedata>
+<tw-passagedata pid="182" name="worstT3" tags="Interview Act2 Tyler" position="3541,2677">“Yeah, I //know.//&quot;
+
+[[&gt;|dialogue2T7]]</tw-passagedata>
+<tw-passagedata pid="183" name="goodT3" tags="Act2 Tyler Interview" position="3550,2824">&quot;Yeah. I guess. I just wish I had been&quot;
+
+[[&gt;|dialogue2T7]]</tw-passagedata>
+<tw-passagedata pid="184" name="dialogue2T7" tags="Interview Act2 Tyler" position="3731,2676">“Would have been a pretty shitty party anyway. Rachel was totally sober. She was taking some painkiller that meant she couldn’t drink, after Brock broke her nose. Had to get surgery to put it back properly.”
+
+
+[[You knew she wasn’t drunk?|dialogue2T8]]</tw-passagedata>
+<tw-passagedata pid="185" name="dialogue2T8" tags="Interview Act2 Tyler" position="3731,2826">Doug rolls his glass, now totally empty, back and forth between his palms. “Yeah. I drove her back and forth to Doctor Wolfe, actually. Brock, the piece of shit, kept stalking her on his goddamn motorbike. I want to know who the fuck invited him to that party. They have blood on their hands.”
+
+[[This town’ll drive you crazy. Good for you, driving with her.|goodT4]]
+
+[[Maybe she should have given him another shot.|worstT4][$HP-=2]]
+
+[[How’d Brock know she was at the party?|badT4][$HP-=1]]
+
 </tw-passagedata>
+<tw-passagedata pid="186" name="goodT4" tags="Interview Act2 Tyler" position="3885,2498">“I guess so. Yeah. You flatter me.:
+
+[[&gt;|dialogue2T9]]</tw-passagedata>
+<tw-passagedata pid="187" name="worstT4" tags="Interview Tyler Act2" position="3883,2681">&quot;He bashed her goddamn face in, Tyler. She should have shot him, is what she should have done.&quot;
+
+[[&gt;|dialogue2T9]]</tw-passagedata>
+<tw-passagedata pid="188" name="badT4" tags="Tyler Act2 Interview" position="3873,2824">&quot;How should I know?&quot;
+
+[[&gt;|dialogue2T9]]</tw-passagedata>
+<tw-passagedata pid="189" name="dialogue2T9" tags="Act2 Tyler Interview" position="4027,2686">“All the speculation over the years has got to me, you know?” Doug says, signalling for another drink. “All the ‘stormed off in a huff,’ and got drunk and shit. I’m so sick of it, of this town treating it like a mysterious unavoidable tragedy. It wasn’t a goddamn accident; she was too careful a driver for that.”
+
+[[You don’t think it was an accident?|dialogue2T10]]
+</tw-passagedata>
+<tw-passagedata pid="190" name="dialogue2T10" tags="Act2 Interview Tyler" position="4027,2836">“I know it wasn’t. She didn’t skid out after leaving the party, she made it home.”
+
+[[How do you know that?|dialogue2T11]]
+</tw-passagedata>
+<tw-passagedata pid="191" name="dialogue2T11" tags="Tyler Act2 Interview" position="4152,2688">Doug hesitates.
+
+[[What would Rachel have wanted?|badT5][$HP-=1]]
+
+[[ If you have something that proves it wasn’t suicide, it was irresponsible to keep it to yourself.|worstT5][$HP-=2]]
+
+[[You can tell me anything, Doug. You know that.|goodT5]]</tw-passagedata>
+<tw-passagedata pid="192" name="badT5" tags="Interview Act2 Tyler" position="4280,2491">“I don’t know. I’m not sure you would either, so don’t try to guilt me into this.”
+
+[[&gt;|dialogue2T12]]
+
+</tw-passagedata>
+<tw-passagedata pid="193" name="worstT5" tags="Interview Act2 Tyler" position="4287,2663">“Hey, fuck off. I was trying to give her family some peace.”
+
+[[&gt;|dialogue2T12]]</tw-passagedata>
+<tw-passagedata pid="194" name="goodT5" tags="Act2 Interview Tyler" position="4278,2802">“Yeah. Yeah you’re right.&quot;
+
+[[&gt;|dialogue2T12]]</tw-passagedata>
+<tw-passagedata pid="195" name="dialogue2T12" tags="Act2 Interview Tyler" position="4455,2643">“Hang on,” Doug says, digging in his coat pocket. He produces a cellphone, battered and at least six years old. “I couldn’t bring myself to delete it, you know? Even if I never did anything with it.”
+
+[[Of course. She meant a lot to you.|dialogue2T13]]
+</tw-passagedata>
+<tw-passagedata pid="196" name="dialogue2T13" tags="Interview Act2" position="4455,2793">“Don’t- Don’t tell anyone about this, ok? I know that you don’t give a shit who knows you’re gay, but we’re not all out to everyone and blasting it all over Twitter. The rest of it too. Let her family think it was an accident. Her sister was enough of a wreck after her sister’s death.”
+
+He hesitates, finger over the button. He presses [[play.|dialogue15]]
+
+</tw-passagedata>
+<tw-passagedata pid="197" name="Act3Start" tags="" position="1792,3316">Double-click this passage to edit it.</tw-passagedata>
 </tw-storydata>
