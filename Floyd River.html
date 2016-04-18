@@ -28,8 +28,10 @@ body.mikayla a{color:#c00070;}
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//prevent use of browser's back button
 config.disableHistoryControls = true;
+
 
 
 
@@ -604,5 +606,32 @@ Rachel never got a chance to escape Floyd River, to find something better somewh
 <tw-passagedata pid="122" name="EndAct1" tags="" position="5807,1434">This is the end of Act 1.
 
 [[Act 2|Act2Start]]</tw-passagedata>
-<tw-passagedata pid="123" name="Act2Start" tags="" position="2230,1746">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="123" name="Act2Start" tags="Act2" position="2230,1746">Paulsen’s Restaurant is the only remotely-formal restaurant in Floyd. Every significant event has meals at Paulsen’s; graduations, birthdays, wedding receptions, funerals. All at Paulsen’s. It’s a nice place - all polished wood and brass. Mr. Paulsen makes his employees polish the plates and glassware every day. The restaurant is is pride and joy. To him, his employees are his family. To them, [[he’s just a boss.|Act21]]
+</tw-passagedata>
+<tw-passagedata pid="124" name="Act21" tags="Act2" position="2230,1896">Tyler has only been working at Paulsen’s for about six months, finishing up his last year of high school. Doug, on the other hand, has been working there since his last year of highschool, nearly ten years ago.
+
+After work, every day, Doug spends about three hours in the bar across the road from Paulsen’s, before going home late at night. If I want to ask him some questions, [[I should meet him there.|Act22]]</tw-passagedata>
+<tw-passagedata pid="125" name="Act22" tags="" position="2229,2029">Should I be:
+
+
+&lt;center&gt;
+[[Mr. Paulsen|Act2P1]]
+
+or
+
+[[Tyle|Act2T1]]
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="126" name="Act2P1" tags="Act2 Paulsen Interview3" position="2443,2002">&lt;&lt;set $HP to 5&gt;&gt;The bar is fairly empty on this Tuesday night. No one looks up as Mr. Paulsen enters the bar.
+
+[[Sit down next to Doug.|Act2P2]]</tw-passagedata>
+<tw-passagedata pid="127" name="Act2T1" tags="Act2 Tyler" position="2449,2412">&lt;&lt;set $HP to 5&gt;&gt;The bar is fairly empty on this Tuesday night. No one looks up as Tyler enters the bar.
+
+
+[Sit down next to Doug.|Act2T2]</tw-passagedata>
+<tw-passagedata pid="128" name="Act2P2" tags="Act2 Paulsen" position="2591,1999">Doug looks up. “Hey,” He says. “I don’t usually see you after work here.” He fiddles with his glass, mostly empty. “What are you doing?”
+
+[[It’s been a long day at the restaurant, I needed a break|worstP1][$HP-=2]]
+
+[[You seemed distracted at work today. I decided to check in.|</tw-passagedata>
+<tw-passagedata pid="129" name="worstP1" tags="" position="2591,2149">Double-click this passage to edit it.</tw-passagedata>
 </tw-storydata>
