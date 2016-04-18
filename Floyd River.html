@@ -20,8 +20,10 @@ body.alfie a {color:#98ea65;}
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//prevent use of browser's back button
 config.disableHistoryControls = true;
+
 
 
 
@@ -171,7 +173,7 @@ You hear the low roar of a motorcycle from down the street. “Oh, goddammit.”
 </tw-passagedata>
 <tw-passagedata pid="28" name="Pro6" tags="Prologue Alfie" position="1563,336">@@color:#98ea65;Alfie@@ will be easy enough. He’s too respected for anyone to question him much, even in his current state.
 
-Still, it’s a good idea to review my evidence and brush up on his history. The better I can impersonate him, the easier it will be to get information out of people.
+Still, it’s a good idea to review my &lt;&lt;click &quot;evidence&quot;&gt;&gt;&lt;&lt;goto &quot;EvidencePrologue&quot;&gt;&gt;&lt;&lt;/click&gt;&gt; and brush up on his history. The better I can impersonate him, the easier it will be to get information out of people.
 
 (I can check my evidence at any time by clicking on “Evidence” in the sidebar.)
 
@@ -189,11 +191,11 @@ That might have been a bit too cold. I should be a bit more careful.
 
 [[&gt;|dialogue2]]</tw-passagedata>
 <tw-passagedata pid="31" name="EvidencePro1" tags="" position="184,452">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20clipping%20award.png&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;</tw-passagedata>
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20clipping%20award.png&quot; height=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="32" name="EvidencePro2" tags="" position="334,452">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20rachel%20obit.png&quot; heigh=&quot;500&quot; width=&quot;500&quot;&gt;</tw-passagedata>
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20rachel%20obit.png&quot; heigh=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="33" name="EvidencePro3" tags="" position="484,452">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20martha%20obit.png&quot; heigh=&quot;500&quot; width=&quot;500&quot;&gt;</tw-passagedata>
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20martha%20obit.png&quot; heigh=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="34" name="Act11" tags="Act1" position="2231,931">Floyd River is a town of [[549|Act12]] people.</tw-passagedata>
 <tw-passagedata pid="35" name="Act12" tags="Act1" position="2418,918">Five years ago it was [[551|Act13]].</tw-passagedata>
 <tw-passagedata pid="36" name="Act13" tags="Act1" position="2418,1068">Every single person, in birth, life, and death, is tended to by Dr. Wolfe, the town&#39;s family practitioner for the last 50 years.
@@ -222,7 +224,7 @@ I&#39;m sure they both have follow up questions the doctor would love to [[answe
 
 &lt;/center&gt;</tw-passagedata>
 <tw-passagedata pid="42" name="predialogueC1" tags="Interview2 Act1 Catherine" position="3103,804">&lt;&lt;set $HP to 5&gt;&gt;I take the form of Catherine, Floyd River’s most prolific busy body and long time friend of Dr. Wolf. The two love to gossip, so I’m sure if I play my cards right he’ll have something interesting to say about the [[prescription.|predialogueC2]]</tw-passagedata>
-<tw-passagedata pid="43" name="predialogueM1" tags="Interview2 Act1 Mikayla" position="3104,1102">&lt;&lt;set $HP to 5&gt;&gt;I take the form of Mikayla, the town’s new young prodigy. 
+<tw-passagedata pid="43" name="predialogueM1" tags="Interview2 Act1 Mikayla" position="3097,1207">&lt;&lt;set $HP to 5&gt;&gt;I take the form of Mikayla, the town’s new young prodigy. 
 
 It’s rising star.
 
@@ -234,7 +236,7 @@ Dr. Wolf has known her since she was a baby. He’ll be pleasantly surprised tha
 
 [[548.|predialogueC3]]
 </tw-passagedata>
-<tw-passagedata pid="45" name="predialogueM2" tags="" position="3259,1100">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="45" name="predialogueM2" tags="" position="3268,1202">Double-click this passage to edit it.</tw-passagedata>
 <tw-passagedata pid="46" name="predialogueC3" tags="Act1 Interview2 Catherine" position="3456,793">I wait a moment to listen for anyone in the examination room, then politely knock on the door. 
 
 Dr. Wolf comes to the door after a moment, NPR quietly groaning out of the radio next to his desk.
@@ -256,8 +258,10 @@ The Doctors’s office is riddled with artifacts from his long career. Photos of
 <tw-passagedata pid="48" name="goodc1" tags="Act1 Interview2 Catherine" position="3524,946">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Oh really? The word all over town is that they’re due for a baby soon, but I haven’t seen them yet. That city boy Rich must be taking Madison into Des Moin to see some greenhorn out [[there.|dialogueC5]]</tw-passagedata>
 <tw-passagedata pid="49" name="worstc1" tags="Act1 Interview2 Catherine" position="3674,946">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Catherine is everything alright? It must be thirty years now since I last heard you call me [[“doctor”.|dialogueC5]]</tw-passagedata>
 <tw-passagedata pid="50" name="badc1" tags="Act1 Interview2 Catherine" position="3824,946">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Why of course. You know you never need worry about bothering an old [[friend.|dialogueC5]]</tw-passagedata>
-<tw-passagedata pid="51" name="FailedCatherine" tags="" position="3109,675">Double-click this passage to edit it.</tw-passagedata>
-<tw-passagedata pid="52" name="FailedMikayla" tags="" position="3094,1249">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="51" name="FailedCatherine" tags="Interview2 Catherine" position="3102,647">
+
+[[Try Again?|predialogueC1]]</tw-passagedata>
+<tw-passagedata pid="52" name="FailedMikayla" tags="" position="2955,1420">Double-click this passage to edit it.</tw-passagedata>
 <tw-passagedata pid="53" name="dialogueC5" tags="Interview2 Act1 Catherine" position="3804,787">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe glances down at his watch briefly. “I do have a fairly open afternoon. How have you been?”
 
 [[There just doesn’t seem to be enough hours in the day anymore, does there? Maybe it’s because we’re getting older. All of these committees all the time - the stress is turning my stomach in knots. Is there something you could give me to settle it Jeff? I saw an ad on TV for Hydrocodone the other night and it looks marvelous.|worstC2][$HP-=2]]
