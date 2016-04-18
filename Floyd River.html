@@ -19,8 +19,10 @@ body.alfie a {color:#98ea65;}
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//prevent use of browser's back button
 config.disableHistoryControls = true;
+
 
 
 
@@ -90,7 +92,7 @@ What should I say?&lt;&lt;set $HP to 5&gt;&gt;
 [[Call me Alfie, ma&#39;am.|med1][$HP-=1]]
 [[I&#39;m not the mayor anymore, you know.|good1]]
 [[You&#39;re lookin&#39; hot, missy.|bad1][$HP-=2]]</tw-passagedata>
-<tw-passagedata pid="8" name="Pro5" tags="Prologue" position="1438,280">Madison is Rachel’s older sister. She’s married now, to a guy named Rich. I’ve heard there’s a baby on the way, which is probably why they’re getting rid of all this junk.
+<tw-passagedata pid="8" name="Pro5" tags="Prologue" position="1438,280">Madison is Rachel’s older sister. She’s married now, to a guy named Rich. I’ve heard there’s a baby on the way, which is probably why they’re getting rid of all of Rachel&#39;s stuff.
 
 Madison seems… tense. She sets down her box and looks around.
 
@@ -116,7 +118,7 @@ Shit. That came off too creepy.
 
 </tw-passagedata>
 <tw-passagedata pid="12" name="Pro1c" tags="Prologue" position="973,258">She was [[intelligent|Pro1d]].</tw-passagedata>
-<tw-passagedata pid="13" name="Pro3b" tags="Prologue" position="1310,255">These days I’ve been keeping tabs on the case ever since. The suspects, the evidence, the motives…
+<tw-passagedata pid="13" name="Pro3b" tags="Prologue" position="1310,255">I’ve been keeping tabs on the case ever since. The suspects, the evidence, the motives…
 
 It’s become one of my obsessions.
 
@@ -167,7 +169,7 @@ You hear the low roar of a motorcycle from down the street. “Oh, goddammit.”
 
 [[“It’s Brock.”|postdialogue6]]
 </tw-passagedata>
-<tw-passagedata pid="28" name="Pro6" tags="Prologue Alfie" position="1563,336">@@color:#98ea65;Alfie@@ will be easy enough. He’s too respected for anyone to question him much, even in his current state.
+<tw-passagedata pid="28" name="Pro6" tags="Prologue" position="1563,336">@@color:#98ea65;Alfie@@ will be easy enough. He’s too respected for anyone to question him much, even in his current state.
 
 Still, it’s a good idea to review my evidence and brush up on his history. The better I can impersonate him, the easier it will be to get information out of people.
 
@@ -211,6 +213,8 @@ The waiting room, scattered with ignored children&#39;s toys, is empty and [[sil
 
 I&#39;m sure they both have follow up questions the doctor would love to [[answer.|Act18]]</tw-passagedata>
 <tw-passagedata pid="41" name="Act18" tags="Act1" position="2870,978">Two very well known Floyd River residents. This should be interesting.
+
+I should review the &lt;&lt;click &quot;evidence&quot;&gt;&gt;&lt;&lt;goto &quot;EvidenceAct1&quot;&gt;&gt;&lt;&lt;/click&gt;&gt; before deciding.
 
 
 &lt;center&gt;
@@ -389,7 +393,7 @@ She doesn’t look pleased with me.
 
 [[&gt;|postdialogue8]]
 </tw-passagedata>
-<tw-passagedata pid="87" name="good7" tags="" position="3797.0001,255">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Rich smiles. “Thanks, Alfie. You’ve always looked out for this family.”
+<tw-passagedata pid="87" name="good7" tags="" position="3797,255">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Rich smiles. “Thanks, Alfie. You’ve always looked out for this family.”
 
 
 [[&gt;|postdialogue8]]
@@ -399,12 +403,12 @@ She doesn’t look pleased with me.
 [[&gt;|postdialogue8]]</tw-passagedata>
 <tw-passagedata pid="89" name="postdialogue8" tags="Interview1 Prologue Alfie" position="3975,243">Madison clasps her hands. “Well, we should be checking up on the other folks. Good seeing you, Alfie.”
 
-Rich gives you a wave goodbye as the young couple walks off to talk with other sale-goers. I get to work looking through the box is full of Rachel’s old [[things|postdialogue9]].
+Rich gives you a wave goodbye as the young couple walks off to talk with other sale-goers. I get to work looking through the box of Rachel’s old [[things|postdialogue9]].
 </tw-passagedata>
 <tw-passagedata pid="90" name="postdialogue9" tags="Prologue Interview1" position="4146,237">After a while I find a white shirts, some dresses, a pair of jeans. There’s [[something in the pocket|postdialogue10]].</tw-passagedata>
 <tw-passagedata pid="91" name="postdialogue10" tags="Interview1 Prologue" position="4146,387">A prescription for something called Hydrocodone. Probably a generic drug.
 
-And, as with all scrips in this town, it’s from Dr. Wolfe. A refill from May 30th, 2010.
+And, as with all prescriptions in this town, it’s from Dr. Wolfe. A refill from May 30th, 2010.
 May 30th, 2010.
 
 [[The day Rachel was murdered.|endprologue]]
