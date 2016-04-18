@@ -628,10 +628,12 @@ or
 <tw-passagedata pid="122" name="Act2P1" tags="Act2 Paulsen Interview3" position="2443,2002">&lt;&lt;set $HP to 5&gt;&gt;The bar is fairly empty on this Tuesday night. No one looks up as Mr. Paulsen enters the bar.
 
 [[Sit down next to Doug.|Act2P2]]</tw-passagedata>
-<tw-passagedata pid="123" name="Act2T1" tags="Act2 Tyler" position="2437,2612">&lt;&lt;set $HP to 5&gt;&gt;The bar is fairly empty on this Tuesday night. No one looks up as Tyler enters the bar.
+<tw-passagedata pid="123" name="Act2T1" tags="Act2 Tyler Interview" position="2437,2612">&lt;&lt;set $HP to 5&gt;&gt;I decide to be Tyler, Doug’s new co-worker. Tyler’s new, but they seem close, and he might tell Tyler something he might not confide in his boss.
+ 
+The bar is fairly empty on this Tuesday night. No one looks up as Tyler enters the bar.
 
 
-[Sit down next to Doug.|Act2T2]</tw-passagedata>
+[[Sit down next to Doug.|Act2T2]]</tw-passagedata>
 <tw-passagedata pid="124" name="Act2P2" tags="Act2 Paulsen Interview" position="2591,1999">Doug looks up. “Hey,” He says. “I don’t usually see you after work here.” He fiddles with his glass, mostly empty. “What are you doing?”
 
 [[It’s been a long day at the restaurant, I needed a break|worstP1][$HP-=2]]
@@ -758,15 +760,19 @@ He hesitates, and then pulls out his wallet. Folded up, and clearly at least a f
 <tw-passagedata pid="151" name="dialogueP14" tags="Act2 Paulsen Interview" position="5023,2155">“You’ll see. Don’t- Don’t tell anyone, right? We’ve known each other long enough that you’ve at least guessed I, that I’m-” he waves his hand. “But I don’t want anyone to think badly of Rachel after this. Especially her sister - I remember how much of a wreck she was after Rachel died, I don’t want her ever know Rachel killed herself. She’s dead- let her rest in peace.”
 
 
-He hesitates, finger over the button. He hits [[play.|dialogueP15]]
+He hesitates, finger over the button. He presses [[play.|dialogue15]]
 
 </tw-passagedata>
-<tw-passagedata pid="152" name="dialogueP15" tags="Act2 Paulsen Interview" position="5201,2008">After listening to the voicemail, Doug has a few more drinks. When he’s about to go home, I slip the photo out of his wallet, and the phone from his pocket.
+<tw-passagedata pid="152" name="dialogue15" tags="Act2 Interview" position="5165,2347">After showing you the voicemail, Doug orders you a beer, pays for it himself.
 
-[[&gt;|endAct2]]
+What doug showed me is evidence. I need evidence to prove what happened to Rachel.
+
+
+[[Sorry, but I have to ask. Who was she fucking?|dialogue16]]
+</tw-passagedata>
+<tw-passagedata pid="153" name="endAct2" tags="Act2" position="5520,2293">End of Act 2.
 
 </tw-passagedata>
-<tw-passagedata pid="153" name="endAct2" tags="" position="5520,2293">Double-click this passage to edit it.</tw-passagedata>
 <tw-passagedata pid="154" name="FailPaulsen" tags="Act2 Paulsen Interview" position="2451.0001,1877">“Y’know, I don’t know how much I want to talk about this shit with my boss. Especially when you’re being weird about this. I’ll see you at work tomorrow.” Doug turns back to the bartender and refuses to talk.
 
 
@@ -788,4 +794,34 @@ He hesitates, finger over the button. He hits [[play.|dialogueP15]]
 <tw-passagedata pid="162" name="EvidenceAct23" tags="" position="1266,1136">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20martha%20obit.png&quot; heigh=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="163" name="Prescription2" tags="" position="1416,1136">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/scrip.png&quot; heigh=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="164" name="dialogue16" tags="Act2" position="5309,2099">Doug scowls. “That’s the mystery, as I understand it. She comes out of the bathroom and starts screaming at whoever is inside. Blah blah blah, I hate you for this, everyone’s going to know what happened. She walks off and someone looks in the bathroom--it’s empty. 
+
+[[She wasn’t fucking anyone?|dialogue17]]
+</tw-passagedata>
+<tw-passagedata pid="165" name="dialogue17" tags="Act2" position="5305,2240">“She was fucking someone who climbed out the shower window and tried to play it cool. It was probably Brock. She sort of liked to take out her stress on him. Everyone saw him trying to talk to her a few minutes later, anyway.”
+
+[[And then she left?|dialogue18]]
+</tw-passagedata>
+<tw-passagedata pid="166" name="dialogue18" tags="Act2" position="5305,2396">“They said she ran off to the car. No one could calm her down. Brock tried to leave too, but everyone sat him down until he cooled off. They sent Rich after her, but his car wouldn’t start, so he started walking.” Doug laughs bitterly. “Guess he couldn’t walk fast enough.” Douglas takes a deep, long swig of his drink. “Or maybe she was fucking Rich. I don’t fucking know.” He slumps forward against the bar. “Don’t see how it matters.”
+
+
+[[How about another round?|dialogue19]]
+</tw-passagedata>
+<tw-passagedata pid="167" name="dialogue19" tags="Act2" position="5305,2546">He has a few more drinks as you nurse your beer.
+[[And another|dialogue100]]</tw-passagedata>
+<tw-passagedata pid="168" name="dialogue100" tags="Act2" position="5484,2462">Doug’s eyes are glazed. You call him a cab.
+Before you slip out, you take the picture from his wallet, and the phone from his [[pocket.|endAct2]]</tw-passagedata>
+<tw-passagedata pid="169" name="Act2T2" tags="Act2 Tyler Interview" position="2596,2614">Doug looks up. “Hey,” He says. “I don’t usually see you after work here.” He fiddles with his glass, mostly empty. “What are you doing?”
+
+[[I just wanted to spend more time with you|goodT1]]
+
+[[You seemed distracted at work|badT1][$HP-=1]]
+
+[[ I wanted to ask you a couple of questions about Rachel McCormack.|worstT1][$HP-=2]]</tw-passagedata>
+<tw-passagedata pid="170" name="goodT1" tags="Act2 Interview Tyler" position="2742,2482">&quot;He smiles at you. “That’s adorable. Also, unnecessary.&quot;
+
+[[&gt;|dialogue2T2]]</tw-passagedata>
+<tw-passagedata pid="171" name="badT1" tags="" position="2748,2626">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="172" name="worstT1" tags="" position="2749,2772">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="173" name="dialogue2T2" tags="" position="2913,2616">Double-click this passage to edit it.</tw-passagedata>
 </tw-storydata>
