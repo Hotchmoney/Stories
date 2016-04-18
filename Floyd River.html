@@ -29,6 +29,7 @@ body.mikayla a{color:#c00070;}
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//prevent use of browser's back button
 config.disableHistoryControls = true;
 
@@ -49,7 +50,10 @@ config.disableHistoryControls = true;
 
 
 
+
 </script><tw-passagedata pid="1" name="Start" tags="Prologue" position="623,95">This is the [[prologue]].
+DEBUG
+go to [[chapter 1|Act1Start]]
 &lt;&lt;set $evidence = [&quot;Pro1&quot;,&quot;Pro2&quot;,&quot;Pro3&quot;]&gt;&gt;
 &lt;&lt;set $profile = []&gt;&gt;
 /%fetch audio from github URLs%/
@@ -266,7 +270,7 @@ Dr. Wolf has known her since she was a baby. He’ll be pleasantly surprised tha
 <tw-passagedata pid="45" name="predialogueM2" tags="Interview2 Act1 Mikayla" position="3268,1202">Dr. Wolfe comes to the door after a moment, NPR quietly groaning out of the radio next to his desk. It’s odd to have him taller than me.
 
 “Makayla!” He says. “I would have thought you’d be too busy with school to come visit me on a weekday, what a wonderful surprise! [[Why don’t you come in?”|dialogueM3]]
-&lt;&lt;audio &quot;radio&quot; play&gt;&gt;</tw-passagedata>
+&lt;&lt;audio &quot;radio&quot; volume 0.25 play&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="46" name="predialogueC3" tags="Act1 Interview2 Catherine" position="3456,793">I wait a moment to listen for anyone in the examination room, then politely knock on the door. 
 
 Dr. Wolf comes to the door after a moment, NPR quietly groaning out of the radio next to his desk.
@@ -274,7 +278,7 @@ Dr. Wolf comes to the door after a moment, NPR quietly groaning out of the radio
 “Why Catherine! So good to see you again! My, don’t you look stunning today. Please, come in.”
 
 The Doctors’s office is riddled with artifacts from his long career. Photos of his children. Photos of his children as adults. Photos of his children’s children. His degree looms imposingly behind his desk written in Latin, as if begging visitors to ask what it [[says.|DialogueC4]]
-&lt;&lt;audio &quot;radio&quot; play&gt;&gt;</tw-passagedata>
+&lt;&lt;audio &quot;radio&quot; volume 0.25 play&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="47" name="DialogueC4" tags="Act1 Interview2 Catherine" position="3614,791">Dr. Wolf sits down behind his desk cheerfully, his elderly frame settling in comfortably. “To what do I owe the pleasure today?”
 
 
@@ -378,7 +382,7 @@ After more small talk and gossip with Dr. Wolfe I politely make an exit.
 Walking down the street back to my car I think about what he said.
 
 [[Douglas|DouglasText]] 
-</tw-passagedata>
+&lt;&lt;audio &quot;radio&quot; fadeto 0&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="74" name="worst2" tags="Interview1 Prologue Alfie" position="2171,211">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Well, Alfie, this is a garage sale…” 
 
 She doesn’t look pleased with me.
@@ -585,8 +589,7 @@ I make a few more minutes’ polite small talk before I make an exit.
 Walking down the street afterwards, I can’t stop thinking about what he said.
 
 [[Douglas.|DouglasText]]
-
-</tw-passagedata>
+&lt;&lt;audio &quot;radio&quot; fadeto 0&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="121" name="DouglasText" tags="Act1 Interview2" position="5784,1106">Douglas knew about the medication.
 
 He knew she wasn’t drinking.
