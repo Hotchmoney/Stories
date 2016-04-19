@@ -74,6 +74,8 @@ body.catherine a{color:#755085;}
 
 body.mikayla a{color:#c00070;}
 
+body.rachel a{color:#FB4F4F;}
+
 
 
 
@@ -235,11 +237,12 @@ I don’t do it often. It takes a lot of preparation, but it can be worth it. Pe
 &lt;&lt;if $evidence.includes(&quot;Act21&quot;)&gt;&gt;[[Tweets by Tyler|TweetsAct2]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act22&quot;)&gt;&gt;[[Performance Review of Douglas|PerfRevAct2]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act23&quot;)&gt;&gt;[[Clipping about Paulson&#39;s Restaurant|Act23Clip]]&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $evidence.includes(&quot;Act3&quot;)&gt;&gt;[[Voicemail from Rachel to Douglas|VoicemailAct3]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
+&lt;&lt;if $evidence.includes(&quot;Act3&quot;)&gt;&gt;[[Voicemail from Rachel to Douglas|VoicemailAct3]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Picture&quot;)&gt;&gt;[[Picture of Rachel|pic]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="19" name="EvidenceAct3" tags="" position="1054,1727">&lt;&lt;if $evidence.includes(&quot;Pro2&quot;)&gt;&gt;[[Clipping of obituary for Rachel Maccormack|EvidenceAct32]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act11&quot;)&gt;&gt;[[Prescription From Dr. Wolfe|Prescription2]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act3&quot;)&gt;&gt;[[Voicemail from Rachel to Douglas|VoicemailAct3]]&lt;&lt;endif&gt;&gt;
-</tw-passagedata>
+&lt;&lt;if $evidence.includes(&quot;Picture&quot;)&gt;&gt;[[Picture of Rachel|pic]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="20" name="FailedMadison" tags="Alfie Interview1 Prologue" position="1466,3">Madison leans in and glares at you. Her bright green eyes scrutinize your face.
 
 
@@ -676,7 +679,7 @@ Why did he let them all sully Rachel’s name, instead of telling the truth?
 Douglas Eikerman works at Paulson’s Restaurant. He always thought he’d escape this town for something better, but after his parents got so sick they needed him here to care of them.
 
 Rachel never got a chance to escape Floyd River, to find something better somewhere with big shiny buildings and fancy cars.
-
+&lt;&lt;set $evidence to $evidence+[&quot;Picture&quot;]&gt;&gt;
 [[Why should he?|EndAct1]]
 </tw-passagedata>
 <tw-passagedata pid="118" name="EndAct1" tags="Act1" position="5807,1434">This is the end of Act 1.
@@ -997,7 +1000,8 @@ He pulls his wallet out of his pocket, and produces a picture of Rachel. She’s
 He hesitates, finger over the button. He presses [[play.|dialogue15]]
 
 </tw-passagedata>
-<tw-passagedata pid="195" name="Act3Start" tags="" position="1792,3316">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="195" name="Act3Start" tags="Act3" position="1792,3316">Small towns are trusting. No one suspects their neighbors. No one locks their [[doors.|Act31]]
+</tw-passagedata>
 <tw-passagedata pid="196" name="NewsletterAct1" tags="" position="514,1412">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/newsletter.png&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="197" name="AcceptanceAct1" tags="" position="664,1412">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
@@ -1035,6 +1039,538 @@ I’m the best goddamn thing that’s happened to this town in years, and this i
 Doug, I gotta go. Call me, when you get this.@@
 </tw-passagedata>
 <tw-passagedata pid="203" name="Act23Clip" tags="" position="1437,1289">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;img src=&quot;https://github.com/Hotchmoney/Stories/blob/master/graphics/restuarantfamousohmygod.png&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="204" name="Act31" tags="" position="1792,3466">Everyone knows [[everyone.|Act32]]</tw-passagedata>
+<tw-passagedata pid="205" name="Act32" tags="Act3" position="1935,3315">Everyone smiles and waves and nobody thinks about the fact that we’re all human, and therefore capable of deception and lies and manipulation and [[murder.|Act33]]
+
+</tw-passagedata>
+<tw-passagedata pid="206" name="Act33" tags="Act3" position="1935,3465">The door to the MacCormack house is unlocked in the early evening, [[just like everyone else’s.|Act34]]</tw-passagedata>
+<tw-passagedata pid="207" name="Act34" tags="Act3" position="2095,3309">Nobody’s [[home.|Act35]]</tw-passagedata>
+<tw-passagedata pid="208" name="Act35" tags="Act3" position="2095,3459">The house is serene. Classy, open concept kitchen leads into a cozy living room. Hardwood flooring.
+
+Must have been renovated to suit [[Rich’s style.|Act36]]</tw-passagedata>
+<tw-passagedata pid="209" name="Act36" tags="Act3" position="2235,3308">A quick search of the house yields [[interesting|Act37]] results.</tw-passagedata>
+<tw-passagedata pid="210" name="Act37" tags="" position="2235,3458">Rachel still lives here, in every photograph and card full of “sorry for your loss” platitudes on the mantle peice, 5 years later.
+
+[[Maybe not everyone moved on after all.|Act38]]
+</tw-passagedata>
+<tw-passagedata pid="211" name="Act38" tags="Act3" position="2387,3292">Can’t help but notice the shotgun leaning against the fireplace. No trigger lock.
+
+A half pump shows a bright @@color:red;red cartridge@@ in the action.
+
+[[What the fuck, Rich?|Act39]]
+</tw-passagedata>
+<tw-passagedata pid="212" name="Act39" tags="Act3" position="2387,3442">[[Careless.|Act310]]</tw-passagedata>
+<tw-passagedata pid="213" name="Act310" tags="Act3" position="2512,3289">Everyone in this town.
+
+[[Careless.|Act311]]</tw-passagedata>
+<tw-passagedata pid="214" name="Act311" tags="Act3" position="2512,3439">The stairs whine and creek desperately up to the third floor bedroom. The carpet is dusty; no one’s stepped on them for nearly five years. It must be Rachel’s.
+
+I can’t help but feel a tinge of anxiety as I approach the landing. There’s nothing up here but a single white door to my left.
+
+[[Open the door.|Act312]]
+</tw-passagedata>
+<tw-passagedata pid="215" name="Act312" tags="Act3" position="2674,3289">The door is locked.
+
+I wear size 11 boots.
+It’s a weak lock.
+The door opens [[easily.|Act313]]</tw-passagedata>
+<tw-passagedata pid="216" name="Act313" tags="Act3" position="2674,3439">It’s dark up here. There’s no ceiling light, and there’s a  ring in the carpet where a standing lamp was recently moved. I click on my [[flashlight.|Act314]]
+</tw-passagedata>
+<tw-passagedata pid="217" name="Act314" tags="Act3" position="2674,3589">Posters adorn the walls. Classic rock, large prints of artistic photographs, blued by age and sunlight. The whole room looks untouched. Make up is still scattered on top of the a slightly damaged looking dresser, with a small mat at the base.
+
+To my right the bed is unmade, covered in half a dozen pillows. 
+
+In front of me is a desk with a small television, surrounded by books and workout equipment. 
+
+To my left is the dresser and a closet. 
+
+Permeating the room is a dank, sour [[smell.|Act315]]
+</tw-passagedata>
+<tw-passagedata pid="218" name="Act315" tags="Act3" position="2805,3290">Something is very [[wrong.|Act316]]</tw-passagedata>
+<tw-passagedata pid="219" name="Act316" tags="Act3" position="2805,3440">My Rachel smelled [[sweet.|Act317]]</tw-passagedata>
+<tw-passagedata pid="220" name="Act317" tags="Act3" position="2809,3588">Search:
+
+[[Closet|closet]]
+
+[[Bed and Floor|BaF]]
+
+[[Desk and Belongings|DaB]]
+
+&lt;&lt;if visited(&quot;closet&quot;,&quot;BaF&quot;,&quot;DaB&quot;)&gt;&gt;
+[[Dresser]]
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="221" name="closet" tags="Act3" position="2805,3740">The closet is overflowing with Rachel’s belongings. Dirty laundry, books. It smells more like what Rachel should smell like in here. A brief investigation determines it’s the clothes.
+
+[[&lt;|Act317]]</tw-passagedata>
+<tw-passagedata pid="222" name="BaF" tags="Act3" position="2955,3740">The bed is what I expected. Unmade but clean. I can picture her here, lying in bed reading late at night. Studying for exams. Preparing for work tomorrow.
+
+[[&gt;|BaF1]]</tw-passagedata>
+<tw-passagedata pid="223" name="DaB" tags="Act3" position="3105,3740">My Rachel was always top of her class. I find a scattering of papers from the Mayor’s office underneath The Brother’s Karamazov and King Lear. The literature is pervasive, stacked on the floor against the wall up to hip height.
+
+[[&gt;|DaB1]]
+</tw-passagedata>
+<tw-passagedata pid="224" name="Dresser" tags="Act3" position="2973,3584">Mascara and foundation covered in dust in turn covers the top of the dresser, with eyeliner pencils and lipstick fallen on the floor nearby. 
+
+It should have been obvious at first. The top of the desk is cracked. The wood along the edge comes away slightly, only attached on one side.
+
+
+
+[[Something is wrong.|D1]]
+</tw-passagedata>
+<tw-passagedata pid="225" name="BaF1" tags="Act3" position="2955,3890">The smell is stronger, the closer I get to the floor. Checking under the bed yields nothing of interest - plastic containers of more clothes 
+
+[[I put my hand down on something hard and sharp|BaF2]]</tw-passagedata>
+<tw-passagedata pid="226" name="BaF2" tags="Act3" position="2955,4015">A pearl stud earring. [[Rusty.|BaF3]]</tw-passagedata>
+<tw-passagedata pid="227" name="BaF3" tags="Act3" position="2955,4164">Wait, no.
+
+[[What?|BaF4]]</tw-passagedata>
+<tw-passagedata pid="228" name="BaF4" tags="Act3" position="2955,4314">[[Bloody.|BaF5]]
+</tw-passagedata>
+<tw-passagedata pid="229" name="BaF5" tags="Act3" position="2955,4464">The white orb and metal prong both tinged with rusty brown gore.
+
+Could this be my [[Rachel’s?|Act317]]</tw-passagedata>
+<tw-passagedata pid="230" name="DaB1" tags="Act3" position="3105,3890">The television is older,  cheap black Samsung I would have thought that would be the first thing down at the garage sale. I pick it up, and see that the power cord has been cut from the back. [[Weird.|DaB2]]
+</tw-passagedata>
+<tw-passagedata pid="231" name="DaB2" tags="Act3" position="3105,4040">The nearest outlet is a few feet away. No powerbar. Must have been a long cord. The only other thing plugged in is a phone from the 90s, [[covered in dust.|DaB3]]
+</tw-passagedata>
+<tw-passagedata pid="232" name="DaB3" tags="Act3" position="3105,4188">Between the bed and the desk I find a rolled up yoga mat and a set of small dumbbells on a rack, [[coloured by weight.|DaB4]]
+</tw-passagedata>
+<tw-passagedata pid="233" name="DaB4" tags="Act3" position="3105,4338">2 Red 20 lbs weights.
+
+[[&gt;|DaB5]]</tw-passagedata>
+<tw-passagedata pid="234" name="DaB5" tags="Act3" position="3105,4488">2 green 15 lbs weights.
+
+[[&gt;|DaB6]]</tw-passagedata>
+<tw-passagedata pid="235" name="DaB6" tags="Act3" position="3105,4638">1 @@color:pink;pink@@ ten pound weight. No sign of the other [[one.|DaB7]]</tw-passagedata>
+<tw-passagedata pid="236" name="DaB7" tags="Act3" position="3105,4788">[[Hm.|Act317]]</tw-passagedata>
+<tw-passagedata pid="237" name="D1" tags="Act3" position="2970,3444">Something is very [[wrong.|D2]]</tw-passagedata>
+<tw-passagedata pid="238" name="D2" tags="Act3" position="2974,3295">I look down to the mat at the base of the dresser.
+
+[[&gt;|D3]]
+</tw-passagedata>
+<tw-passagedata pid="239" name="D3" tags="Act3" position="3122,3290">A mat on carpet?
+
+A mat on-
+
+[[...|D4]]</tw-passagedata>
+<tw-passagedata pid="240" name="D4" tags="Act3" position="3122,3440">[[Examine mat on all fours|D5]]</tw-passagedata>
+<tw-passagedata pid="241" name="D5" tags="Act3" position="3122,3590">The mat is actually a small throw rug, white with thin multi-coloured lines.
+
+[[Lift up the rug|D6]]</tw-passagedata>
+<tw-passagedata pid="242" name="D6" tags="Act3" position="3285,3285">The carpet beneath the rug seems normal at first. Same colour. Same pattern. Same feel.
+
+[[Wait.|D7]]
+</tw-passagedata>
+<tw-passagedata pid="243" name="D7" tags="Act3" position="3285,3435">Feels different. Coarse, not soft. And a little brighter too.
+
+[[No…|D8]]
+</tw-passagedata>
+<tw-passagedata pid="244" name="D8" tags="Act3" position="3285,3585">[[Pause|D9]]</tw-passagedata>
+<tw-passagedata pid="245" name="D9" tags="Act3" position="3285,3735">[[Take out your knife|D10]]</tw-passagedata>
+<tw-passagedata pid="246" name="D10" tags="Act3" position="3285,3885">[[Start cutting out the carpet|D11]]</tw-passagedata>
+<tw-passagedata pid="247" name="D11" tags="Act3" position="3285,4035">[[Cut faster|D12]]</tw-passagedata>
+<tw-passagedata pid="248" name="D12" tags="Act3" position="3285,4185">I work furiously, slicing a deep corner through the fabric to the wood beneath.
+
+[[Pull back the carpet|D13]]
+</tw-passagedata>
+<tw-passagedata pid="249" name="D13" tags="Act3" position="3285,4335">The stench seeps out so much stronger than before. A dark brown stain spreads across the plywood, white globs of mold interrupting it.
+
+[[Oh no.|D14]]
+</tw-passagedata>
+<tw-passagedata pid="250" name="D14" tags="Act3" position="3285,4485">[[Oh god.|D15]]
+</tw-passagedata>
+<tw-passagedata pid="251" name="D15" tags="Act3" position="3285,4636">[[Oh Fuck.|D16]]</tw-passagedata>
+<tw-passagedata pid="252" name="D16" tags="Act3" position="3285,4786">[[Fuck.|D17]]</tw-passagedata>
+<tw-passagedata pid="253" name="D17" tags="Act3" position="3285,4936">[[Oh god.|D18]]</tw-passagedata>
+<tw-passagedata pid="254" name="D18" tags="Act3" position="3285,5085">[[My poor Rachel|C1]]</tw-passagedata>
+<tw-passagedata pid="255" name="C1" tags="Act3" position="3285,5235">A car door slams downstairs. Footsteps.
+
+Oh no.
+
+[[No.|C2]]
+</tw-passagedata>
+<tw-passagedata pid="256" name="C2" tags="Act3" position="3427,3280">Not like this.
+
+[[No.|C3]]</tw-passagedata>
+<tw-passagedata pid="257" name="C3" tags="Act3" position="3427,3430">I can hear Rich and Madison talking downstairs. I’m trapped.
+
+
+I have to confront the killer now, or it’s over.
+
+
+I have to have witnesses. People who cared about Rachel.
+
+
+I need to get Madison, Rich, and Brock together and confront the killer.
+
+
+Once I’ve reviewed the &lt;&lt;click &quot;evidence&quot;&gt;&gt;&lt;&lt;goto &quot;EvidenceAct3&quot;&gt;&gt;&lt;&lt;/click&gt;&gt; and am sure of who the killer is I can [[confront them.|C4]]
+</tw-passagedata>
+<tw-passagedata pid="258" name="C4" tags="Act3" position="3427,3580">I hope this works.
+
+[[Search Rachel’s Room|C5]]
+</tw-passagedata>
+<tw-passagedata pid="259" name="C5" tags="Act3" position="3427,3730">As quietly as I can I search through Rachel’s belongings. After a few moments I remember who I’m dealing with. My Rachel was no fool, to be sure. Such a smart, perfect girl. It won’t be somewhere obvious.
+
+I check under the bed again and find it stashed in the bed frame.
+We’re both such clever people. I know she would have liked me.
+
+[[Flip Pages|C6]]
+</tw-passagedata>
+<tw-passagedata pid="260" name="C6" tags="Act3" position="3427,3880">[[Flip faster.|C7]]</tw-passagedata>
+<tw-passagedata pid="261" name="C7" tags="Act3" position="3427,4030">I find Brock’s phone number at the top of a page full of drawings of airplanes. They’re tiny, as if viewed while lying on the lawn in the summer.
+
+[[Pick up the Phone|C8]]
+</tw-passagedata>
+<tw-passagedata pid="262" name="C8" tags="Act3 Rachel" position="3427,4180">The keys squish under my fingertips in protest as I dial Brock’s number.
+
+I wait until I hear a dial tone.
+
+[[Transform into Rachel MacCormack|C9]]
+</tw-passagedata>
+<tw-passagedata pid="263" name="C9" tags="Act3 Rachel" position="3427,4330">“Hello?” I can hear a TV in the background. Brock sounds drunk.
+
+[[Hey you.|C10]]
+</tw-passagedata>
+<tw-passagedata pid="264" name="C10" tags="Act3 Rachel" position="3427,4480">“... who… who is this?”
+
+@@color:#FB4F4F;“Hahaha,” I trill gleefully, “It’s me Brock-oli! What, do you not have call display anymore?@@
+
+There’s an uncomfortable silence while Brock’s worldview is taken out back and shot.
+
+“ … R… Rache? Is… is that you? I… I thought… ”
+
+[[Giggle|C11]]
+</tw-passagedata>
+<tw-passagedata pid="265" name="C11" tags="Act3 Rachel" position="3427,4630">“Wait... no. No. NO.”
+
+“NO NO NO NO NO NO NO NO NO”
+
+Brock screams into the phone so loudly I worry they’ll hear him downstairs. “Who is this?! Do you think this is funny? You’re dead.Can you hear what I am saying right now? You’re dead. You’re fucking dead.”
+
+[[Oh baby please don’t be mad. I miss you. Please, just come over.|C12]]</tw-passagedata>
+<tw-passagedata pid="266" name="C12" tags="Act3 Rachel" position="3427,4780">Brock doesn’t hang up the phone, but I hear a loud crack as it hits the wall. In the distance out the window, I can hear a door slam and an engine start. Small towns are such a community. I put the phone down and wait.
+
+I hear the low roar of a motorbike outside. It gets louder and louder, then stops.
+
+There’s a loud knock on the door.
+
+“Oh, goddammit,” I hear a muffled woman’s voice say from downstairs.
+
+[[It&#39;s Brock|C13]]</tw-passagedata>
+<tw-passagedata pid="267" name="C13" tags="Act3 Rachel" position="3426,4930">After some arguing, the door opens. “What the fuck? I got a call from someone in this house saying they were Rachel. Is this a fucking joke to you guys?”
+
+“What?” Madison interjects. “That’s ridiculous. We haven’t made a call since we got home.”
+
+“Yeah, well, I checked the Caller ID. And the crazy part was, [[it sounded just like her.|C14]]”
+</tw-passagedata>
+<tw-passagedata pid="268" name="C14" tags="Act3 Rachel" position="3427,5080">Silence.
+
+“Brock…” Madison stammers. “I know you’re still struggling with this, but… please don’t bring us into it.”
+
+“What!?!” Brock screams. “Fuck you guys! I know what I heard. Look at my phone, that’s your number, right?”
+
+More silence.
+
+[[Time to move.|C15]]</tw-passagedata>
+<tw-passagedata pid="269" name="C15" tags="Act3 Rachel" position="3427,5230">
+I walk downstairs, making my presence known.
+
+The three of them turn and look at me, with abject shock on their faces.
+
+Madison drops her wine glass to the floor. It shatters.
+
+No one moves.
+
+[[Silence.|C16]]
+</tw-passagedata>
+<tw-passagedata pid="270" name="C16" tags="Act3 Rachel" position="3567,3272">“R--Rach…” Madison’s voice catches.
+
+“Holy shit,” Rich mutters. He’s tugging at his wristwatch as his eyes drink in my-her-face. 
+
+“Hello,” I say, and smile. 
+
+Too much. Madison starts fidgeting. Brock is the only one who seems unafraid. 
+
+He clears his throat. “Why...why are you here, Rachel?”
+
+@@color:#FB4F4F;“I’m here to tell you who did it,” I say. They all look pale under the dim kitchen light. “Who killed me.”@@
+
+[[“It was Madison.”|M1]]
+
+[[“It was Rich.”|R1]]
+
+[[“It was Brock.”|BR1]]
+
+</tw-passagedata>
+<tw-passagedata pid="271" name="M1" tags="Act3 Rachel" position="3757,3677">“I don’t know what kind of a sick, demented, joke this is. That’s your fucking sister!” Brock hisses between his clenched jaw.
+
+“Madison tell… whatever this is that you would never do that. I know you. You loved her.” 
+
+Rich puts his arm around Madison. [[She shrugs it off.|M2]]
+
+</tw-passagedata>
+<tw-passagedata pid="272" name="R1" tags="Act3 Rachel" position="3739,4143">“I fuckin’ knew it!” Brock roars. He’s past the point of confusion or worry--all that matters is that he has his answer.
+
+“Shut up, Brock! Rich would never do that!” Madison hisses. There are tears in her eyes. She tries, and fails, to get in between Brock and Rich.
+
+“I never said anything but I always knew it! At the party--that night--I heard her screaming at you. She said she was going to tell Madison everything. And you couldn’t take it, huh? you piece of shit!”
+
+Rich’s voice is a hoarse whisper. “That isn’t how it went.”
+
+“You followed her home. You drove her off the bridge in your car. She knows!” Brock says, jabbing his finger at me.
+
+[[It’s true. He rammed me and I lost control.|R2]]
+
+[[That’s not what happened. He killed me at the party.|R3]]
+
+[[No. He killed me later.|R4]]
+</tw-passagedata>
+<tw-passagedata pid="273" name="BR1" tags="Act3 Rachel" position="3893,3061">Madison gasps. Rich yells. Brock says something but Rich is too loud. 
+Madison starts to cry. 
+“What are you talking about?” Brock screams, “I loved you. I DO love you!”
+“You never loved her Brock!” Madison yells “You just couldn’t live without her! You were obsessed! She told you to never talk to her again after the party and you saw red.”
+
+Brock’s face turns red as he begins to look around, frantically. “You can’t be serious! How would that even be possible?”
+
+[[He followed me when I left the party and ran me off the road.|BB1]] 
+
+[[He broke into the house and was waiting for me in my room. When I got home he killed me.|BB2]]
+
+[[He was waiting for me in the back seat of my car.|BB3]]
+</tw-passagedata>
+<tw-passagedata pid="274" name="M2" tags="Act3 Rachel" position="3757,3827">
+Rich looks at Madison, concerned, then back again at me. “I don’t know what you are. But get out of our house.” 
+
+He begins to reach for the shotgun, but Madison puts her hand on his arm.
+
+“How would I have killed you?” she asks accusingly. “I wasn’t even at the party.”
+
+[[Yes, you were.|MadisonFail]]
+
+[[I know you weren’t. You were here.|goodMadison]]
+
+[[Neither was I.|MadisonFail]]
+</tw-passagedata>
+<tw-passagedata pid="275" name="goodMadison" tags="Rachel Act3" position="3943,3833">“Exactly.” Madison says “You went right from the party into the river. It was just a drunken accident, and I had nothing to do with it.”
+
+[[You’re lying. I came home that night.|goodMadison1]]</tw-passagedata>
+<tw-passagedata pid="276" name="goodMadison1" tags="Act3 Rachel" position="4076,3839">“What? That’s not true!”
+
+[[I left Douglas a voicemail. From home.|goodMadison2]]</tw-passagedata>
+<tw-passagedata pid="277" name="goodMadison2" tags="Act3 Rachel" position="4214,3823">Madison’s face goes blank.
+
+“That couldn’t be true!” Rich exclaims. “I came over that night. I would have seen you!”
+
+Madison puts her hand on Rich’s shoulder.
+
+She turns to him. “[[It&#39;s true.|goodMadison3]]”
+</tw-passagedata>
+<tw-passagedata pid="278" name="goodMadison3" tags="Act3 Rachel" position="4371,3843">&quot;What?”
+
+“Rachel did come over that night, before she drove off.”
+
+She puts her hand on Rich’s chest. “I’m sorry I never told you, I was really upset that night and…”
+
+He smiles. “It’s alright. I understand.”
+
+She turns back to you. “And that’s [[all that happened|goodMadison4]].”</tw-passagedata>
+<tw-passagedata pid="279" name="goodMadison4" tags="Act3 Rachel" position="4506,3838">“You came home, went up to your room to make a call, and then you walked back out again. Maybe you went to see Doug, I don’t know. I never said anything to you.”
+
+“It was just an accident, OK?.”
+
+[[You didn’t have to. She was drunk.|failMadison2]]
+
+[[That’s not what the evidence in your room said.|goodMadison5]]
+</tw-passagedata>
+<tw-passagedata pid="280" name="failMadison2" tags="Act3 Rachel" position="4220,3970"> “Exactly. just a drunken accident.”
+ 
+ Damn it.
+ 
+ [[&gt;|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="281" name="goodMadison5" tags="Act3 Rachel" position="4656,3988">“What? What evidence in her room?”
+
+[[Show her the earring.|goodMadison6]]</tw-passagedata>
+<tw-passagedata pid="282" name="FailedEnding" tags="Act3 Rachel" position="3552,3128">I&#39;ve failed Rachel....
+
+[[Try again?|C16]]</tw-passagedata>
+<tw-passagedata pid="283" name="MadisonFail" tags="Act3 Rachel" position="3960,3593">&quot;What! That doesn&#39;t make sense!&quot;
+
+[[&gt;|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="284" name="goodMadison6" tags="Act3 Rachel" position="4684,3851">I show Madison the bloody pearl earring. She gasps.
+
+[[There’s blood on the carpet. We fought. You killed me.|goodMadison7]]
+</tw-passagedata>
+<tw-passagedata pid="285" name="goodMadison7" tags="Act3 Rachel" position="4781,4001">“N… no.” Madison stammers, head in her hands. “You must have borrowed it! There’s a thousand reasons it could be in your room! I had nothing to do with it!”
+
+[[[It’s your earring. I’ve got proof.|goodMadison8]]</tw-passagedata>
+<tw-passagedata pid="286" name="goodMadison8" tags="Act3 Rachel" position="4842,3864">You show Madison the photo you took from Douglas’s wallet. She grabs it from your hand and stares at it intently. Rachel’s long, dangling earring hangs prominently.
+
+“But why would I even want to kill my sister? That doesn’t make any sense.”
+
+[[She was fucking Brock.|failMad3]]
+
+[[She was fucking Rich.|goodMadison9]]
+
+[[She was obnoxious.|fail4]] </tw-passagedata>
+<tw-passagedata pid="287" name="failMad3" tags="Act3 Rachel" position="5009,3733">“Why would I care if she was fucking her boyfriend?”
+
+[[Shit|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="288" name="goodMadison9" tags="Act3 Rachel" position="5031,4009">Rich stares at Madison. He’s turning steadily, unpleasantly red. “You- You knew?”
+
+Madison stomps her foot. “Of course I knew, asshole! I couldn’t believe that you would do that!”
+
+She turns to you, fists balled, teeth clenched. “But I didn’t kill her for it! How could I have? She drove herself off the bridge! It was an accident, or a suicide, or something!”
+
+[[You killed her and drove her body to the bridge.|goodMadison10]]
+
+</tw-passagedata>
+<tw-passagedata pid="289" name="fail4" tags="Act3 Rachel" position="5005,3865">“That’s not enough reason to murder someone.”
+
+[[Shit, she&#39;s right...|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="290" name="goodMadison10" tags="Act3 Rachel" position="5170,3776">What? That doesn’t make any sense! How could I have possibly done that?”
+
+[[You pushed the car in.|failMad7]]
+
+[[You weighed down the gas pedal.|goodMadison11]]
+</tw-passagedata>
+<tw-passagedata pid="291" name="failMad7" tags="Act3 Rachel" position="5170,3925"> “Look at me! I’m not strong enough to push a sedan…”
+ 
+ [[Shit.|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="292" name="goodMadison11" tags="Act3 Rachel" position="5320,3926">She scoffs, aiming for dismissive and missing by a mile. “ How would I do that?”
+
+[[With something missing from my room.|goodMadison12]]
+</tw-passagedata>
+<tw-passagedata pid="293" name="goodMadison12" tags="Act3 Rachel" position="5387,3763">Madison freezes. Her bright green eyes stare right through you.
+
+
+[[The earring|failMad12]] 
+
+[[The dumbbell|goodMadison13]]
+
+
+</tw-passagedata>
+<tw-passagedata pid="294" name="failMad12" tags="Act3 Rachel" position="5445,3912">“That wouldn’t weigh down a gas pedal…”
+
+[[Fuck|FailedEnding]] </tw-passagedata>
+<tw-passagedata pid="295" name="goodMadison13" tags="Act3 Rachel" position="5570.0001,3912">[[The TV cord|goodMadison14]]</tw-passagedata>
+<tw-passagedata pid="296" name="goodMadison14" tags="Act3 Rachel" position="5623,3787">Madison’s collapsing in on herself, arms clutched protectivly over her pregnant belly. She’s starting to hyperventilate.
+
+Rich takes a step towards her, protective. “What’s going on Madison?” 
+
+[[Tell them Madison.|goodMadison15]]
+
+</tw-passagedata>
+<tw-passagedata pid="297" name="goodMadison15" tags="Act3 Rachel" position="5695.0001,3937">They all look at up me.
+
+[[Tell. Them.]]
+</tw-passagedata>
+<tw-passagedata pid="298" name="Tell. Them." tags="Act3 Rachel" position="5784,3759">Madison begins shaking “I- I didn’t mean to..”
+
+[[Tell them the truth Madison. Tell them how I came home, upset and sobbing with guilt. How I worked up the courage to confess to you about the affair with Rich.|goodMadison19]]
+</tw-passagedata>
+<tw-passagedata pid="299" name="goodMadison19" tags="Act3 Rachel" position="5820.0001,3909">Rich looks at Madison, shame heavy in his eyes, then back at the ground. “Madison-I…”
+
+“She told me Rich. I know everything. But I didn’t mean to kill you. I swear. It was an accident. We started arguing, and I don’t know what came over me- I pushed her, that was all it was, a push. It was that goddamned dresser! How could I have known--”
+
+“Madison.. wh-what are you talking about…? You.. this was your fault??” Brock steps forward and grabs Madison’s shoulder and shakes her, slightly.
+
+“Tell me you didn’t do this!”
+
+Madison remains quiet.
+
+[[Tell them, Madison. They deserve to know.|goodMadison20]]
+</tw-passagedata>
+<tw-passagedata pid="300" name="goodMadison20" tags="Act3 Rachel" position="5920.0001,3784">“I… I didn’t know what to do. There was so much blood… She had stopped breathing. There was nothing I could do.” She turns to look imploringly at Rish “We were so happy, Rich. I couldn’t go to jail. I wanted a family, a life of our own, without my sister ruining it for us.”
+
+Madison begins sobbing. 
+
+“I’m.. I’m so sorry Rachel. I’m so fucking sorry.”
+
+Rich takes a step back from Madison, his mouth in a straight line.
+
+Brock begins to phone the police. He’s still stumbling, but it’s shock rather than alcohol. Madison falls to the floor, sobbing uncontrollably. Rich dithers, like he’s not sure if he should comfort his wife or condemn her.
+
+Nobody notices me sneak out the [[back.|leaving]]
+</tw-passagedata>
+<tw-passagedata pid="301" name="leaving" tags="Act3" position="5945.0002,3933">It all comes out in a day or two. There are no secrets in a small town. Everything that gets passed around is half truth and half gossip: a distortion, a fragment of reality chewed into shape by the biases and beliefs of the community.
+
+The cops can’t do anything. There’s no recorded confession, just Brock’s furious accusations and Rich’s stony silence. It isn’t long before Madison packs up and leaves town without even saying a word to Rich, which speaks louder than any confession could anyway. [[547.|leaving2]]</tw-passagedata>
+<tw-passagedata pid="302" name="leaving2" tags="Act3" position="6064,3780">I thought...I thought that I would feel better after this. Knowing what really happened to my Rachel. But I don’t feel better. I feel hollow. I had to lie so much to get to the truth, to be so many people, that I barely recognize my own face in the mirror.
+
+The town feels different too. Bleaker. More hopeless. I hold out for as long as I can, but it’s not long before I pack up and hit the road. I need to find somewhere else to be. Someone else to be, maybe.
+
+546.
+
+[[END]]</tw-passagedata>
+<tw-passagedata pid="303" name="END" tags="Act3" position="6070.0002,3930">The End</tw-passagedata>
+<tw-passagedata pid="304" name="R2" tags="Rachel Act3" position="3739.0001,4293">“No,” Rich growls. “That’s not true. You know it’s not. My car wouldn’t start.”
+
+Madison shakes her head. “Brock-- Rachel did come home that night. She even called Douglas from the house. But before I could calm her down, she said she was tired of everything. She drove off without another word.”
+
+[[Shit...|RichFailedEnding]]</tw-passagedata>
+<tw-passagedata pid="305" name="R3" tags="Rachel Act3" position="3614,4293">“No, I didn’t!” Rich cried, aghast. “There’s no way I could have! Everyone saw her leave in her car.”
+
+[[Fuck.|RichFailedEnding]]</tw-passagedata>
+<tw-passagedata pid="306" name="R4" tags="Act3 Rachel" position="3889,4292">“I couldn’t have.” Rich protests “She went home and I followed her--on foot. It took at least an hour. When I got there, all I found was Madison crying about how she had driven off. She had told the cops that Rachel never came home. I should have told someone, sure, but what difference would it have made?”
+
+[[Oh fuck, I know I missed something...|RichFailedEnding]]</tw-passagedata>
+<tw-passagedata pid="307" name="RichFailedEnding" tags="Act3 Rachel" position="3698,4453">Brock doesn’t seem to care. He’s swayed more by my face than any argument.
+
+“You fucking coward. You could have owned up to this like a man. I don’t try to act like I’m better than I am. I deal with my problems. You killed her, and you can’t even admit it.”
+
+He’s stepping forward--Rich is cornered against the fridge. Madison’s face has gone hard and flat as slate and she doesn’t blink when Brock’s fist crunches against Rich’s jaw.
+
+“It wasn’t me.” Rich cries, over and over. “I didn’t do it!” His shirt is stained with sweat and blood. Brock reaches behind him for something to use in place of his hands, and Madison quietly slides the cast-iron skillet down the countertop until it’s within reach. 547.
+
+They’re so transfixed at the blood and gore that they don’t notice me slip out of the kitchen and up to the top of the stairs. I pause on my way out, and hear ragged breathing and soft cries from below.
+
+Brock’s voice, low and weak. “Why did you let me do that?”
+
+Madison, shrill. “I didn’t let you do anything! This is your fault!”
+“But what are we going to do now?”
+I can picture Madison, eyes low, voice steady. “I have a plan.”
+
+[[This doesn&#39;t feel quite right...I wish I had another chance to find justice for my Rachel…|FailedEnding]]
+</tw-passagedata>
+<tw-passagedata pid="308" name="BB1" tags="Rachel Act3" position="3893,3213">“I drive a motorcycle! How could I have run you off the road?”
+
+[[Uhhhh...|FailedBrockEnding]]</tw-passagedata>
+<tw-passagedata pid="309" name="FailedBrockEnding" tags="Act3 Rachel" position="3894,3363">“I always knew you’d be the death of her, you disgusting creep,” Madison screams.
+
+Brock’s eyes go wide. “ I’d never do that! I didn’t do that. I stayed at the party longer than anyone else! I passed out on Gary’s floor that night! Rachel, listen to me. I love you Rachel. I know I have problems but I promised I’d never hurt you again. I promised you.”
+
+Rich’s fist makes a hollow cracking noise as it hits the side of Brock’s face. Madison screams.
+
+Brock howls.
+
+Before Rich can follow up Brock has him pressed against the mantelpiece by the neck, his practiced fist battering him repeatedly.
+
+Rich’s head slams back against the wood.
+Just like before.
+Just like my Rachel.
+He falls to the floor, Brock’s lithe form looming over him, panting.
+“Oh my god no!” Madison screams.
+Brock turns to look at Madison. He is crying. Sobbing. He opens his mouth to speak. Rich gropes at the side of the mantle.
+
+My eardrums pop and my face is spattered with thick, warm blood.
+Brock falls to the floor, a gaping hole ripped in his chest. 547.
+Rich lies on his back, panting, still tightly grasping the loaded shotgun he’d left there.
+
+Careless.
+
+I run.
+
+[[This doesn&#39;t feel quite right...I wish I could have another chance to find justice for my Rachel…|FailedEnding]]
+</tw-passagedata>
+<tw-passagedata pid="310" name="BB2" tags="Act3 Rachel" position="4041,3211">Madison: “What? I was at home, how could he get in without me hearing his motorcycle? If he was here before you wouldn’t you have seen his bike outside?”
+
+[[Shit she&#39;s right.|FailedBrockEnding]]</tw-passagedata>
+<tw-passagedata pid="311" name="BB3" tags="Act3 Rachel" position="4177,3222">Brock: You saw me right before you ran to your car! I was going to try to go after you right away but everyone else at the party made me stay and cool off first! By the time they’d let me leave I was too stoned to drive.”
+
+[[Fuck|FailedBrockEnding]] </tw-passagedata>
+<tw-passagedata pid="312" name="pic" tags="" position="1058,1409">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/rachel%20evidence.jpg&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;</tw-passagedata>
 </tw-storydata>
 </div>
 	<script id="script-sugarcube" type="text/javascript">

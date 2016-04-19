@@ -170,11 +170,12 @@ I don’t do it often. It takes a lot of preparation, but it can be worth it. Pe
 &lt;&lt;if $evidence.includes(&quot;Act21&quot;)&gt;&gt;[[Tweets by Tyler|TweetsAct2]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act22&quot;)&gt;&gt;[[Performance Review of Douglas|PerfRevAct2]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act23&quot;)&gt;&gt;[[Clipping about Paulson&#39;s Restaurant|Act23Clip]]&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $evidence.includes(&quot;Act3&quot;)&gt;&gt;[[Voicemail from Rachel to Douglas|VoicemailAct3]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
+&lt;&lt;if $evidence.includes(&quot;Act3&quot;)&gt;&gt;[[Voicemail from Rachel to Douglas|VoicemailAct3]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Picture&quot;)&gt;&gt;[[Picture of Rachel|pic]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="19" name="EvidenceAct3" tags="" position="1054,1727">&lt;&lt;if $evidence.includes(&quot;Pro2&quot;)&gt;&gt;[[Clipping of obituary for Rachel Maccormack|EvidenceAct32]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act11&quot;)&gt;&gt;[[Prescription From Dr. Wolfe|Prescription2]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $evidence.includes(&quot;Act3&quot;)&gt;&gt;[[Voicemail from Rachel to Douglas|VoicemailAct3]]&lt;&lt;endif&gt;&gt;
-</tw-passagedata>
+&lt;&lt;if $evidence.includes(&quot;Picture&quot;)&gt;&gt;[[Picture of Rachel|pic]]&lt;&lt;endif&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="20" name="FailedMadison" tags="Alfie Interview1 Prologue" position="1466,3">Madison leans in and glares at you. Her bright green eyes scrutinize your face.
 
 
@@ -611,7 +612,7 @@ Why did he let them all sully Rachel’s name, instead of telling the truth?
 Douglas Eikerman works at Paulson’s Restaurant. He always thought he’d escape this town for something better, but after his parents got so sick they needed him here to care of them.
 
 Rachel never got a chance to escape Floyd River, to find something better somewhere with big shiny buildings and fancy cars.
-
+&lt;&lt;set $evidence to $evidence+[&quot;Picture&quot;]&gt;&gt;
 [[Why should he?|EndAct1]]
 </tw-passagedata>
 <tw-passagedata pid="118" name="EndAct1" tags="Act1" position="5807,1434">This is the end of Act 1.
@@ -1501,4 +1502,6 @@ I run.
 <tw-passagedata pid="311" name="BB3" tags="Act3 Rachel" position="4177,3222">Brock: You saw me right before you ran to your car! I was going to try to go after you right away but everyone else at the party made me stay and cool off first! By the time they’d let me leave I was too stoned to drive.”
 
 [[Fuck|FailedBrockEnding]] </tw-passagedata>
+<tw-passagedata pid="312" name="pic" tags="" position="1058,1409">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/rachel%20evidence.jpg&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;</tw-passagedata>
 </tw-storydata>
