@@ -375,8 +375,9 @@ The Doctors’s office is riddled with artifacts from his long career. Photos of
 I subconsciously start adjusting
 
 [[Try Again?|predialogueC1]]</tw-passagedata>
-<tw-passagedata pid="48" name="FailedMikayla" tags="" position="3099,1370">
+<tw-passagedata pid="48" name="FailedMikayla" tags="Act1 Mikayla" position="3099,1369">Dr. Wolfe recoils in his chair. “Mikayla, I don’t know what’s gotten into you, but I don’t feel comfortable discussing this with you if you continue to act this way. If you’ll excuse me, I have work to do.”
 
+He gets up from behind the desk and opens the door, showing you out.
 
 [[Try again?|predialogueM1]]</tw-passagedata>
 <tw-passagedata pid="49" name="dialogueC5" tags="Interview2 Act1 Catherine" position="3804,787">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe glances down at his watch briefly. “I do have a fairly open afternoon. How have you been?”
@@ -679,7 +680,7 @@ Why did he let them all sully Rachel’s name, instead of telling the truth?
 Douglas Eikerman works at Paulson’s Restaurant. He always thought he’d escape this town for something better, but after his parents got so sick they needed him here to care of them.
 
 Rachel never got a chance to escape Floyd River, to find something better somewhere with big shiny buildings and fancy cars.
-&lt;&lt;set $evidence to $evidence+[&quot;Picture&quot;]&gt;&gt;
+&lt;&lt;set $evidence to $evidence+[&quot;Act21&quot;,&quot;Act22&quot;,&quot;Act23&quot;]&gt;&gt;
 [[Why should he?|EndAct1]]
 </tw-passagedata>
 <tw-passagedata pid="118" name="EndAct1" tags="Act1" position="5807,1434">This is the end of Act 1.
@@ -852,7 +853,7 @@ Start [[Act 3|Act3Start]].</tw-passagedata>
 
 
 [[Try again?|Act2P1]]</tw-passagedata>
-<tw-passagedata pid="155" name="FailTyler" tags="Act2 Tyler" position="2439,2811">
+<tw-passagedata pid="155" name="FailTyler" tags="Act2 Tyler" position="2439,2811">Doug scowls at you. “You know, I know we’re sleeping together, but that doesn’t give you the right to know everything about me. Piss off, before I call your parents and tell them you’re drinking underage.” 
 
 [[Try again?|Act2T1]]</tw-passagedata>
 <tw-passagedata pid="156" name="EvidenceAct11" tags="" position="339,1423">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
@@ -880,7 +881,7 @@ Start [[Act 3|Act3Start]].</tw-passagedata>
 </tw-passagedata>
 <tw-passagedata pid="165" name="dialogue19" tags="Act2" position="5305,2546">He has a few more drinks as you nurse your beer.
 [[And another|dialogue100]]</tw-passagedata>
-<tw-passagedata pid="166" name="dialogue100" tags="Act2" position="5484,2462">Doug’s eyes are glazed. You call him a cab.
+<tw-passagedata pid="166" name="dialogue100" tags="Act2" position="5483,2462">&lt;&lt;set $evidence to $evidence+[&quot;Picture&quot;]&gt;&gt;Doug’s eyes are glazed. You call him a cab.
 Before you slip out, you take the picture from his wallet, and the phone from his [[pocket.|endAct2]]</tw-passagedata>
 <tw-passagedata pid="167" name="Act2T2" tags="Act2 Tyler Interview" position="2586,2616">Doug looks up. “Hey,” He says. “I don’t usually see you after work here.” He fiddles with his glass, mostly empty. “What are you doing?”
 
