@@ -1,0 +1,1592 @@
+<tw-storydata name="My Rachel" startnode="1" creator="Twine" creator-version="2.0.11" ifid="EF4AC3EE-D840-4376-B311-A35BDBF479C0" format="SugarCube" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body .passage{
+	font-size:200%	
+}
+body.alfie a {color:#98ea65;}
+
+body.catherine a{color:#755085;}
+
+body.mikayla a{color:#c00070;}
+
+body.rachel a{color:#FB4F4F;}
+
+body.paulsen a{color:#79cbdd;}
+
+body.tyler a{color:#f9a43c;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">//prevent use of browser's back button
+config.disableHistoryControls = true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="623,95">&lt;center&gt;@@color:#FB4F4F;My Rachel
+A mystery game in Twine
+Directed by Jesse Gazic
+Written by Sam Hotchkiss, Sam Kary, and Sam Kilpatrick
+Editing by Carter Cook and Nova Cross
+Programming by Hamada Gasmallah
+
+Sound Design by Carter Cook and Nova Cross
+Graphics by Jesse Gazic
+
+Special Thanks to Diana Yoon@@
+
+[[Start|prologue]]&lt;/center&gt;
+&lt;&lt;set $evidence = [&quot;Pro1&quot;,&quot;Pro2&quot;,&quot;Pro3&quot;]&gt;&gt;
+/%fetch audio from github URLs%/
+&lt;&lt;cacheaudio &quot;ambientLoop&quot; &quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/music/654155_Silence.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;pageTurn&quot; &quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/sounds/pageTurn.mp3&quot;&gt;&gt;&lt;&lt;audio &quot;ambientLoop&quot; play&gt;&gt;
+&lt;&lt;cacheaudio &quot;garageSaleAmbience&quot; &quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/sounds/garageSaleAmbience.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;radio&quot; &quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/sounds/iowaRadioNews.mp3&quot;&gt;&gt;
+&lt;&lt;audio &quot;ambientLoop&quot; loop play&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="2" name="prologue" tags="Prologue Forest" position="811,100">Rachel MacCormack was on my soccer team when we were kids.
+
+Rachel MacCormack went to my high school.
+
+Rachel MacCormack was the shining star of our community.
+
+She was [[beautiful|Pro1b]].
+
+</tw-passagedata>
+<tw-passagedata pid="3" name="StoryMenu" tags="" position="4,699">&lt;&lt;if tags().contains(&quot;Prologue&quot;)&gt;&gt;
+[[Evidence|EvidencePrologue]]
+&lt;&lt;elseif tags().contains(&quot;Act1&quot;)&gt;&gt;
+[[Evidence|EvidenceAct1]]
+&lt;&lt;elseif tags().contains(&quot;Act2&quot;)&gt;&gt;
+[[Evidence|EvidenceAct2]]
+&lt;&lt;elseif tags().contains(&quot;Act3&quot;)&gt;&gt;
+[[Evidence|EvidenceAct3]]
+&lt;&lt;endif&gt;&gt;
+
+
+&lt;&lt;if tags().contains(&quot;Interview&quot;)&gt;&gt;&lt;&lt;if $HP lte 0&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp0.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 1&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp1.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 2&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp2.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 3&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp3.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 4&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp4.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 5&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp5.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if tags().contains(&quot;Interview1&quot;)&gt;&gt;&lt;&lt;if $HP lte 0&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp0.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 1&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp1.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 2&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp2.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 3&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp3.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 4&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp4.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 5&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp5.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if tags().contains(&quot;Interview2&quot;)&gt;&gt;&lt;&lt;if $HP lte 0&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp0.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 1&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp1.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 2&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp2.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 3&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp3.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 4&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp4.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 5&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp5.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if tags().contains(&quot;Interview3&quot;)&gt;&gt;&lt;&lt;if $HP lte 0&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp0.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 1&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp1.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 2&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp2.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 3&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp3.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 4&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp4.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 5&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp5.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if tags().contains(&quot;Interview4&quot;)&gt;&gt;&lt;&lt;if $HP lte 0&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp0.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 1&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp1.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 2&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp2.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 3&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp3.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 4&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp4.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;elseif $HP eq 5&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/hp5.png&quot; height=&quot;150&quot; width=&quot;150&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="4" name="Pro2" tags="Prologue" position="1139,97">Five years ago, Greggory Thimbald threw a house party. 
+
+That was the last time Rachel MacCormack was seen.
+
+Her car was found at the bottom of the river.
+
+It had careened off the highway, with [[Rachel|Pro3]] still behind the wheel.</tw-passagedata>
+<tw-passagedata pid="5" name="Pro3" tags="Prologue" position="1139,258">Slowly, the Town of Floyd River recovered from losing its shining star.
+
+The town labelled Rachel MacCormack’s death a tragic drunk driving accident, and moved on.
+
+[[But I haven’t|Pro3b]].</tw-passagedata>
+<tw-passagedata pid="6" name="Pro4" tags="Prologue" position="1443,128">There is a yard sale down the road. There are people perusing the clutter, talking.
+
+A woman is carrying a large cardboard box out to the curb. [[Madison|Pro5]]</tw-passagedata>
+<tw-passagedata pid="7" name="dialogue1" tags="Prologue Interview1 Alfie" position="1696,244">I assume the form of Alfie and approach the garage sale. More people have arrived; seems like everyone’s excited about the new baby. No one’s had a baby in this town in a few years, and it’s become an event.
+
+Madison has forced a smile and is talking with people. I walk up to her and shake her hand.
+
+“Oh, Mayor Larssen…” she says, distant.
+
+What should I say?&lt;&lt;set $HP to 5&gt;&gt;
+
+[[Call me Alfie, ma&#39;am.|med1][$HP-=1]]
+[[I&#39;m not the mayor anymore, you know.|good1]]
+[[You&#39;re lookin&#39; hot, missy.|bad1][$HP-=2]]
+&lt;&lt;audio &quot;garageSaleAmbience&quot; loop volume 0.25 play&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="8" name="Pro5" tags="Prologue" position="1438,280">Madison is Rachel’s older sister. She’s married now, to a guy named Rich. I’ve heard there’s a baby on the way, which is probably why they’re getting rid of all this junk.
+
+Madison seems… tense. She sets down her box and looks around.
+
+This seems like a great opportunity to get some information. I haven’t had much time to prepare for this one, so let’s go for [[something easy|Pro6]].
+
+</tw-passagedata>
+<tw-passagedata pid="9" name="dialogue2" tags="Prologue Interview1 Alfie" position="2005,225">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;
+You glace down at the box Madison was carrying. &quot;RACHEL&quot; is scrawled on one of the cardboard flaps in big, black letters.
+
+Madison is surveying the garage sale, keeping her eyes on the buyers. &quot;So,&quot; she says, not making eye contact, &quot;what brings you here today?&quot;
+
+[[I&#39;m just passing through.|worst2][$HP-=2]]
+
+[[Right..... what was I doing here?|bad2][$HP-=1]]
+
+[[I wanted to see how you were holding up.|good2]]</tw-passagedata>
+<tw-passagedata pid="10" name="bad1" tags="Prologue Alfie Interview1" position="1864,96">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She looks offended. &quot;Mr. Larssen, I have a husband! Are you drunk&quot;
+
+Shit. That came off too creepy.
+
+[[So sorry...|dialogue2]]</tw-passagedata>
+<tw-passagedata pid="11" name="Pro1b" tags="Prologue" position="812,258">She was [[kind|Pro1c]].
+
+</tw-passagedata>
+<tw-passagedata pid="12" name="Pro1c" tags="Prologue" position="973,258">She was [[intelligent|Pro1d]].</tw-passagedata>
+<tw-passagedata pid="13" name="Pro3b" tags="Prologue" position="1310,255">These days I’ve been keeping tabs on the case ever since. The suspects, the evidence, the motives…
+
+It’s become one of my obsessions.
+
+I keep tabs on everyone in this town. Not just for Rachel’s sake, though. I have a special… [[ability|Pro3c]].</tw-passagedata>
+<tw-passagedata pid="14" name="Pro1d" tags="Prologue" position="974,101">She died when she was only [[21 years old|Pro2]].</tw-passagedata>
+<tw-passagedata pid="15" name="Pro3c" tags="Prologue" position="1311,95">See, I can steal people’s identities. But it’s not identity theft or credit card fraud.
+
+I can take their face, their voice, and their body. And as long as I can walk and talk like whoever I’m pretending to be, no one suspects a thing.
+
+I don’t do it often. It takes a lot of preparation, but it can be worth it. People will tell you anything if you can be [[the right person|Pro4]] at the right time.</tw-passagedata>
+<tw-passagedata pid="16" name="EvidencePrologue" tags="" position="373,970">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+
+&lt;&lt;if $evidence.includes(&quot;Pro1&quot;)&gt;&gt;[[Clipping from the Des Moines Register|EvidencePro1]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Pro2&quot;)&gt;&gt;[[Clipping of obituary for Rachel Maccormack|EvidencePro2]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Pro3&quot;)&gt;&gt;[[Clipping of obituary for Martha Larssen|EvidencePro3]]&lt;&lt;endif&gt;&gt;
+
+In the morning of May 30th, 2011, Rachel MacCormack drove off a bridge into Floyd River. The police were called from the MacCormack residence by Rachel’s sister Madison, who reported that she hadn’t come home after a party earlier in the night.
+
+The next morning, Rachel’s body was pulled from the river. She died from head trauma sustained when driving off the bridge. The car was not recovered and the incident was ruled as a drunk driving tragedy.</tw-passagedata>
+<tw-passagedata pid="17" name="EvidenceAct1" tags="" position="762,1211">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+
+&lt;&lt;if $evidence.includes(&quot;Pro1&quot;)&gt;&gt;[[Clipping from the Des Moines Register|EvidenceAct11]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Pro2&quot;)&gt;&gt;[[Clipping of obituary for Rachel Maccormack|EvidenceAct12]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Pro3&quot;)&gt;&gt;[[Clipping of obituary for Martha Larssen|EvidenceAct13]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act11&quot;)&gt;&gt;[[Prescription From Dr. Wolfe|Prescription]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act12&quot;)&gt;&gt;[[Spring Newsletter|NewsletterAct1]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act13&quot;)&gt;&gt;[[Acceptance Letter|AcceptanceAct1]]&lt;&lt;endif&gt;&gt;
+
+In the morning of May 30th, 2011, Rachel MacCormack drove off a bridge into Floyd River. The police were called from the MacCormack residence by Rachel’s sister Madison, who reported that she hadn’t come home after a party earlier in the night.
+
+The next morning, Rachel’s body was pulled from the river. She died from head trauma sustained when driving off the bridge. The car was not recovered and the incident was ruled as a drunk driving tragedy.</tw-passagedata>
+<tw-passagedata pid="18" name="EvidenceAct2" tags="" position="1179,989">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+
+&lt;&lt;if $evidence.includes(&quot;Pro2&quot;)&gt;&gt;[[Clipping of obituary for Rachel Maccormack|EvidenceAct22]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act1&quot;)&gt;&gt;[[Prescription From Dr. Wolfe|Prescription2]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act21&quot;)&gt;&gt;[[Tweets by Tyler|TweetsAct2]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act22&quot;)&gt;&gt;[[Performance Review of Douglas|PerfRevAct2]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act23&quot;)&gt;&gt;[[Clipping about Paulson&#39;s Restaurant|Act23Clip]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act3&quot;)&gt;&gt;[[Voicemail from Rachel to Douglas|VoicemailAct3]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Picture&quot;)&gt;&gt;[[Picture of Rachel|pic]]&lt;&lt;endif&gt;&gt;
+
+In the morning of May 30th, 2011, Rachel MacCormack drove off a bridge into Floyd River. The police were called from the MacCormack residence by Rachel’s sister Madison, who reported that she hadn’t come home after a party earlier in the night.
+
+The next morning, Rachel’s body was pulled from the river. She died from head trauma sustained when driving off the bridge. The car was not recovered and the incident was ruled as a drunk driving tragedy.
+</tw-passagedata>
+<tw-passagedata pid="19" name="EvidenceAct3" tags="" position="1054,1727">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+
+&lt;&lt;if $evidence.includes(&quot;Pro2&quot;)&gt;&gt;[[Clipping of obituary for Rachel Maccormack|EvidenceAct32]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act11&quot;)&gt;&gt;[[Prescription From Dr. Wolfe|Prescription2]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Act3&quot;)&gt;&gt;[[Voicemail from Rachel to Douglas|VoicemailAct3]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $evidence.includes(&quot;Picture&quot;)&gt;&gt;[[Picture of Rachel|pic]]&lt;&lt;endif&gt;&gt;
+
+In the morning of May 30th, 2011, Rachel MacCormack drove off a bridge into Floyd River. The police were called from the MacCormack residence by Rachel’s sister Madison, who reported that she hadn’t come home after a party earlier in the night.
+
+The next morning, Rachel’s body was pulled from the river. She died from head trauma sustained when driving off the bridge. The car was not recovered and the incident was ruled as a drunk driving tragedy.</tw-passagedata>
+<tw-passagedata pid="20" name="FailedMadison" tags="Alfie Interview1 Prologue" position="1466,3">Madison leans in and glares at you. Her bright green eyes scrutinize your face.
+
+
+&quot;Alfie....?&quot;
+
+&quot;What&#39;s going on!? You&#39;re not Alfie. Who are you?&quot;
+
+
+(Damn it. I failed....)
+
+
+[[Try again?|Pro4]]
+</tw-passagedata>
+<tw-passagedata pid="21" name="dialogue3" tags="Prologue Interview1 Alfie" position="2389,230">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;We keep chatting. Madison is all smiles.
+
+“Rich and I wanted to clean out the house to make room for the baby. When we told everyone we were going to have a garage sale, they kind of turned it into a baby shower, too.”
+
+Her eyes dart down to the box for a second. “We’re going to put her in the spare bedroom.”
+
+[[That must be hard for you.|good3]]
+[[You have a spare bedroom?|worst3][$HP-=2]]
+[[So that’s why you’re selling her stuff.|bad3][$HP-=1]]</tw-passagedata>
+<tw-passagedata pid="22" name="dialogue4" tags="Interview1 Alfie Prologue" position="2965,242">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Anyway,” she continues, “we needed to clear out Rachel’s room, so I gathered some things out of there that we could sell. We still need to clean it up, move in the crib, that sort of thing.”
+
+She looks to the side and fiddles with her pearl earring. Pain flashes across her face.“I thought I was over it, you know? I guess I wasn’t. How did you deal with it all when your wife died, Alfie?”
+
+[[I didn’t. My life fell apart.|bad4][$HP-=1]]
+[[I found that getting back to work put my mind off it.|worst4][$HP-=2]]
+[[I finally accepted there was nothing I could have done.|good4]]</tw-passagedata>
+<tw-passagedata pid="23" name="dialogue5" tags="Interview1 Prologue Alfie" position="3311,251">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Well, I suppose I’ll have to move on with my life soon enough. She’s due in a few months.”
+
+You hear the low roar of a motorcycle from down the street. “Oh, goddammit.” Madison shields her eyes to see the approaching figure on a Harley over the morning sun. She grimaces.
+
+[[“It’s Brock.”|postdialogue6]]
+</tw-passagedata>
+<tw-passagedata pid="24" name="Pro6" tags="Prologue" position="1563,336">@@color:#98ea65;Alfie@@ will be easy enough. He’s too respected for anyone to question him much, even in his current state.
+
+Still, it’s a good idea to review my &lt;&lt;click &quot;evidence&quot;&gt;&gt;&lt;&lt;goto &quot;EvidencePrologue&quot;&gt;&gt;&lt;&lt;/click&gt;&gt; and brush up on his history. The better I can impersonate him, the easier it will be to get information out of people.
+
+(I can check my evidence at any time by clicking on “Evidence” in the sidebar.)
+
+Once I’m ready, I’ll [[transform|dialogue1]].</tw-passagedata>
+<tw-passagedata pid="25" name="med1" tags="Prologue Alfie Interview" position="1876,395">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She raises her eyebrows.
+
+&quot;Well, if you insist...&quot;
+
+That might have been a bit too cold. I should be a bit more careful.
+
+[[&gt;|dialogue2]]</tw-passagedata>
+<tw-passagedata pid="26" name="good1" tags="Prologue Alfie Interview1" position="1867,235">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She chuckles.
+
+&quot;Yes, right. Old habits die hard.&quot;
+
+[[&gt;|dialogue2]]</tw-passagedata>
+<tw-passagedata pid="27" name="EvidencePro1" tags="" position="220,1170">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20clipping%20award.png&quot; height=&quot;1000&quot; width=&quot;1000&quot;&gt;
+
+Alfie used to be such a pillar of the community. So sad what happened to him.</tw-passagedata>
+<tw-passagedata pid="28" name="EvidencePro2" tags="" position="346,1171">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20rachel%20obit.png&quot; height=&quot;1000&quot; width=&quot;1000&quot;&gt;
+
+Rachel MacCormack accidently drove her car into the Floyd River. She was driving home drunk from a party. </tw-passagedata>
+<tw-passagedata pid="29" name="EvidencePro3" tags="" position="471,1173">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20martha%20obit.png&quot; heigh=&quot;1000&quot; width=&quot;1000&quot;&gt;
+
+Martha’s death really shook with Alfie, he hasn’t been the same since. 
+</tw-passagedata>
+<tw-passagedata pid="30" name="Act11" tags="Act1" position="2231,931">Floyd River is a town of [[549|Act12]] people.</tw-passagedata>
+<tw-passagedata pid="31" name="Act12" tags="Act1" position="2418,918">Five years ago it was [[551|Act13]].</tw-passagedata>
+<tw-passagedata pid="32" name="Act13" tags="Act1" position="2418,1068">Every single person, in birth, life, and death, is tended to by Dr. Wolfe, the town&#39;s family practitioner for the last 50 years.
+
+Everyone knows him and he knows everyone, resulting in a steady pulse of gossip pumping through his examination [[room|Act14]].
+</tw-passagedata>
+<tw-passagedata pid="33" name="Act14" tags="Act1" position="2568,927">His office is stuffy, lit by incandescent bulbs.
+
+The green carpet crunches under my feet, emanating an odor of baby powder and old cleaning products.
+
+The waiting room, scattered with ignored children&#39;s toys, is empty and [[silent|Act15]].</tw-passagedata>
+<tw-passagedata pid="34" name="Act15" tags="Act1" position="2568,1077">The door to the receptionist&#39;s office has a weak [[lock|Act16]].</tw-passagedata>
+<tw-passagedata pid="35" name="Act16" tags="Act1" position="2727,913">Confidential medical records are left scattered on the desk.
+
+[[Careless.|Act17]]</tw-passagedata>
+<tw-passagedata pid="36" name="Act17" tags="Act1" position="2727,1063">Two appointments earlier this week stand out: @@color:#755085;Catherine Olster@@, yesterday at 1, and @@color:#c00070;Mikayla Stroud@@ the day before at 11.
+
+I&#39;m sure they both have follow up questions the doctor would love to [[answer.|Act18]]</tw-passagedata>
+<tw-passagedata pid="37" name="Act18" tags="Act1" position="2870,978">Two very well known Floyd River residents. Both equally good candidates. I&#39;ve collected profiles on them in my &lt;&lt;click &quot;evidence&quot;&gt;&gt;&lt;&lt;goto &quot;EvidenceAct1&quot;&gt;&gt;&lt;&lt;/click&gt;&gt; folder.
+
+
+&lt;center&gt;
+[[Catherine|predialogueC1]]
+
+[[Mikayla|predialogueM1]]
+
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="38" name="predialogueC1" tags="Interview2 Act1 Catherine" position="3103,804">&lt;&lt;set $HP to 5&gt;&gt;I take the form of Catherine, Floyd River’s most prolific busy body and long time friend of Dr. Wolf. The two love to gossip, so I’m sure if I play my cards right he’ll have something interesting to say about the [[prescription.|predialogueC2]]</tw-passagedata>
+<tw-passagedata pid="39" name="predialogueM1" tags="Interview2 Act1 Mikayla" position="3097,1207">&lt;&lt;set $HP to 5&gt;&gt;I take the form of Mikayla, the town’s new young prodigy. 
+
+It’s rising star.
+
+Its new Rachel MacCormack.
+
+Dr. Wolf has known her since she was a baby. He’ll be pleasantly surprised that she wants to talk about his work in the town, [[I’m sure.|predialogueM2]]
+</tw-passagedata>
+<tw-passagedata pid="40" name="predialogueC2" tags="Act1 Catherine Interview2" position="3279,800">The door creeks groggily as you return to the still empty Doctor’s office. The receptionist isn’t here. Looking around over the desk I remember that she passed away earlier this year and Dr. Wolf has been managing the practice by himself since then.
+
+[[548.|predialogueC3]]
+</tw-passagedata>
+<tw-passagedata pid="41" name="predialogueM2" tags="Interview2 Act1 Mikayla" position="3268,1202">Dr. Wolfe comes to the door after a moment, NPR quietly groaning out of the radio next to his desk. It’s odd to have him taller than me.
+
+“Makayla!” He says. “I would have thought you’d be too busy with school to come visit me on a weekday, what a wonderful surprise! [[Why don’t you come in?”|dialogueM3]]
+&lt;&lt;audio &quot;radio&quot; volume 0.25 play&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="42" name="predialogueC3" tags="Act1 Interview2 Catherine" position="3456,793">I wait a moment to listen for anyone in the examination room, then politely knock on the door. 
+
+Dr. Wolf comes to the door after a moment, NPR quietly groaning out of the radio next to his desk.
+
+“Why Catherine! So good to see you again! My, don’t you look stunning today. Please, come in.”
+
+The Doctors’s office is riddled with artifacts from his long career. Photos of his children. Photos of his children as adults. Photos of his children’s children. His degree looms imposingly behind his desk written in Latin, as if begging visitors to ask what it [[says.|DialogueC4]]
+&lt;&lt;audio &quot;radio&quot; volume 0.25 play&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="43" name="DialogueC4" tags="Act1 Interview2 Catherine" position="3614,791">Dr. Wolf sits down behind his desk cheerfully, his elderly frame settling in comfortably. “To what do I owe the pleasure today?”
+
+
+[[Oh Jeff, you know as well as anyone I never need a reason to get these old bones out of the house. I’ve just been at the MacCormack house for their garage sale.|goodc1]]
+
+[[Oh Doctor, I was just out for a stroll and thought I’d stop by and ask you some questions if that’s alright.|worstc1][$HP-=2]]
+
+[[Sorry to bother you, do you have a minute?|badc1][$HP-=1]]
+
+&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="44" name="goodc1" tags="Act1 Interview2 Catherine" position="3524,946">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Oh really? The word all over town is that they’re due for a baby soon, but I haven’t seen them yet. That city boy Rich must be taking Madison into Des Moin to see some greenhorn out [[there.|dialogueC5]]</tw-passagedata>
+<tw-passagedata pid="45" name="worstc1" tags="Act1 Interview2 Catherine" position="3674,946">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Catherine is everything alright? It must be thirty years now since I last heard you call me [[“doctor”.|dialogueC5]]</tw-passagedata>
+<tw-passagedata pid="46" name="badc1" tags="Act1 Interview2 Catherine" position="3824,946">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Why of course. You know you never need worry about bothering an old [[friend.|dialogueC5]]</tw-passagedata>
+<tw-passagedata pid="47" name="FailedCatherine" tags="Interview2 Catherine" position="3102,647">Dr. Wolfe recoils in his chair. “Catherine, I don’t know what’s gotten into you, but I don’t feel comfortable discussing this with you if you continue to act this way. If you’ll excuse me, I have work to do.”
+
+He gets up from behind the desk and opens the door, showing you out.
+
+[[Try Again?|predialogueC1]]</tw-passagedata>
+<tw-passagedata pid="48" name="FailedMikayla" tags="Act1 Mikayla" position="3099,1369">Dr. Wolfe recoils in his chair. “Mikayla, I don’t know what’s gotten into you, but I don’t feel comfortable discussing this with you if you continue to act this way. If you’ll excuse me, I have work to do.”
+
+He gets up from behind the desk and opens the door, showing you out.
+
+[[Try again?|predialogueM1]]</tw-passagedata>
+<tw-passagedata pid="49" name="dialogueC5" tags="Interview2 Act1 Catherine" position="3804,787">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe glances down at his watch briefly. “I do have a fairly open afternoon. How have you been?”
+
+[[There just doesn’t seem to be enough hours in the day anymore, does there? Maybe it’s because we’re getting older. All of these committees all the time - the stress is turning my stomach in knots. Is there something you could give me to settle it Jeff? I saw an ad on TV for Hydrocodone the other night and it looks marvelous.|worstC2][$HP-=2]]
+
+[[I tell ya Jeff, all of this running around has really got me down. I heard one of the girls at the Home Owners’ Association say she’s started taking Hydrocodone for her mood and it really cheered her up.|badC2][$HP-=1]]
+
+[[Oh Jeff, they’re working me to the bone out there. All this gardening is doing a number on my back. One of my girlfriends got perscribed Hydrocodone after her hip surgery and said it does wonders for her pain.|goodC2]]</tw-passagedata>
+<tw-passagedata pid="50" name="worstC2" tags="Interview2 Catherine Act1" position="3698,633">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Catherine my dear what in gods name are you talking about? That is not a drug to joke about. [[It’s a pain killer, not an antacid for god sake.|predialogueC6]]</tw-passagedata>
+<tw-passagedata pid="51" name="badC2" tags="Interview2 Catherine Act1" position="3836,649">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;What?! Who told you that? Hydrocodone isn’t an upper Catherine, [[it’s an opiate for god sakes!|predialogueC6]]</tw-passagedata>
+<tw-passagedata pid="52" name="goodC2" tags="Interview2 Act1 Catherine" position="3981,648">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe blinks, startled. He makes an uncomfortable groaning noise with his [[mouth.|predialogueC6]]</tw-passagedata>
+<tw-passagedata pid="53" name="predialogueC6" tags="Interview2 Act1 Catherine" position="4086,789">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe looks around his office nervously, as if expecting to be interrupted.
+“I… I really don’t prescribe medications like that anymore if it can be avoided. While I’m sure your symptoms are… troubling you, I truly do not think it wise. Heavens knows why someone would recommend such a thing in the first place.”
+[[Surely people must have their reasons.|dialogueC6]]</tw-passagedata>
+<tw-passagedata pid="54" name="dialogueC6" tags="Interview2 Act1 Catherine" position="4261,799">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“I’m sure they do Catherine, but I’ve seen what drugs like that can do to the body. Narcotics, Ha! More of a poison than a medicine really. No, I don’t approve anything like that anymore...”
+
+[[What’s wrong Jeff? You look flushed. I don’t think I’ve ever seen you turn that colour before.|badC3][$HP-=1]]
+
+[[Now Jeff, don’t you try keeping secrets now. I’ve known you a long time and I can tell when something’s bothering you.|goodC3]]
+
+[[Oh come now Jeff. I’m not exactly getting younger. Why not let a girl have a little fun before she goes? |worstC3][$HP-=3]]
+</tw-passagedata>
+<tw-passagedata pid="55" name="badC3" tags="Interview2 Act1 Catherine" position="4093,956">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;It’s been thirty years Catherine, I’m sure you’ve seen me turn all sorts of [[colours.|predialogueC7]]</tw-passagedata>
+<tw-passagedata pid="56" name="goodC3" tags="Act1 Interview2 Catherine" position="4245,956">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt; Dr. Wolfe lets out a [[long sigh.|predialogueC7]]</tw-passagedata>
+<tw-passagedata pid="57" name="worstC3" tags="Interview2 Act1 Catherine" position="4396,956">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Catherine! Please! Opiates are not something to [[joke about.|predialogueC7]]”</tw-passagedata>
+<tw-passagedata pid="58" name="predialogueC7" tags="Interview2 Act1 Catherine" position="4463,797">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe stands up and fiddles with some pictures on the window sill nervously. “I just don’t feel comfortable with them anymore Catherine, really. The side effects can be serious.”
+
+[[Side effects like what?|predialogueC8]]
+</tw-passagedata>
+<tw-passagedata pid="59" name="predialogueC8" tags="Interview2 Act1 Catherine" position="4609,792">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe exhales while scratching his face, nervously.
+“Plenty of them really. Nausea, dizzyness, intense mood swings. Mixing it with alcohol causes almost immobilizing effects.”
+
+[[What?|predialogueC9]]
+</tw-passagedata>
+<tw-passagedata pid="60" name="predialogueC9" tags="Interview2 Act1 Catherine" position="4607,943">“Indeed. Intense nausea, vomiting, the whole lot.”
+
+
+[[You’ve seen it before I take it?|predialogueC10]]</tw-passagedata>
+<tw-passagedata pid="61" name="predialogueC10" tags="Interview2 Act1 Catherine" position="4757,798">“Oh no, heavens no. But… listen… the last time I prescribed it…”
+
+
+[[Yes?|predialogueC11]]</tw-passagedata>
+<tw-passagedata pid="62" name="predialogueC11" tags="Interview2 Act1 Catherine" position="4757,948">“It was to the MacCormack girl.”
+
+[[Rachel?|predialogueC12]]</tw-passagedata>
+<tw-passagedata pid="63" name="predialogueC12" tags="Interview2 Act1 Catherine" position="4894,794">“She had an elective surgery in Des Moines and complained of post operational pain so I prescribed that exact same drug for her. That poor girl.”
+
+
+[[What was the surgery for?|dialogueC13]]
+</tw-passagedata>
+<tw-passagedata pid="64" name="dialogueC13" tags="Interview2 Act1 Catherine" position="4890,945">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Hm, I seem to recall it being rhinoplasty. Reconstructive. She insisted she had broken her nose falling down the stairs, but you know… You know how that boy Brock could get.”
+
+[[What do you mean?|worstC4][$HP-=2]]
+
+[[Of course.|badC4][$HP-=1]]
+
+[[Hmpf, that man! You know I saw him today drive past the MacCormack family garage sale on that bike of his, dressed like some sort of urbanite. Some people, I tell you.|goodC4]]
+
+</tw-passagedata>
+<tw-passagedata pid="65" name="worstC4" tags="Interview2 Act1 Catherine" position="5059,658">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Haven’t you seen the man? He’s such a brute. [[You can’t tell me you don’t remember what he did to that poor dog of hers.|predialogueC14]]</tw-passagedata>
+<tw-passagedata pid="66" name="badC4" tags="Act1 Interview Catherine" position="5061,813">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;hmm, yes.&quot;
+
+[[&gt;|predialogueC14]]</tw-passagedata>
+<tw-passagedata pid="67" name="goodC4" tags="Interview2 Catherine Act1" position="5062,951">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Some people never grow up. Just like his father. Do you remember that man? God, always drunk, always with a, ehem, [[certain kind of people.|predialogueC14]]&quot;</tw-passagedata>
+<tw-passagedata pid="68" name="predialogueC14" tags="Interview2 Act1 Catherine" position="5210,808">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedCatherine&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“I just feel so terrible now looking back. She was so well liked by everyone. That friend of her’s Douglas came with her to every single appointment, no matter what. They were inseparable. Such a terrible tragedy.”
+
+
+[[How could she have been driving drunk if her medication conflicted so strongly?|postdialogueC15]]
+</tw-passagedata>
+<tw-passagedata pid="69" name="postdialogueC15" tags="Interview2 Catherine Act1" position="5348,806">“People don’t like accidents, Catherine. They want a reason. They want something they can blame. Nobody outside of this office ever knew that she was taking Hydrocodone. Alcohol was the easiest answer for them.” The doctor stares out the window, tensing his brow.
+
+“It’ll always haunt me though. Wondering if the medication had anything to do with the crash. Dizziness, nausea…”
+
+Dr. Wolfe turns around and looks at me. “People always try to find a reason I suppose… but I’d rather it wasn’t me… ”
+
+After more small talk and gossip with Dr. Wolfe I politely make an exit.
+
+Walking down the street back to my car I think about what he said.
+
+[[Douglas|DouglasText]] 
+&lt;&lt;audio &quot;radio&quot; fadeto 0&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="70" name="worst2" tags="Interview1 Prologue Alfie" position="2171,211">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Well, Alfie, this is a garage sale…” 
+
+She doesn’t look pleased with me.
+
+[[&gt;|dialogue3]]</tw-passagedata>
+<tw-passagedata pid="71" name="good2" tags="Interview1 Alfie Prologue" position="2142,8">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Things are going alright, thanks for asking,” she says, turning to look at me. Her smile seems genuine this time.
+
+[[&gt;|dialogue3]]</tw-passagedata>
+<tw-passagedata pid="72" name="bad2" tags="Interview1 Prologue Alfie" position="2156,366">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Looking to buy something, I hope,” she says dismissively.
+
+
+[[&gt;|dialogue3]]</tw-passagedata>
+<tw-passagedata pid="73" name="good3" tags="Interview1 Prologue Alfie" position="2593,227">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Yes, it was. I hadn’t been in there since… [[well, you know.”|dialogue4]]</tw-passagedata>
+<tw-passagedata pid="74" name="worst3" tags="Interview1 Prologue Alfie" position="2589,43">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She raises an eyebrow. “Yes, Alfie. Remember Rachel? My dead sister?”
+
+[[&gt;|dialogue4]]</tw-passagedata>
+<tw-passagedata pid="75" name="bad3" tags="Alfie Interview1 Prologue" position="2599,412">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She glares at me. “It’s not like it’s easy!”
+
+[[&gt;|dialogue4]]</tw-passagedata>
+<tw-passagedata pid="76" name="worst4" tags="Prologue Alfie Interview1" position="3125,278">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She looks at me quizzically. “Alfie, you didn’t go back to work, you quit, remember? Are you drunk again?”
+
+
+[[&gt;|dialogue5]]</tw-passagedata>
+<tw-passagedata pid="77" name="good4" tags="Interview1 Prologue Alfie" position="3137,143">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;She forces a smile. “Yeah, I guess that’s right…”
+
+
+[[&gt;|dialogue5]]</tw-passagedata>
+<tw-passagedata pid="78" name="bad4" tags="Interview1 Prologue Alfie" position="3127,418">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt; “Oh.” she says, detached. “I’m sorry to hear that.”
+
+[[&gt;|dialogue5]]</tw-passagedata>
+<tw-passagedata pid="79" name="postdialogue6" tags="Interview1 Prologue Alfie" position="3455,244">The bike approaches the MacCormack house and slows. Brock is wearing a tight white T-shirt, jeans, and aviators, and his black hair is slicked back. I think he and Rachel used to date. He turns to look at Madison as he drives off. Those pipes are ear-splittingly loud.
+
+“Hey, get a real car, asshole!” you hear a man yell. He turns, lowering his balled fist, towards Madison.
+
+[[Rich.|dialogue7]]</tw-passagedata>
+<tw-passagedata pid="80" name="dialogue7" tags="Alfie Interview1 Prologue" position="3584,243">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;He’s dressed in khakis and a blue polo. Probably something Madison bought him at the mall in Mason City. He walks up to her and puts his arm around her waist.
+
+“How are you feeling?” he asks, moving his hand to rub her stomach.
+
+“Oh, great!” she smiles. “I was just speaking with--”
+
+“Ah, yes! Mayor…” Madison gives him a look.
+
+“...Alfie, how are you doing?”
+
+[[Fine, just keeping up with the citizens.|bad7][$HP-=1]]
+
+[[Just making sure Madison here is feeling alright.|good7]]
+
+[[Why did you yell at that nice man?|worst7][$HP-=2]]</tw-passagedata>
+<tw-passagedata pid="81" name="bad7" tags="Interview1 Prologue Alfie" position="3793,130">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Rich cocks his head. “Haven’t heard you talk like that in a while, Alfie.”
+
+[[&gt;|postdialogue8]]
+</tw-passagedata>
+<tw-passagedata pid="82" name="good7" tags="Alfie Interview1 Prologue" position="3797,255">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Rich smiles. “Thanks, Alfie. You’ve always looked out for this family.”
+
+
+[[&gt;|postdialogue8]]
+</tw-passagedata>
+<tw-passagedata pid="83" name="worst7" tags="Interview1 Prologue Alfie" position="3797,380">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMadison&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Madison’s jaw drops. “Brock!? Rachel’s horrible ex-boyfriend? He’s not nice.”
+
+[[&gt;|postdialogue8]]</tw-passagedata>
+<tw-passagedata pid="84" name="postdialogue8" tags="Interview1 Prologue Alfie" position="3975,243">Madison clasps her hands. “Well, we should be checking up on the other folks. Good seeing you, Alfie.”
+
+Rich gives you a wave goodbye as the young couple walks off to talk with other sale-goers. I get to work looking through the box full of Rachel’s old [[things|postdialogue9]].
+&lt;&lt;audio &quot;garageSaleAmbience&quot; fadeto 0&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="85" name="postdialogue9" tags="Prologue Interview1 Alfie" position="4146,237">After a while I find a white shirt, some dresses, a pair of jeans. There’s [[something in the pocket|postdialogue10]].</tw-passagedata>
+<tw-passagedata pid="86" name="postdialogue10" tags="Interview1 Prologue Alfie" position="4146,387">A prescription for something called Hydrocodone. Probably a generic drug. Doesn&#39;t ring a bell, I should probably google it.
+
+And, as with all prescriptions in this town, it’s from Dr. Wolfe. A refill from May 30th, 2010.
+May 30th, 2010.
+
+[[The day Rachel died.|endprologue]]
+</tw-passagedata>
+<tw-passagedata pid="87" name="endprologue" tags="" position="4343,230">&lt;&lt;set $evidence to $evidence + [&quot;Act11&quot;,&quot;Act12&quot;,&quot;Act13&quot;]&gt;&gt;[[End Prologue|Act1Start]]</tw-passagedata>
+<tw-passagedata pid="88" name="Act1Start" tags="Act1" position="2229,1077">Start [[Act 1|Act11]].</tw-passagedata>
+<tw-passagedata pid="89" name="dialogueM3" tags="Mikayla Interview2 Act1" position="3424,1196">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;The Doctor’s office is riddled with artifacts from his long career. Photos of his children. Photos of his children as adults.
+
+Photos of his grandchildren. His degree looms imposingly behind his desk written in Latin, as if begging visitors to ask what it says. Dr. Wolf sits down behind his desk cheerfully, his elderly frame settling in comfortably.
+
+“To what do I owe the pleasure today?”
+
+[[Well, Doctor Wolfe, I just wanted to thank you so much for your letter of recommendation. It meant a lot to me, and I think it might have been what helped me get accepted!”|goodM1]]
+
+[[Hey Jeff, I just wanted to stop by and see how you were doing.”|worstM1][$HP-=2]]
+
+[[I just have a couple of questions, doctor. Do you have a moment?”|badM1][$HP-=1]]
+
+
+
+</tw-passagedata>
+<tw-passagedata pid="90" name="goodM1" tags="Interview2 Act1 Mikayla" position="3563,1074">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Well, of course it’s my pleasure to help such a bright young lady, Makayla. Especially if you’re going to come back and help me with my practice, when you get your degree!&quot;
+
+[[&gt;|dialogueM4]]</tw-passagedata>
+<tw-passagedata pid="91" name="worstM1" tags="Interview2 Act1 Mikayla" position="3567,1209">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Well that’s very kind of you. Although I think that’s the first time you’ve ever called me ‘Jeff,’ rather than ‘Doctor Wolfe.’ I’m not sure I’m as fun to talk to after school as someone your own age, after all!&quot;
+
+[[&gt;|dialogueM4]]</tw-passagedata>
+<tw-passagedata pid="92" name="badM1" tags="Interview2 Act1 Mikayla" position="3579,1354">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;I suppose. Are you sure a bright young thing like yourself wouldn’t rather spend her afternoon outside on a beautiful day like this?&quot;
+
+[[&gt;|dialogueM4]]</tw-passagedata>
+<tw-passagedata pid="93" name="dialogueM4" tags="Interview2 Mikayla Act1" position="3780,1205">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe glances down at his watch briefly. “I do have a fairly open afternoon. How have you been?”
+
+[[I can’t wait to go off to university in the fall and get out of Floyd for the first time! I’m so sick of this town!”|worstM2][$HP-=2]]
+
+[[I have to keep my grades up until the end of the year, with exams coming up, and keep help organizing the youth group. It’s exhausting!|goodM2]]
+
+[[I’ve been organizing community gardens and potlucks for the city. It’s so much work!”|badM2][$HP-=1]]</tw-passagedata>
+<tw-passagedata pid="94" name="worstM2" tags="Act1 Mikayla Interview2" position="3946,1205">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe recoils, startled. “Mikayla, I’m shocked to hear you say that! You’ve always loved living in Floyd!&quot;
+
+[[&gt;|dialogueM5]]</tw-passagedata>
+<tw-passagedata pid="95" name="goodM2" tags="Act1 Interview2 Mikayla" position="3949,1064">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe chuckles ”Oh, I can imagine. It wasn’t that long ago that I was a high school student myself. I remember how it is.&quot;
+
+[[&gt;|dialogueM5]]
+
+</tw-passagedata>
+<tw-passagedata pid="96" name="badM2" tags="Interview2 Act1 Mikayla" position="3954,1348">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Have you been? I thought the Potlucks were through the Home Owner’s association, have you started volunteering for them too?”
+
+[[&gt;|dialogueM5]]</tw-passagedata>
+<tw-passagedata pid="97" name="dialogueM5" tags="Interview2 Act1 Mikayla" position="4097,1202">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“But.” Doctor Wolfe says, reclining in his chair. “I’m not so full of myself that I think a young bright thing like you would spend her afternoon talking to an old man like me without a reason for it. What’s going on, Mikayla?”
+
+[[I’ve been having a bit of a toothache, and I was wondering if I could get something for it. I’ve heard good things about Hydrocodone?|worstM3][$HP-=2]]
+
+[[I was writing a paper for extra-credit in biology, and I was wondering if you could tell me anything about Hydrocodone?|goodM3]]
+
+[[I saw a pill bottle in a friend’s bag, and I was wondering if you could tell me what it was. Do you know anything about Hydrocodone?|badM3][$HP-=1]]
+</tw-passagedata>
+<tw-passagedata pid="98" name="worstM3" tags="Interview2 Mikayla Act1" position="4270,1089">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Dr. Wolfe startles. “Good Lord Mikayla, Hydrocodone? For a toothache? It’s an opiate, not an Advil! It has serious dangers attached to it, not the least of which is addiction!&quot;
+ 
+ [[&gt;|predialogueM6]]
+ </tw-passagedata>
+<tw-passagedata pid="99" name="goodM3" tags="Act1 Mikayla Interview2" position="4273,1217">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Hydrocodone? It’s a serious drug, Mikayla. This had better be just for this project- I’ve seen people get into serious trouble with that.&quot;
+
+[[&gt;|predialogueM6]]</tw-passagedata>
+<tw-passagedata pid="100" name="badM3" tags="Interview2 Act1 Mikayla" position="4274,1342">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Mikayla, I don’t know what you were doing snooping around, but if your friend hasn’t already told you I don’t suspect it’s your business.&quot;
+
+[[&gt;|predialogueM6]]</tw-passagedata>
+<tw-passagedata pid="101" name="predialogueM6" tags="Mikayla Interview2 Act1" position="4445,1208">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;He glances at the door, as though he’s expecting an interruption. “Besides, I don’t much prescribe that anymore. Not if it can be avoided.”
+
+[[Why not?|dialogueM7]]
+</tw-passagedata>
+<tw-passagedata pid="102" name="dialogueM7" tags="Interview2 Act1 Mikayla" position="4570,1211">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“I’ve seen what drugs like that can do to a body Mikayla. You will too, if you become a doctor. Narcotics are just as much a poison as a medicine, and a doctor must be very careful about giving them out.”
+
+
+[[Well, if I’m going to be a doctor, I better know all about them. Why don’t you just tell me?|badM4][$HP-=1]]
+
+[[I don’t see why not, if the patient asks for it.|worstM4][$HP-=2]]
+
+[[Doctor Wolfe? Are you alright? I don’t think I’ve ever seen you this nervous before.|goodM4]]</tw-passagedata>
+<tw-passagedata pid="103" name="badM4" tags="Interview2 Act1 Mikayla" position="4720,1091">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Well, one experienced doctor to one //potential// doctor, I’m telling you to be careful.&quot;
+
+[[&gt;|predialogueM8]]</tw-passagedata>
+<tw-passagedata pid="104" name="worstM4" tags="Interview2 Act1 Mikayla" position="4721,1230">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Because they have serious side effects, Mikayla. They’re not something to be taken lightly.&quot;
+
+[[&gt;|predialogueM8]]</tw-passagedata>
+<tw-passagedata pid="105" name="goodM4" tags="Interview2 Act1 Mikayla" position="4724,1364">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Doctor Wolfe lets out a long sigh.
+
+[[&gt;|predialogueM8]]</tw-passagedata>
+<tw-passagedata pid="106" name="predialogueM8" tags="Interview2 Act1 Mikayla" position="4916,1176">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“The side effects are… unpleasant to say the least. Nausea, dizziness, intense mood swings. Mixing it with alcohol causes almost immobilizing effects.”
+
+[[Really?|predialogueM9]]</tw-passagedata>
+<tw-passagedata pid="107" name="predialogueM9" tags="Interview2 Act1 Mikayla" position="4916,1326">“Oh, absolutely. Intense nausea, vomiting, the whole lot.”
+
+[[Is this something you’ve seen in a patient?|predialogueM10]]
+</tw-passagedata>
+<tw-passagedata pid="108" name="predialogueM10" tags="Act1 Interview2 Mikayla" position="5060,1186">“Oh no, heavens no. But… listen… the last time I prescribed it…”
+
+[[Yes?|predialogueM11]]</tw-passagedata>
+<tw-passagedata pid="109" name="predialogueM11" tags="Interview2 Mikayla Act1" position="5060,1336">”Do you remember Rachel MacCormack?”
+
+[[Of course I do. Everyone loved Rachel.|predialogueM12]]</tw-passagedata>
+<tw-passagedata pid="110" name="predialogueM12" tags="Mikayla Interview2 Act1" position="5199,1183">“She had an elective surgery in Des Moines and complained of post operational pain, so I prescribed that exact same drug for her. That poor girl.”
+
+[[What was the surgery for?|dialogueM13]]</tw-passagedata>
+<tw-passagedata pid="111" name="dialogueM13" tags="Interview2 Act1 Mikayla" position="5199,1333">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Rhinoplasty, if I recall correctly. Reconstructive. She insisted she had broken her nose falling down the stairs, but you do sometimes have to read between the lines, when patients give you information. What do you think happened?”
+
+[[I think she really did fall down the stairs and you’re being over-suspicious.|worstM5][$HP-=2]]
+
+[[I think she did something she was ashamed about, and lied about it.|badM5][$HP-=1]]
+
+[[I think someone hit her, and she lied about it.|goodM5]]
+</tw-passagedata>
+<tw-passagedata pid="112" name="worstM5" tags="Interview2 Mikayla Act1" position="5346,1104">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Mikayla, I know everything that happens in this town. She didn’t fall down the stairs.&quot;
+
+[[&gt;|predialogueM14]]</tw-passagedata>
+<tw-passagedata pid="113" name="badM5" tags="Interview2 Mikayla Act1" position="5338,1309">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;That’s not a very nice thing to say.&quot;
+
+[[&gt;|predialogueM14]]</tw-passagedata>
+<tw-passagedata pid="114" name="goodM5" tags="Interview2 Act1 Mikayla" position="5352,1448">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“That’s what my guess was as well.”
+
+[[&gt;|predialogueM14]]</tw-passagedata>
+<tw-passagedata pid="115" name="predialogueM14" tags="Mikayla Act1 Interview" position="5494,1278">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailedMikayla&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Doctor Wolfe shifted in his chair, uncomfortable. “Her ex-boyfriend Brock had a nasty temper. I feel so terrible, looking back, that I didn’t do more. That’s the hardest part of this job, you know. Trying to grapple with your own mistakes. Wondering if you could have saved as life if you had done something different, or better. If you could keep someone’s sister alive, or their daughter, or their best friend. She and Douglas were nearly inseparable. He came to every appointment. Such a tragedy.”
+
+[[How could she have been drunk driving, if the Hydrocodone reacts so strongly with alcohol?|predialogueM15]]</tw-passagedata>
+<tw-passagedata pid="116" name="predialogueM15" tags="Interview2 Mikayla Act1" position="5600,1409">“People don’t like to think accidents just happen, Mikayla. They want someone, something to blame. Nobody outside this office even knew she was on Hydrocodone. Alcohol seemed like the easiest target.” 
+
+The doctor stares out the window, tensing his brow.
+
+“I’ll always wonder, I suppose. Wondering if the medication had anything to do with crash. Dizziness, nausea…”
+
+Dr. Wolfe turns around and looks right at me. “People always try to find a reason, I suppose. But I’d rather it wasn’t me.”
+
+I make a few more minutes’ polite small talk before I make an exit.
+
+Walking down the street afterwards, I can’t stop thinking about what he said.
+
+[[Douglas.|DouglasText]]
+&lt;&lt;audio &quot;radio&quot; fadeto 0&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="117" name="DouglasText" tags="Act1 Interview2" position="5784,1106">Douglas knew about the medication.
+
+He knew she wasn’t drinking.
+
+He knew they were wrong.
+
+He stayed silent.
+
+Why did he let them all sully Rachel’s name, instead of telling the truth?
+
+Douglas Eikerman works at Paulson’s Restaurant. He always thought he’d escape this town for something better, but after his parents got so sick they needed him here to care of them.
+
+Rachel never got a chance to escape Floyd River, to find something better somewhere with big shiny buildings and fancy cars.
+&lt;&lt;set $evidence to $evidence+[&quot;Act21&quot;,&quot;Act22&quot;,&quot;Act23&quot;]&gt;&gt;
+[[Why should he?|EndAct1]]
+</tw-passagedata>
+<tw-passagedata pid="118" name="EndAct1" tags="Act1" position="5807,1434">This is the end of Act 1.
+
+[[Act 2|Act2Start]]</tw-passagedata>
+<tw-passagedata pid="119" name="Act2Start" tags="Act2" position="2230,1746">Paulsen’s Restaurant is the only remotely-formal restaurant in Floyd. Every significant event has meals at Paulsen’s; graduations, birthdays, wedding receptions, funerals. All at Paulsen’s. It’s a nice place - all polished wood and brass. Mr. Paulsen makes his employees polish the plates and glassware every day. The restaurant is is pride and joy. To him, his employees are his family. To them, [[he’s just a boss.|Act21]]
+</tw-passagedata>
+<tw-passagedata pid="120" name="Act21" tags="Act2" position="2230,1896">Tyler has only been working at Paulsen’s for about six months, finishing up his last year of high school. Doug, on the other hand, has been working there since his last year of highschool, nearly ten years ago.
+
+After work, every day, Doug spends about three hours in the bar across the road from Paulsen’s, before going home late at night. If I want to ask him some questions, [[I should meet him there.|Act22]]</tw-passagedata>
+<tw-passagedata pid="121" name="Act22" tags="Act2" position="2229,2029">Should I be:
+
+
+&lt;center&gt;
+[[Mr. Paulsen|Act2P1]]
+
+or
+
+[[Tyler|Act2T1]]
+&lt;/center&gt;</tw-passagedata>
+<tw-passagedata pid="122" name="Act2P1" tags="Act2 Paulsen Interview3" position="2443,2002">&lt;&lt;set $HP to 5&gt;&gt;The bar is fairly empty on this Tuesday night. No one looks up as Mr. Paulsen enters the bar.
+
+[[Sit down next to Doug.|Act2P2]]</tw-passagedata>
+<tw-passagedata pid="123" name="Act2T1" tags="Act2 Tyler Interview" position="2437,2612">&lt;&lt;set $HP to 5&gt;&gt;I decide to be Tyler, Doug’s new co-worker. Tyler’s new, but they seem close, and he might tell Tyler something he might not confide in his boss.
+ 
+The bar is fairly empty on this Tuesday night. No one looks up as Tyler enters the bar.
+
+
+[[Sit down next to Doug.|Act2T2]]</tw-passagedata>
+<tw-passagedata pid="124" name="Act2P2" tags="Act2 Paulsen Interview" position="2591,1999">Doug looks up. “Hey,” He says. “I don’t usually see you after work here.” He fiddles with his glass, mostly empty. “What are you doing?”
+
+[[It’s been a long day at the restaurant, I needed a break|worstP1][$HP-=2]]
+
+[[You seemed distracted at work today. I decided to check in.|goodP1]]
+
+[[I just had some questions I wanted to ask.|badP1][$HP-=1]]</tw-passagedata>
+<tw-passagedata pid="125" name="goodP1" tags="Act2 Paulsen Interview" position="2733,1880">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;You would, Mr. Paulsen.&quot;
+
+[[&gt;|dialogueP3]]</tw-passagedata>
+<tw-passagedata pid="126" name="badP1" tags="Act2 Paulsen Interview" position="2735,2005">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;No pleasantries or anything, huh?&quot;
+
+[[&gt;|dialogueP3]]</tw-passagedata>
+<tw-passagedata pid="127" name="worstP1" tags="Act2 Paulsen Interview" position="2731,2140">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;That’s not like you, Mr. Paulsen. Besides, this bar? You could do better.&quot;
+
+[[&gt;|dialogueP3]]</tw-passagedata>
+<tw-passagedata pid="128" name="dialogueP3" tags="Act2 Paulsen Interview" position="2901,1993">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Doug snorts.
+
+[[Actually, I wanted to ask you something.|dialogueP4]]
+</tw-passagedata>
+<tw-passagedata pid="129" name="dialogueP4" tags="Act2 Paulsen Interview" position="2903,2135">&quot;Oh?&quot; Doug says.
+
+[[It’s about Rachel McCormack.|dialogueP5]]
+</tw-passagedata>
+<tw-passagedata pid="130" name="dialogueP5" tags="Act2 Paulsen Interview" position="3042,1990">Doug recoils. “Jesus, Mr. Paulsen,” he says “It was five years ago. Why drag that up now?”
+
+
+[[Her sister cleared out her room last weekend, and you’ve been distracted lately. I thought they might be related. Are you ok?|goodP2]]
+
+[[I want to know what you remember about the night she died.|worstP2][$HP-=2]]
+
+[[I know you were close, and I’m not sure you ever really grieved about it. I’m just concerned for you.|badP2][$HP-=1]]</tw-passagedata>
+<tw-passagedata pid="131" name="goodP2" tags="Act2 Paulsen Interview" position="3195,1868">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Nah, I was distracted for- Never mind. Really, clearing out her room?&quot;
+
+[[&gt;|dialogueP6]]</tw-passagedata>
+<tw-passagedata pid="132" name="worstP2" tags="Act2 Paulsen Interview" position="3192,2140">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;What? Why would you- Really? After all this time you want to know what happened?&quot;
+
+[[&gt;|dialogueP6]]</tw-passagedata>
+<tw-passagedata pid="133" name="badP2" tags="Act2 Paulsen Interview" position="3191,2012">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;I’m not sure why you think that, Doug says. After five years, really?&quot;
+
+[[&gt;|dialogueP6]]</tw-passagedata>
+<tw-passagedata pid="134" name="dialogueP6" tags="Paulsen Act2 Interview" position="3360,2020">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Really. What do you remember about the party?
+
+“What, the night she died?” Doug sighs, and tips his chair momentarily back on two legs, before letting it fall back to thud on the sticky floor.
+
+
+[[Yes. Were you there?|dialogueP7]]
+</tw-passagedata>
+<tw-passagedata pid="135" name="dialogueP7" tags="Act2 Paulsen Interview" position="3513,2013">“Nah.” Doug says. “That was always much more Rachel’s thing than mine. She always loved being the centre of everything”.
+
+He hesitates, and then pulls out his wallet. Folded up, and clearly at least a few years old, is a picture of Rachel. She is beautiful, laughing, full of life.
+
+“It was taken at the party,” he says. “I got a copy from a friend of a friend a few months later. It’s the last picture of her alive.”
+
+[[You must have cared about her a lot, to carry this around for five years.|goodP3]]
+
+[[Maybe it’s time to let it go|badP3][$HP-=1]]
+
+[[Were the two of you together?|worstP3][$HP-=2]]
+</tw-passagedata>
+<tw-passagedata pid="136" name="goodP3" tags="Act2 Paulsen Interview" position="3692,1865">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Yeah. I still miss her a lot.&quot;
+
+[[&gt;|dialogueP8]]</tw-passagedata>
+<tw-passagedata pid="137" name="badP3" tags="Act2 Paulsen Interview" position="3697,2007">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Maybe it’s none of your business, Mr. Paulsen.&quot;
+
+[[&gt;|dialogueP8]]</tw-passagedata>
+<tw-passagedata pid="138" name="worstP3" tags="Act2 Paulsen Interview" position="3697,2171">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;You know damn well that we couldn’t have been!&quot;
+
+[[&gt;|dialogueP8]]</tw-passagedata>
+<tw-passagedata pid="139" name="dialogueP8" tags="Act2 Paulsen Interview" position="3973,2049">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Besides,” Doug says, tucking the picture back away. “I didn’t want fucking Brock to have it.”
+
+[[Her old boyfriend, right?|dialogueP9]]
+</tw-passagedata>
+<tw-passagedata pid="140" name="dialogueP9" tags="Act2 Paulsen Interview" position="4165,2049">“Her ex boyfriend. That asshole. He broke her nose, did you know? I went with her to doctor&#39;s appointments and stuff, to keep her safe. Brock kept stalking her on his goddamn bike, like he was hot shit. Didn’t even have a proper car. He was at the party too. Jackass.”
+
+[[That sounds dangerous; were you ever in danger?|goodP4]]
+
+[[What happened between them?|worstP4][$HP-=2]]
+
+[[Did he leave with her?|badP4][$HP-=1]]
+</tw-passagedata>
+<tw-passagedata pid="141" name="goodP4" tags="Act2 Paulsen Interview" position="4310,1875">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Nah, I was always ok. Thanks though.”
+
+[[&gt;|dialogueP10]]
+
+</tw-passagedata>
+<tw-passagedata pid="142" name="worstP4" tags="Act2 Paulsen Interview" position="4320,2034">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Besides him bashing her face in? gee, I dunno.&quot;
+
+[[&gt;|dialogueP10]]</tw-passagedata>
+<tw-passagedata pid="143" name="badP4" tags="Act2 Paulsen Interview" position="4328,2196">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;How would I know? I wasn’t even there. I don’t think so, though.&quot;
+
+[[&gt;|dialogueP10]]</tw-passagedata>
+<tw-passagedata pid="144" name="dialogueP10" tags="Act2 Paulsen Interview" position="4477,2030">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“What an asshole.” He says. “Who invited him to that goddamn party I have no idea. They could have stopped Rachel from killing herself.”
+
+
+[[You don’t think it was an accident?|dialogueP11]]
+</tw-passagedata>
+<tw-passagedata pid="145" name="dialogueP11" tags="Act2 Paulsen Interview" position="4477,2180">“Rachel was stone-cold sober when she drove home that night. She must’ve aimed right for the gap in the guardrail. Besides, she went home before she died.”
+
+
+[[How do you know that?|dialogueP12]]
+</tw-passagedata>
+<tw-passagedata pid="146" name="dialogueP12" tags="Act2 Paulsen Interview" position="4625,2037">Doug hesitates.
+
+[[You can tell me anything, Doug. We’re like family.|goodP5]]
+
+[[Doug, what would Rachel have wanted?|badP5][$HP-=1]]
+
+[[ If you have something that proves this was a suicide, it was irresponsible to keep this to yourself.|worstP5][$HP-=2]]</tw-passagedata>
+<tw-passagedata pid="147" name="goodP5" tags="Act2 Paulsen Interview" position="4822,1888">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Yeah. Yeah ok.&quot;
+
+[[&gt;|dialogueP13]]</tw-passagedata>
+<tw-passagedata pid="148" name="badP5" tags="Act2 Paulsen Interview" position="4825,2013">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;I’m not sure she would have wanted me to share it with my boss, but you know what? Sure. Why not?&quot;
+
+[[&gt;|dialogueP13]]</tw-passagedata>
+<tw-passagedata pid="149" name="worstP5" tags="Act2 Paulsen Interview" position="4830,2138">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Yeah? You listen to the damn thing then.”
+
+[[&gt;|dialogueP13]]</tw-passagedata>
+<tw-passagedata pid="150" name="dialogueP13" tags="Act2 Paulsen Interview" position="5023,2005">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailPaulsen&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Doug digs in his pocket for a moment, and produces a cellphone. “I couldn’t bring myself to delete it, you know? It’s been five years, but-“
+
+
+[[why didn’t you come forward with it?|dialogueP14]]
+</tw-passagedata>
+<tw-passagedata pid="151" name="dialogueP14" tags="Act2 Paulsen Interview" position="5014,2156">“You’ll see. Don’t- Don’t tell anyone, right? We’ve known each other long enough that you’ve at least guessed I, that I’m-” he waves his hand. “But I don’t want anyone to think badly of Rachel after this. Especially her sister - I remember how much of a wreck she was after Rachel died, I don’t want her ever know Rachel killed herself. She’s dead- let her rest in peace.”
+
+
+He hesitates, finger over the button. He presses [[play.|voicemail]]
+
+</tw-passagedata>
+<tw-passagedata pid="152" name="dialogue15" tags="Act2 Interview" position="5165,2347">&lt;&lt;set $evidence to $evidence+[&quot;Act3&quot;]&gt;&gt;After showing you the voicemail, Doug orders you a beer, pays for it himself.
+
+What doug showed me is evidence. I need evidence to prove what happened to Rachel.
+
+
+[[Sorry, but I have to ask. Who was she fucking?|dialogue16]]
+</tw-passagedata>
+<tw-passagedata pid="153" name="endAct2" tags="Act2" position="5636,2698">End of Act 2.
+
+Start [[Act 3|Act3Start]].</tw-passagedata>
+<tw-passagedata pid="154" name="FailPaulsen" tags="Act2 Paulsen Interview" position="2451,1877">“Y’know, I don’t know how much I want to talk about this shit with my boss. Especially when you’re being weird about this. I’ll see you at work tomorrow.” Doug turns back to the bartender and refuses to talk.
+
+
+[[Try again?|Act2P1]]</tw-passagedata>
+<tw-passagedata pid="155" name="FailTyler" tags="Act2 Tyler" position="2439,2811">Doug scowls at you. “You know, I know we’re sleeping together, but that doesn’t give you the right to know everything about me. Piss off, before I call your parents and tell them you’re drinking underage.” 
+
+[[Try again?|Act2T1]]</tw-passagedata>
+<tw-passagedata pid="156" name="EvidenceAct11" tags="" position="339,1423">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20clipping%20award.png&quot; height=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="157" name="EvidenceAct12" tags="" position="431,1556">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20rachel%20obit.png&quot; height=&quot;1000&quot; width=&quot;1000&quot;&gt;
+
+Rachel MacCormack accidently drove her car into the Floyd River. She was driving home drunk from a party. </tw-passagedata>
+<tw-passagedata pid="158" name="EvidenceAct13" tags="" position="692,1558">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20martha%20obit.png&quot; heigh=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="159" name="Prescription" tags="" position="789,1423">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/scrip.png&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+Hydrocodone? I have no idea what that is.</tw-passagedata>
+<tw-passagedata pid="160" name="EvidenceAct22" tags="" position="1116,1136">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20rachel%20obit.png&quot; height=&quot;1000&quot; width=&quot;1000&quot;&gt;
+
+Rachel couldn’t have been drunk. She was taking a painkiller prescription and she wasn’t the type to ignore instructions. </tw-passagedata>
+<tw-passagedata pid="161" name="Prescription2" tags="" position="1416,1136">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/scrip.png&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+This is Rachel’s hydrocodone prescription. It was refilled the day before the party. If she was taking this, there’s no way she was drunk.
+</tw-passagedata>
+<tw-passagedata pid="162" name="dialogue16" tags="Act2" position="5309,2099">Doug scowls. “That’s the mystery, as I understand it. She comes out of the bathroom and starts screaming at whoever is inside. Blah blah blah, I hate you for this, everyone’s going to know what happened. She walks off and someone looks in the bathroom--it’s empty. 
+
+[[She wasn’t fucking anyone?|dialogue17]]
+</tw-passagedata>
+<tw-passagedata pid="163" name="dialogue17" tags="Act2" position="5305,2240">“She was fucking someone who climbed out the shower window and tried to play it cool. It was probably Brock. She sort of liked to take out her stress on him. Everyone saw him trying to talk to her a few minutes later, anyway.”
+
+[[And then she left?|dialogue18]]
+</tw-passagedata>
+<tw-passagedata pid="164" name="dialogue18" tags="Act2" position="5305,2396">“They said she ran off to the car. No one could calm her down. Brock tried to leave too, but everyone sat him down until he cooled off. They sent Rich after her, but his car wouldn’t start, so he started walking.” Doug laughs bitterly. “Guess he couldn’t walk fast enough.” Douglas takes a deep, long swig of his drink. “Or maybe she was fucking Rich. I don’t fucking know.” He slumps forward against the bar. “Don’t see how it matters.”
+
+
+[[How about another round?|dialogue19]]
+</tw-passagedata>
+<tw-passagedata pid="165" name="dialogue19" tags="Act2" position="5305,2546">He has a few more drinks as you nurse your beer.
+[[And another|dialogue100]]</tw-passagedata>
+<tw-passagedata pid="166" name="dialogue100" tags="Act2" position="5483,2462">&lt;&lt;set $evidence to $evidence+[&quot;Picture&quot;]&gt;&gt;Doug’s eyes are glazed. You call him a cab.
+Before you slip out, you take the picture from his wallet, and the phone from his [[pocket.|endAct2]]</tw-passagedata>
+<tw-passagedata pid="167" name="Act2T2" tags="Act2 Tyler Interview" position="2586,2616">Doug looks up. “Hey,” He says. “I don’t usually see you after work here.” He fiddles with his glass, mostly empty. “What are you doing?”
+
+[[I just wanted to spend more time with you|goodT1]]
+
+[[You seemed distracted at work|badT1][$HP-=1]]
+
+[[ I wanted to ask you a couple of questions about Rachel McCormack.|worstT1][$HP-=2]]</tw-passagedata>
+<tw-passagedata pid="168" name="goodT1" tags="Act2 Interview Tyler" position="2742,2482">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;He smiles at you. “That’s adorable. Also, unnecessary.&quot;
+
+[[&gt;|dialogue2T2]]</tw-passagedata>
+<tw-passagedata pid="169" name="badT1" tags="Act2 Tyler Interview" position="2747,2626">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;He snorts. &quot;Yeah, when aren’t we. It’s not exactly a surprise, with you around.&quot;
+
+[[&gt;|dialogue2T2]]</tw-passagedata>
+<tw-passagedata pid="170" name="worstT1" tags="Tyler Act2 Interview" position="2749,2772">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;What the hell? No ‘how are you’ or anything?&quot;
+
+[[&gt;|dialogue2T2]]</tw-passagedata>
+<tw-passagedata pid="171" name="dialogue2T2" tags="Act2 Tyler Interview" position="2910,2629">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“By the way,” he says “Are you even legal? Can you be in here?”
+
+[[I&#39;ll be fine.|dialogue2T3]]
+</tw-passagedata>
+<tw-passagedata pid="172" name="dialogue2T3" tags="Tyler Act2 Interview" position="2918,2776">Doug raises his eyebrows, and smiles a little around his beer. “Uh huh. Well, don’t blame me when you get yourself banned from the only place in town where you can get a decent beer.”
+
+[[Actually could I ask you something? About Rachel MacCormack?|dialogue2T4]]</tw-passagedata>
+<tw-passagedata pid="173" name="dialogue2T4" tags="Act2 Tyler Interview" position="3067,2626">//“Why?”//
+
+[[It’s the only exciting thing that’s happened in this town in twenty years, I wanted to hear more about it.|worstT2][$HP-=2]]
+
+[[ You used to be good friends. I just wanted to know more about her, since she was important to you.|goodT2]]
+
+[[I was too young to remember it that clearly.|badT2][$HP-=1]]</tw-passagedata>
+<tw-passagedata pid="174" name="worstT2" tags="Act2 Tyler Interview" position="3237,2632">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“And you thought that I was the best person to talk to about this? She was my best friend, Tyler.”
+
+[[&gt;|dialogue2T5]]</tw-passagedata>
+<tw-passagedata pid="175" name="goodT2" tags="Act2 Interview Tyler" position="3239,2507">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Oh. Thanks, that’s sweet of you.&quot;
+
+[[&gt;|dialogue2T5]]</tw-passagedata>
+<tw-passagedata pid="176" name="badT2" tags="Act2 Tyler Interview" position="3246,2776">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;You weren’t that young were you? Although, now that I think about it, that was like, middle school for you. God, I’m a cradle robber.&quot;
+
+[[&gt;|dialogue2T5]]
+</tw-passagedata>
+<tw-passagedata pid="177" name="dialogue2T5" tags="Tyler Interview Act2" position="3383,2634">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“What to say about Rachel.” He tips his chair back on two legs, and then lets the chair thud back onto the sticky floor. “You’ve probably heard all the glowing reviews, right? Not that she wasn’t great, but people make her sound like a saint now.”
+
+[[She wasn’t?|dialogue2T6]]</tw-passagedata>
+<tw-passagedata pid="178" name="dialogue2T6" tags="Interview Act2 Tyler" position="3383,2784">“No one’s a saint. Me included, obviously. But me and Rachel used to get drunk nearly every weekend of high school out in her backyard. She was the first person I came out to. Hang on, I actually have-“
+
+He pulls his wallet out of his pocket, and produces a picture of Rachel. She’s young, beautiful, laughing. Alive. “This was taken that night. Fuck, I wish I’d been at that party. Rachel loved them, you know? Loved being the centre of attention.”
+
+[[You don’t?|badT3][$HP-=1]]
+
+[[You should have been there with her, she was your best friend.|worstT3][$HP-=2]]
+
+[[It’s not your fault; you hate parties. There was no reason to think anything would have happened.|goodT3]]</tw-passagedata>
+<tw-passagedata pid="179" name="badT3" tags="Interview Act2 Tyler" position="3542,2481">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;Nope. I still don’t actually. Stop tweeting at me.
+
+[[&gt;|dialogue2T7]]</tw-passagedata>
+<tw-passagedata pid="180" name="worstT3" tags="Interview Act2 Tyler" position="3541,2677">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Yeah, I //know.//&quot;
+
+[[&gt;|dialogue2T7]]</tw-passagedata>
+<tw-passagedata pid="181" name="goodT3" tags="Act2 Tyler Interview" position="3550,2824">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;Yeah. I guess. I just wish I had been&quot;
+
+[[&gt;|dialogue2T7]]</tw-passagedata>
+<tw-passagedata pid="182" name="dialogue2T7" tags="Interview Act2 Tyler" position="3731,2676">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Would have been a pretty shitty party anyway. Rachel was totally sober. She was taking some painkiller that meant she couldn’t drink, after Brock broke her nose. Had to get surgery to put it back properly.”
+
+
+[[You knew she wasn’t drunk?|dialogue2T8]]</tw-passagedata>
+<tw-passagedata pid="183" name="dialogue2T8" tags="Interview Act2 Tyler" position="3731,2826">Doug rolls his glass, now totally empty, back and forth between his palms. “Yeah. I drove her back and forth to Doctor Wolfe, actually. Brock, the piece of shit, kept stalking her on his goddamn motorbike. I want to know who the fuck invited him to that party. They have blood on their hands.”
+
+[[This town’ll drive you crazy. Good for you, driving with her.|goodT4]]
+
+[[Maybe she should have given him another shot.|worstT4][$HP-=2]]
+
+[[How’d Brock know she was at the party?|badT4][$HP-=1]]
+
+</tw-passagedata>
+<tw-passagedata pid="184" name="goodT4" tags="Interview Act2 Tyler" position="3885,2498">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“I guess so. Yeah. You flatter me.:
+
+[[&gt;|dialogue2T9]]</tw-passagedata>
+<tw-passagedata pid="185" name="worstT4" tags="Interview Tyler Act2" position="3883,2681">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;He bashed her goddamn face in, Tyler. She should have shot him, is what she should have done.&quot;
+
+[[&gt;|dialogue2T9]]</tw-passagedata>
+<tw-passagedata pid="186" name="badT4" tags="Tyler Act2 Interview" position="3873,2824">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&quot;How should I know?&quot;
+
+[[&gt;|dialogue2T9]]</tw-passagedata>
+<tw-passagedata pid="187" name="dialogue2T9" tags="Act2 Tyler Interview" position="4027,2686">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“All the speculation over the years has got to me, you know?” Doug says, signalling for another drink. “All the ‘stormed off in a huff,’ and got drunk and shit. I’m so sick of it, of this town treating it like a mysterious unavoidable tragedy. It wasn’t a goddamn accident; she was too careful a driver for that.”
+
+[[You don’t think it was an accident?|dialogue2T10]]
+</tw-passagedata>
+<tw-passagedata pid="188" name="dialogue2T10" tags="Act2 Interview Tyler" position="4027,2836">“I know it wasn’t. She didn’t skid out after leaving the party, she made it home.”
+
+[[How do you know that?|dialogue2T11]]
+</tw-passagedata>
+<tw-passagedata pid="189" name="dialogue2T11" tags="Tyler Act2 Interview" position="4152,2688">Doug hesitates.
+
+[[What would Rachel have wanted?|badT5][$HP-=1]]
+
+[[ If you have something that proves it wasn’t suicide, it was irresponsible to keep it to yourself.|worstT5][$HP-=2]]
+
+[[You can tell me anything, Doug. You know that.|goodT5]]</tw-passagedata>
+<tw-passagedata pid="190" name="badT5" tags="Interview Act2 Tyler" position="4280,2491">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“I don’t know. I’m not sure you would either, so don’t try to guilt me into this.”
+
+[[&gt;|dialogue2T12]]
+
+</tw-passagedata>
+<tw-passagedata pid="191" name="worstT5" tags="Interview Act2 Tyler" position="4287,2663">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Hey, fuck off. I was trying to give her family some peace.”
+
+[[&gt;|dialogue2T12]]</tw-passagedata>
+<tw-passagedata pid="192" name="goodT5" tags="Act2 Interview Tyler" position="4278,2802">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Yeah. Yeah you’re right.&quot;
+
+[[&gt;|dialogue2T12]]</tw-passagedata>
+<tw-passagedata pid="193" name="dialogue2T12" tags="Act2 Interview Tyler" position="4455,2643">&lt;&lt;if $HP&lt;=0&gt;&gt;&lt;&lt;goto &quot;FailTyler&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;“Hang on,” Doug says, digging in his coat pocket. He produces a cellphone, battered and at least six years old. “I couldn’t bring myself to delete it, you know? Even if I never did anything with it.”
+
+[[Of course. She meant a lot to you.|dialogue2T13]]
+</tw-passagedata>
+<tw-passagedata pid="194" name="dialogue2T13" tags="Interview Act2" position="4455,2793">“Don’t- Don’t tell anyone about this, ok? I know that you don’t give a shit who knows you’re gay, but we’re not all out to everyone and blasting it all over Twitter. The rest of it too. Let her family think it was an accident. Her sister was enough of a wreck after her sister’s death.”
+
+He hesitates, finger over the button. He presses [[play.|voicemail]]
+
+</tw-passagedata>
+<tw-passagedata pid="195" name="Act3Start" tags="Act3" position="1792,3316">Small towns are trusting. No one suspects their neighbors. No one locks their [[doors.|Act31]]
+</tw-passagedata>
+<tw-passagedata pid="196" name="NewsletterAct1" tags="" position="514,1412">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/newsletter.png&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+Catherine’s so nosey all the time. I think she hosts these things so she gets the gossip at least as much as she does because someone has to.)</tw-passagedata>
+<tw-passagedata pid="197" name="AcceptanceAct1" tags="" position="664,1412">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/acceptance%20letter.png&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+ISU huh? I think Rich went there too. Good for her; she’s the first Floydite to go to college in over a decade.</tw-passagedata>
+<tw-passagedata pid="198" name="NewsletterAct2" tags="" position="1107,1261">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/newsletter.png&quot; height=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="199" name="TweetsAct2" tags="" position="1252,1264">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/tweet1.jpg&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/tweet2.jpg&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/tweet3.jpg&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/tweet4.jpg&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/tweet5.jpg&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/tweet6.jpg&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/tweet7.jpg&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/tweet8.jpg&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+Tyler’s still in highschool. Wants to get out, like all highschoolers. He probably won’t, like all of us.
+</tw-passagedata>
+<tw-passagedata pid="200" name="PerfRevAct2" tags="" position="1248,1137">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+
+Ugh. Who gives these? Who pays attention to them?
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/perf%20review.png&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+	Doug,
+First of all, wonderful work again this year; you’re an invaluable part of the Paulsen’s team. You’ve been a great asset helping train the new servers and busboys. You’ve been supervising them maybe too closely; I think you might be able to improve your over-all performance by letting them work more independently. I know it’s hard to let your new dependants spread their own wings, but it’s time to let them leave the nest!
+Your attitude seems much improved from last year, overall. I know you’ve been having some family concerns, and I just want you to know that I’m always here if you need anyone to talk to. I’ve been out of the front of the restaurant for a long time, but if you need to take some time off, I can step back behind the podium again any time. Just let me know.
+
+I hope you’ll be part of the Paulsen’s family for many years to come,
+	Mr. Paulsen
+</tw-passagedata>
+<tw-passagedata pid="201" name="EvidenceAct32" tags="" position="843,1910">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/larssen%20rachel%20obit.png&quot; height=&quot;1000&quot; width=&quot;1000&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="202" name="VoicemailAct3" tags="" position="1251,1915">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;Transcript:
+
+RACHEL, PISSED:
+ 	@@color:#FB4F4F;Doug, Doug, I fucked up real bad, Doug. I know it’s like, three in the goddamn morning and you won’t get this until tomorrow, but I gotta talk to you, Doug. I fucked up real bad, At the party, this night, I just- but I had to do it, Doug. I had to prove I could do it. Please pick up, I gotta talk to you, Doug. –door slamming- This fucking town, Doug. You were right, we shoulda gotten the fuck out while we could, we could move to, I don’t know, fucking Chicago or something, a girl and her gay best friend against the big city, Doug, instead of this shit.
+
+I’m the best goddamn thing that’s happened to this town in years, and this is how they treat me? How fucking dare they, after all I’ve done for them? Who the fuck does he think he is, anyway? So I fucked him. Again. They don’t give a fuck about me, Doug. I’ll fucking show her. I’ll fucking tell her I slept with-
+-indistinct in the background. Voice, confused/soft, door creaking-
+
+Doug, I gotta go. Call me, when you get this.@@
+</tw-passagedata>
+<tw-passagedata pid="203" name="Act23Clip" tags="" position="1437,1289">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/restuarantfamousohmygod.png&quot; heigh=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+I remember that episode. It was a big deal for the town. Everyone watched it, the afternoon it aired.</tw-passagedata>
+<tw-passagedata pid="204" name="Act31" tags="" position="1792,3466">Everyone knows [[everyone.|Act32]]</tw-passagedata>
+<tw-passagedata pid="205" name="Act32" tags="Act3" position="1935,3315">Everyone smiles and waves and nobody thinks about the fact that we’re all human, and therefore capable of deception and lies and manipulation and [[murder.|Act33]]
+
+</tw-passagedata>
+<tw-passagedata pid="206" name="Act33" tags="Act3" position="1935,3465">The door to the MacCormack house is unlocked in the early evening, [[just like everyone else’s.|Act34]]</tw-passagedata>
+<tw-passagedata pid="207" name="Act34" tags="Act3" position="2095,3309">Nobody’s [[home.|Act35]]</tw-passagedata>
+<tw-passagedata pid="208" name="Act35" tags="Act3" position="2095,3459">The house is serene. Classy, open concept kitchen leads into a cozy living room. Hardwood flooring.
+
+Must have been renovated to suit [[Rich’s style.|Act36]]</tw-passagedata>
+<tw-passagedata pid="209" name="Act36" tags="Act3" position="2235,3308">A quick search of the house yields [[interesting|Act37]] results.</tw-passagedata>
+<tw-passagedata pid="210" name="Act37" tags="" position="2235,3458">Rachel still lives here, in every photograph and card full of “sorry for your loss” platitudes on the mantle peice, 5 years later.
+
+[[Maybe not everyone moved on after all.|Act38]]
+</tw-passagedata>
+<tw-passagedata pid="211" name="Act38" tags="Act3" position="2387,3292">Can’t help but notice the shotgun leaning against the fireplace. No trigger lock.
+
+A half pump shows a bright @@color:red;red cartridge@@ in the action.
+
+[[What the fuck, Rich?|Act39]]
+</tw-passagedata>
+<tw-passagedata pid="212" name="Act39" tags="Act3" position="2387,3442">[[Careless.|Act310]]</tw-passagedata>
+<tw-passagedata pid="213" name="Act310" tags="Act3" position="2512,3289">Everyone in this town.
+
+[[Careless.|Act311]]</tw-passagedata>
+<tw-passagedata pid="214" name="Act311" tags="Act3" position="2512,3439">The stairs whine and creek desperately up to the third floor bedroom. The carpet is dusty; no one’s stepped on them for nearly five years. It must be Rachel’s.
+
+I can’t help but feel a tinge of anxiety as I approach the landing. There’s nothing up here but a single white door to my left.
+
+[[Open the door.|Act312]]
+</tw-passagedata>
+<tw-passagedata pid="215" name="Act312" tags="Act3" position="2674,3289">The door is locked.
+
+I wear size 11 boots.
+It’s a weak lock.
+The door opens [[easily.|Act313]]</tw-passagedata>
+<tw-passagedata pid="216" name="Act313" tags="Act3" position="2674,3439">It’s dark up here. There’s no ceiling light, and there’s a  ring in the carpet where a standing lamp was recently moved. I click on my [[flashlight.|Act314]]
+</tw-passagedata>
+<tw-passagedata pid="217" name="Act314" tags="Act3" position="2674,3589">Posters adorn the walls. Classic rock, large prints of artistic photographs, blued by age and sunlight. The whole room looks untouched. Make up is still scattered on top of the a slightly damaged looking dresser, with a small mat at the base.
+
+To my right the bed is unmade, covered in half a dozen pillows. 
+
+In front of me is a desk with a small television, surrounded by books and workout equipment. 
+
+To my left is the dresser and a closet. 
+
+Permeating the room is a dank, sour [[smell.|Act315]]
+</tw-passagedata>
+<tw-passagedata pid="218" name="Act315" tags="Act3" position="2805,3290">Something is very [[wrong.|Act316]]</tw-passagedata>
+<tw-passagedata pid="219" name="Act316" tags="Act3" position="2805,3440">My Rachel smelled [[sweet.|Act317]]</tw-passagedata>
+<tw-passagedata pid="220" name="Act317" tags="Act3" position="2809,3588">Search:
+
+[[Closet|closet]]
+
+[[Bed and Floor|BaF]]
+
+[[Desk and Belongings|DaB]]
+
+&lt;&lt;if visited(&quot;closet&quot;,&quot;BaF&quot;,&quot;DaB&quot;)&gt;&gt;
+[[Dresser]]
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="221" name="closet" tags="Act3" position="2805,3740">The closet is overflowing with Rachel’s belongings. Dirty laundry, books. It smells more like what Rachel should smell like in here. A brief investigation determines it’s the clothes.
+
+[[&lt;|Act317]]</tw-passagedata>
+<tw-passagedata pid="222" name="BaF" tags="Act3" position="2955,3740">The bed is what I expected. Unmade but clean. I can picture her here, lying in bed reading late at night. Studying for exams. Preparing for work tomorrow.
+
+[[&gt;|BaF1]]</tw-passagedata>
+<tw-passagedata pid="223" name="DaB" tags="Act3" position="3105,3740">My Rachel was always top of her class. I find a scattering of papers from the Mayor’s office underneath The Brother’s Karamazov and King Lear. The literature is pervasive, stacked on the floor against the wall up to hip height.
+
+[[&gt;|DaB1]]
+</tw-passagedata>
+<tw-passagedata pid="224" name="Dresser" tags="Act3" position="2973,3584">Mascara and foundation covered in dust in turn covers the top of the dresser, with eyeliner pencils and lipstick fallen on the floor nearby. 
+
+It should have been obvious at first. The top of the desk is cracked. The wood along the edge comes away slightly, only attached on one side.
+
+
+
+[[Something is wrong.|D1]]
+</tw-passagedata>
+<tw-passagedata pid="225" name="BaF1" tags="Act3" position="2955,3890">The smell is stronger, the closer I get to the floor. Checking under the bed yields nothing of interest - plastic containers of more clothes 
+
+[[I put my hand down on something hard and sharp|BaF2]]</tw-passagedata>
+<tw-passagedata pid="226" name="BaF2" tags="Act3" position="2955,4015">A pearl stud earring. [[Rusty.|BaF3]]</tw-passagedata>
+<tw-passagedata pid="227" name="BaF3" tags="Act3" position="2955,4164">Wait, no.
+
+[[What?|BaF4]]</tw-passagedata>
+<tw-passagedata pid="228" name="BaF4" tags="Act3" position="2955,4314">[[Bloody.|BaF5]]
+</tw-passagedata>
+<tw-passagedata pid="229" name="BaF5" tags="Act3" position="2955,4464">The white orb and metal prong both tinged with rusty brown gore.
+
+Could this be my [[Rachel’s?|Act317]]</tw-passagedata>
+<tw-passagedata pid="230" name="DaB1" tags="Act3" position="3105,3890">The television is older,  cheap black Samsung I would have thought that would be the first thing down at the garage sale. I pick it up, and see that the power cord has been cut from the back. [[Weird.|DaB2]]
+</tw-passagedata>
+<tw-passagedata pid="231" name="DaB2" tags="Act3" position="3105,4040">The nearest outlet is a few feet away. No powerbar. Must have been a long cord. The only other thing plugged in is a phone from the 90s, [[covered in dust.|DaB3]]
+</tw-passagedata>
+<tw-passagedata pid="232" name="DaB3" tags="Act3" position="3105,4188">Between the bed and the desk I find a rolled up yoga mat and a set of small dumbbells on a rack, [[coloured by weight.|DaB4]]
+</tw-passagedata>
+<tw-passagedata pid="233" name="DaB4" tags="Act3" position="3105,4338">2 Red 20 lbs weights.
+
+[[&gt;|DaB5]]</tw-passagedata>
+<tw-passagedata pid="234" name="DaB5" tags="Act3" position="3105,4488">2 green 15 lbs weights.
+
+[[&gt;|DaB6]]</tw-passagedata>
+<tw-passagedata pid="235" name="DaB6" tags="Act3" position="3105,4638">1 @@color:pink;pink@@ ten pound weight. No sign of the other [[one.|DaB7]]</tw-passagedata>
+<tw-passagedata pid="236" name="DaB7" tags="Act3" position="3105,4788">[[Hm.|Act317]]</tw-passagedata>
+<tw-passagedata pid="237" name="D1" tags="Act3" position="2970,3444">Something is very [[wrong.|D2]]</tw-passagedata>
+<tw-passagedata pid="238" name="D2" tags="Act3" position="2974,3295">I look down to the mat at the base of the dresser.
+
+[[&gt;|D3]]
+</tw-passagedata>
+<tw-passagedata pid="239" name="D3" tags="Act3" position="3122,3290">A mat on carpet?
+
+A mat on-
+
+[[...|D4]]</tw-passagedata>
+<tw-passagedata pid="240" name="D4" tags="Act3" position="3122,3440">[[Examine mat on all fours|D5]]</tw-passagedata>
+<tw-passagedata pid="241" name="D5" tags="Act3" position="3122,3590">The mat is actually a small throw rug, white with thin multi-coloured lines.
+
+[[Lift up the rug|D6]]</tw-passagedata>
+<tw-passagedata pid="242" name="D6" tags="Act3" position="3285,3285">The carpet beneath the rug seems normal at first. Same colour. Same pattern. Same feel.
+
+[[Wait.|D7]]
+</tw-passagedata>
+<tw-passagedata pid="243" name="D7" tags="Act3" position="3285,3435">Feels different. Coarse, not soft. And a little brighter too.
+
+[[No…|D8]]
+</tw-passagedata>
+<tw-passagedata pid="244" name="D8" tags="Act3" position="3285,3585">[[Pause|D9]]</tw-passagedata>
+<tw-passagedata pid="245" name="D9" tags="Act3" position="3285,3735">[[Take out your knife|D10]]</tw-passagedata>
+<tw-passagedata pid="246" name="D10" tags="Act3" position="3285,3885">[[Start cutting out the carpet|D11]]</tw-passagedata>
+<tw-passagedata pid="247" name="D11" tags="Act3" position="3285,4035">[[Cut faster|D12]]</tw-passagedata>
+<tw-passagedata pid="248" name="D12" tags="Act3" position="3285,4185">I work furiously, slicing a deep corner through the fabric to the wood beneath.
+
+[[Pull back the carpet|D13]]
+</tw-passagedata>
+<tw-passagedata pid="249" name="D13" tags="Act3" position="3285,4335">The stench seeps out so much stronger than before. A dark brown stain spreads across the plywood, white globs of mold interrupting it.
+
+[[Oh no.|D14]]
+</tw-passagedata>
+<tw-passagedata pid="250" name="D14" tags="Act3" position="3285,4485">[[Oh god.|D15]]
+</tw-passagedata>
+<tw-passagedata pid="251" name="D15" tags="Act3" position="3285,4636">[[Oh Fuck.|D16]]</tw-passagedata>
+<tw-passagedata pid="252" name="D16" tags="Act3" position="3285,4786">[[Fuck.|D17]]</tw-passagedata>
+<tw-passagedata pid="253" name="D17" tags="Act3" position="3285,4936">[[Oh god.|D18]]</tw-passagedata>
+<tw-passagedata pid="254" name="D18" tags="Act3" position="3285,5085">[[My poor Rachel|C1]]</tw-passagedata>
+<tw-passagedata pid="255" name="C1" tags="Act3" position="3285,5235">A car door slams downstairs. Footsteps.
+
+Oh no.
+
+[[No.|C2]]
+</tw-passagedata>
+<tw-passagedata pid="256" name="C2" tags="Act3" position="3427,3280">Not like this.
+
+[[No.|C3]]</tw-passagedata>
+<tw-passagedata pid="257" name="C3" tags="Act3" position="3427,3430">I can hear Rich and Madison talking downstairs. I’m trapped.
+
+
+I have to confront the killer now, or it’s over.
+
+
+I have to have witnesses. People who cared about Rachel.
+
+
+I need to get Madison, Rich, and Brock together and confront the killer.
+
+
+Once I’ve reviewed the &lt;&lt;click &quot;evidence&quot;&gt;&gt;&lt;&lt;goto &quot;EvidenceAct3&quot;&gt;&gt;&lt;&lt;/click&gt;&gt; and am sure of who the killer is I can [[confront them.|C4]]
+</tw-passagedata>
+<tw-passagedata pid="258" name="C4" tags="Act3" position="3427,3580">I hope this works.
+
+[[Search Rachel’s Room|C5]]
+</tw-passagedata>
+<tw-passagedata pid="259" name="C5" tags="Act3" position="3427,3730">As quietly as I can I search through Rachel’s belongings. After a few moments I remember who I’m dealing with. My Rachel was no fool, to be sure. Such a smart, perfect girl. It won’t be somewhere obvious.
+
+I check under the bed again and find it stashed in the bed frame.
+We’re both such clever people. I know she would have liked me.
+
+[[Flip Pages|C6]]
+</tw-passagedata>
+<tw-passagedata pid="260" name="C6" tags="Act3" position="3427,3880">[[Flip faster.|C7]]</tw-passagedata>
+<tw-passagedata pid="261" name="C7" tags="Act3" position="3427,4030">I find Brock’s phone number at the top of a page full of drawings of airplanes. They’re tiny, as if viewed while lying on the lawn in the summer.
+
+[[Pick up the Phone|C8]]
+</tw-passagedata>
+<tw-passagedata pid="262" name="C8" tags="Act3 Rachel" position="3427,4180">The keys squish under my fingertips in protest as I dial Brock’s number.
+
+I wait until I hear a dial tone.
+
+[[Transform into Rachel MacCormack|C9]]
+</tw-passagedata>
+<tw-passagedata pid="263" name="C9" tags="Act3 Rachel" position="3427,4330">“Hello?” I can hear a TV in the background. Brock sounds drunk.
+
+[[Hey you.|C10]]
+</tw-passagedata>
+<tw-passagedata pid="264" name="C10" tags="Act3 Rachel" position="3427,4480">“... who… who is this?”
+
+@@color:#FB4F4F;“Hahaha,” I trill gleefully, “It’s me Brock-oli! What, do you not have call display anymore?@@
+
+There’s an uncomfortable silence while Brock’s worldview is taken out back and shot.
+
+“ … R… Rache? Is… is that you? I… I thought… ”
+
+[[Giggle|C11]]
+</tw-passagedata>
+<tw-passagedata pid="265" name="C11" tags="Act3 Rachel" position="3427,4630">“Wait... no. No. NO.”
+
+“NO NO NO NO NO NO NO NO NO”
+
+Brock screams into the phone so loudly I worry they’ll hear him downstairs. “Who is this?! Do you think this is funny? You’re dead.Can you hear what I am saying right now? You’re dead. You’re fucking dead.”
+
+[[Oh baby please don’t be mad. I miss you. Please, just come over.|C12]]</tw-passagedata>
+<tw-passagedata pid="266" name="C12" tags="Act3 Rachel" position="3427,4780">Brock doesn’t hang up the phone, but I hear a loud crack as it hits the wall. In the distance out the window, I can hear a door slam and an engine start. Small towns are such a community. I put the phone down and wait.
+
+I hear the low roar of a motorbike outside. It gets louder and louder, then stops.
+
+There’s a loud knock on the door.
+
+“Oh, goddammit,” I hear a muffled woman’s voice say from downstairs.
+
+[[It&#39;s Brock|C13]]</tw-passagedata>
+<tw-passagedata pid="267" name="C13" tags="Act3 Rachel" position="3426,4930">After some arguing, the door opens. “What the fuck? I got a call from someone in this house saying they were Rachel. Is this a fucking joke to you guys?”
+
+“What?” Madison interjects. “That’s ridiculous. We haven’t made a call since we got home.”
+
+“Yeah, well, I checked the Caller ID. And the crazy part was, [[it sounded just like her.|C14]]”
+</tw-passagedata>
+<tw-passagedata pid="268" name="C14" tags="Act3 Rachel" position="3427,5080">Silence.
+
+“Brock…” Madison stammers. “I know you’re still struggling with this, but… please don’t bring us into it.”
+
+“What!?!” Brock screams. “Fuck you guys! I know what I heard. Look at my phone, that’s your number, right?”
+
+More silence.
+
+[[Time to move.|C15]]</tw-passagedata>
+<tw-passagedata pid="269" name="C15" tags="Act3 Rachel" position="3427,5230">
+I walk downstairs, making my presence known.
+
+The three of them turn and look at me, with abject shock on their faces.
+
+Madison drops her wine glass to the floor. It shatters.
+
+No one moves.
+
+[[Silence.|C16]]
+</tw-passagedata>
+<tw-passagedata pid="270" name="C16" tags="Act3 Rachel" position="3567,3272">“R--Rach…” Madison’s voice catches.
+
+“Holy shit,” Rich mutters. He’s tugging at his wristwatch as his eyes drink in my-her-face. 
+
+“Hello,” I say, and smile. 
+
+Too much. Madison starts fidgeting. Brock is the only one who seems unafraid. 
+
+He clears his throat. “Why...why are you here, Rachel?”
+
+@@color:#FB4F4F;“I’m here to tell you who did it,” I say. They all look pale under the dim kitchen light. “Who killed me.”@@
+
+[[“It was Madison.”|M1]]
+
+[[“It was Rich.”|R1]]
+
+[[“It was Brock.”|BR1]]
+
+</tw-passagedata>
+<tw-passagedata pid="271" name="M1" tags="Act3 Rachel" position="3757,3677">“I don’t know what kind of a sick, demented, joke this is. That’s your fucking sister!” Brock hisses between his clenched jaw.
+
+“Madison tell… whatever this is that you would never do that. I know you. You loved her.” 
+
+Rich puts his arm around Madison. [[She shrugs it off.|M2]]
+
+</tw-passagedata>
+<tw-passagedata pid="272" name="R1" tags="Act3 Rachel" position="3739,4143">“I fuckin’ knew it!” Brock roars. He’s past the point of confusion or worry--all that matters is that he has his answer.
+
+“Shut up, Brock! Rich would never do that!” Madison hisses. There are tears in her eyes. She tries, and fails, to get in between Brock and Rich.
+
+“I never said anything but I always knew it! At the party--that night--I heard her screaming at you. She said she was going to tell Madison everything. And you couldn’t take it, huh? you piece of shit!”
+
+Rich’s voice is a hoarse whisper. “That isn’t how it went.”
+
+“You followed her home. You drove her off the bridge in your car. She knows!” Brock says, jabbing his finger at me.
+
+[[It’s true. He rammed me and I lost control.|R2]]
+
+[[That’s not what happened. He killed me at the party.|R3]]
+
+[[No. He killed me later.|R4]]
+</tw-passagedata>
+<tw-passagedata pid="273" name="BR1" tags="Act3 Rachel" position="3893,3061">Madison gasps. Rich yells. Brock says something but Rich is too loud. 
+Madison starts to cry. 
+“What are you talking about?” Brock screams, “I loved you. I DO love you!”
+“You never loved her Brock!” Madison yells “You just couldn’t live without her! You were obsessed! She told you to never talk to her again after the party and you saw red.”
+
+Brock’s face turns red as he begins to look around, frantically. “You can’t be serious! How would that even be possible?”
+
+[[He followed me when I left the party and ran me off the road.|BB1]] 
+
+[[He broke into the house and was waiting for me in my room. When I got home he killed me.|BB2]]
+
+[[He was waiting for me in the back seat of my car.|BB3]]
+</tw-passagedata>
+<tw-passagedata pid="274" name="M2" tags="Act3 Rachel" position="3757,3827">
+Rich looks at Madison, concerned, then back again at me. “I don’t know what you are. But get out of our house.” 
+
+He begins to reach for the shotgun, but Madison puts her hand on his arm.
+
+“How would I have killed you?” she asks accusingly. “I wasn’t even at the party.”
+
+[[Yes, you were.|MadisonFail]]
+
+[[I know you weren’t. You were here.|goodMadison]]
+
+[[Neither was I.|MadisonFail]]
+</tw-passagedata>
+<tw-passagedata pid="275" name="goodMadison" tags="Rachel Act3" position="3943,3833">“Exactly.” Madison says “You went right from the party into the river. It was just a drunken accident, and I had nothing to do with it.”
+
+[[You’re lying. I came home that night.|goodMadison1]]</tw-passagedata>
+<tw-passagedata pid="276" name="goodMadison1" tags="Act3 Rachel" position="4076,3839">“What? That’s not true!”
+
+[[I left Douglas a voicemail. From home.|goodMadison2]]</tw-passagedata>
+<tw-passagedata pid="277" name="goodMadison2" tags="Act3 Rachel" position="4214,3823">Madison’s face goes blank.
+
+“That couldn’t be true!” Rich exclaims. “I came over that night. I would have seen you!”
+
+Madison puts her hand on Rich’s shoulder.
+
+She turns to him. “[[It&#39;s true.|goodMadison3]]”
+</tw-passagedata>
+<tw-passagedata pid="278" name="goodMadison3" tags="Act3 Rachel" position="4371,3843">&quot;What?”
+
+“Rachel did come over that night, before she drove off.”
+
+She puts her hand on Rich’s chest. “I’m sorry I never told you, I was really upset that night and…”
+
+He smiles. “It’s alright. I understand.”
+
+She turns back to you. “And that’s [[all that happened|goodMadison4]].”</tw-passagedata>
+<tw-passagedata pid="279" name="goodMadison4" tags="Act3 Rachel" position="4506,3838">“You came home, went up to your room to make a call, and then you walked back out again. Maybe you went to see Doug, I don’t know. I never said anything to you.”
+
+“It was just an accident, OK?.”
+
+[[You didn’t have to. I was drunk.|failMadison2]]
+
+[[That’s not what the evidence in my room said.|goodMadison5]]
+</tw-passagedata>
+<tw-passagedata pid="280" name="failMadison2" tags="Act3 Rachel" position="4220,3970"> “Exactly. just a drunken accident.”
+ 
+ Damn it.
+ 
+ [[&gt;|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="281" name="goodMadison5" tags="Act3 Rachel" position="4656,3988">“What? What evidence in your room?”
+
+[[Show her the earring.|goodMadison6]]</tw-passagedata>
+<tw-passagedata pid="282" name="FailedEnding" tags="Act3 Rachel" position="3552,3128">I&#39;ve failed Rachel....
+
+[[Try again?|C16]]</tw-passagedata>
+<tw-passagedata pid="283" name="MadisonFail" tags="Act3 Rachel" position="3960,3593">&quot;What! That doesn&#39;t make sense!&quot;
+
+[[&gt;|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="284" name="goodMadison6" tags="Act3 Rachel" position="4684,3851">I show Madison the bloody pearl earring. She gasps.
+
+[[There’s blood on the carpet. We fought. You killed me.|goodMadison7]]
+</tw-passagedata>
+<tw-passagedata pid="285" name="goodMadison7" tags="Act3 Rachel" position="4781,4001">“N… no.” Madison stammers, head in her hands. “You must have borrowed it! There’s a thousand reasons it could be in your room! I had nothing to do with it!”
+
+[[It’s your earring. I’ve got proof.|goodMadison8]]</tw-passagedata>
+<tw-passagedata pid="286" name="goodMadison8" tags="Act3 Rachel" position="4842,3864">You show Madison the photo you took from Douglas’s wallet. She grabs it from your hand and stares at it intently. Rachel’s long, dangling earring hangs prominently.
+
+“But why would I even want to kill my sister? That doesn’t make any sense.”
+
+[[She was fucking Brock.|failMad3]]
+
+[[She was fucking Rich.|goodMadison9]]
+
+[[She was obnoxious.|fail4]] </tw-passagedata>
+<tw-passagedata pid="287" name="failMad3" tags="Act3 Rachel" position="5009,3733">“Why would I care if she was fucking her boyfriend?”
+
+[[Shit|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="288" name="goodMadison9" tags="Act3 Rachel" position="5031,4009">Rich stares at Madison. He’s turning steadily, unpleasantly red. “You- You knew?”
+
+Madison stomps her foot. “Of course I knew, asshole! I couldn’t believe that you would do that!”
+
+She turns to you, fists balled, teeth clenched. “But I didn’t kill her for it! How could I have? She drove herself off the bridge! It was an accident, or a suicide, or something!”
+
+[[You killed her and drove her body to the bridge.|goodMadison10]]
+
+</tw-passagedata>
+<tw-passagedata pid="289" name="fail4" tags="Act3 Rachel" position="5005,3865">“That’s not enough reason to murder someone.”
+
+[[Shit, she&#39;s right...|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="290" name="goodMadison10" tags="Act3 Rachel" position="5170,3776">What? That doesn’t make any sense! How could I have possibly done that?”
+
+[[You pushed the car in.|failMad7]]
+
+[[You weighed down the gas pedal.|goodMadison11]]
+</tw-passagedata>
+<tw-passagedata pid="291" name="failMad7" tags="Act3 Rachel" position="5170,3925"> “Look at me! I’m not strong enough to push a sedan…”
+ 
+ [[Shit.|FailedEnding]]</tw-passagedata>
+<tw-passagedata pid="292" name="goodMadison11" tags="Act3 Rachel" position="5320,3926">She scoffs, aiming for dismissive and missing by a mile. “ How would I do that?”
+
+[[With something missing from my room.|goodMadison12]]
+</tw-passagedata>
+<tw-passagedata pid="293" name="goodMadison12" tags="Act3 Rachel" position="5387,3763">Madison freezes. Her bright green eyes stare right through you.
+
+
+[[The earring|failMad12]] 
+
+[[The dumbbell|goodMadison13]]
+
+
+</tw-passagedata>
+<tw-passagedata pid="294" name="failMad12" tags="Act3 Rachel" position="5445,3912">“That wouldn’t weigh down a gas pedal…”
+
+[[Fuck|FailedEnding]] </tw-passagedata>
+<tw-passagedata pid="295" name="goodMadison13" tags="Act3 Rachel" position="5570,3912">[[The TV cord|goodMadison14]]</tw-passagedata>
+<tw-passagedata pid="296" name="goodMadison14" tags="Act3 Rachel" position="5623,3787">Madison’s collapsing in on herself, arms clutched protectivly over her pregnant belly. She’s starting to hyperventilate.
+
+Rich takes a step towards her, protective. “What’s going on Madison?” 
+
+[[Tell them Madison.|goodMadison15]]
+
+</tw-passagedata>
+<tw-passagedata pid="297" name="goodMadison15" tags="Act3 Rachel" position="5695,3937">They all look at up me.
+
+[[Tell. Them.]]
+</tw-passagedata>
+<tw-passagedata pid="298" name="Tell. Them." tags="Act3 Rachel" position="5784,3759">Madison begins shaking “I- I didn’t mean to..”
+
+[[Tell them the truth Madison. Tell them how I came home, upset and sobbing with guilt. How I worked up the courage to confess to you about the affair with Rich.|goodMadison19]]
+</tw-passagedata>
+<tw-passagedata pid="299" name="goodMadison19" tags="Act3 Rachel" position="5820,3909">Rich looks at Madison, shame heavy in his eyes, then back at the ground. “Madison-I…”
+
+“She told me Rich. I know everything. But I didn’t mean to kill you. I swear. It was an accident. We started arguing, and I don’t know what came over me- I pushed her, that was all it was, a push. It was that goddamned dresser! How could I have known--”
+
+“Madison.. wh-what are you talking about…? You.. this was your fault??” Brock steps forward and grabs Madison’s shoulder and shakes her, slightly.
+
+“Tell me you didn’t do this!”
+
+Madison remains quiet.
+
+[[Tell them, Madison. They deserve to know.|goodMadison20]]
+</tw-passagedata>
+<tw-passagedata pid="300" name="goodMadison20" tags="Act3 Rachel" position="5920,3784">“I… I didn’t know what to do. There was so much blood… She had stopped breathing. There was nothing I could do.” She turns to look imploringly at Rish “We were so happy, Rich. I couldn’t go to jail. I wanted a family, a life of our own, without my sister ruining it for us.”
+
+Madison begins sobbing. 
+
+“I’m.. I’m so sorry Rachel. I’m so fucking sorry.”
+
+Rich takes a step back from Madison, his mouth in a straight line.
+
+Brock begins to phone the police. He’s still stumbling, but it’s shock rather than alcohol. Madison falls to the floor, sobbing uncontrollably. Rich dithers, like he’s not sure if he should comfort his wife or condemn her.
+
+Nobody notices me sneak out the [[back.|leaving]]
+</tw-passagedata>
+<tw-passagedata pid="301" name="leaving" tags="Act3" position="5945,3933">It all comes out in a day or two. There are no secrets in a small town. Everything that gets passed around is half truth and half gossip: a distortion, a fragment of reality chewed into shape by the biases and beliefs of the community.
+
+The cops can’t do anything. There’s no recorded confession, just Brock’s furious accusations and Rich’s stony silence. It isn’t long before Madison packs up and leaves town without even saying a word to Rich, which speaks louder than any confession could anyway. [[547.|leaving2]]</tw-passagedata>
+<tw-passagedata pid="302" name="leaving2" tags="Act3" position="6064,3780">I thought...I thought that I would feel better after this. Knowing what really happened to my Rachel. But I don’t feel better. I feel hollow. I had to lie so much to get to the truth, to be so many people, that I barely recognize my own face in the mirror.
+
+The town feels different too. Bleaker. More hopeless. I hold out for as long as I can, but it’s not long before I pack up and hit the road. I need to find somewhere else to be. Someone else to be, maybe.
+
+546.
+
+[[END]]</tw-passagedata>
+<tw-passagedata pid="303" name="END" tags="Act3" position="6070.0001,3930">The End
+
+[[&gt;|Start]]</tw-passagedata>
+<tw-passagedata pid="304" name="R2" tags="Rachel Act3" position="3739,4293">“No,” Rich growls. “That’s not true. You know it’s not. My car wouldn’t start.”
+
+Madison shakes her head. “Brock-- Rachel did come home that night. She even called Douglas from the house. But before I could calm her down, she said she was tired of everything. She drove off without another word.”
+
+[[Shit...|RichFailedEnding]]</tw-passagedata>
+<tw-passagedata pid="305" name="R3" tags="Rachel Act3" position="3614,4293">“No, I didn’t!” Rich cried, aghast. “There’s no way I could have! Everyone saw her leave in her car.”
+
+[[Fuck.|RichFailedEnding]]</tw-passagedata>
+<tw-passagedata pid="306" name="R4" tags="Act3 Rachel" position="3889,4292">“I couldn’t have.” Rich protests “She went home and I followed her--on foot. It took at least an hour. When I got there, all I found was Madison crying about how she had driven off. She had told the cops that Rachel never came home. I should have told someone, sure, but what difference would it have made?”
+
+[[Oh fuck, I know I missed something...|RichFailedEnding]]</tw-passagedata>
+<tw-passagedata pid="307" name="RichFailedEnding" tags="Act3 Rachel" position="3698,4453">Brock doesn’t seem to care. He’s swayed more by my face than any argument.
+
+“You fucking coward. You could have owned up to this like a man. I don’t try to act like I’m better than I am. I deal with my problems. You killed her, and you can’t even admit it.”
+
+He’s stepping forward--Rich is cornered against the fridge. Madison’s face has gone hard and flat as slate and she doesn’t blink when Brock’s fist crunches against Rich’s jaw.
+
+“It wasn’t me.” Rich cries, over and over. “I didn’t do it!” His shirt is stained with sweat and blood. Brock reaches behind him for something to use in place of his hands, and Madison quietly slides the cast-iron skillet down the countertop until it’s within reach. 547.
+
+They’re so transfixed at the blood and gore that they don’t notice me slip out of the kitchen and up to the top of the stairs. I pause on my way out, and hear ragged breathing and soft cries from below.
+
+Brock’s voice, low and weak. “Why did you let me do that?”
+
+Madison, shrill. “I didn’t let you do anything! This is your fault!”
+“But what are we going to do now?”
+I can picture Madison, eyes low, voice steady. “I have a plan.”
+
+[[This doesn&#39;t feel quite right...I wish I had another chance to find justice for my Rachel…|FailedEnding]]
+</tw-passagedata>
+<tw-passagedata pid="308" name="BB1" tags="Rachel Act3" position="3893,3213">“I drive a motorcycle! How could I have run you off the road?”
+
+[[Uhhhh...|FailedBrockEnding]]</tw-passagedata>
+<tw-passagedata pid="309" name="FailedBrockEnding" tags="Act3 Rachel" position="3894,3363">“I always knew you’d be the death of her, you disgusting creep,” Madison screams.
+
+Brock’s eyes go wide. “ I’d never do that! I didn’t do that. I stayed at the party longer than anyone else! I passed out on Gary’s floor that night! Rachel, listen to me. I love you Rachel. I know I have problems but I promised I’d never hurt you again. I promised you.”
+
+Rich’s fist makes a hollow cracking noise as it hits the side of Brock’s face. Madison screams.
+
+Brock howls.
+
+Before Rich can follow up Brock has him pressed against the mantelpiece by the neck, his practiced fist battering him repeatedly.
+
+Rich’s head slams back against the wood.
+Just like before.
+Just like my Rachel.
+He falls to the floor, Brock’s lithe form looming over him, panting.
+“Oh my god no!” Madison screams.
+Brock turns to look at Madison. He is crying. Sobbing. He opens his mouth to speak. Rich gropes at the side of the mantle.
+
+My eardrums pop and my face is spattered with thick, warm blood.
+Brock falls to the floor, a gaping hole ripped in his chest. 547.
+Rich lies on his back, panting, still tightly grasping the loaded shotgun he’d left there.
+
+Careless.
+
+I run.
+
+[[This doesn&#39;t feel quite right...I wish I could have another chance to find justice for my Rachel…|FailedEnding]]
+</tw-passagedata>
+<tw-passagedata pid="310" name="BB2" tags="Act3 Rachel" position="4041,3211">Madison: “What? I was at home, how could he get in without me hearing his motorcycle? If he was here before you wouldn’t you have seen his bike outside?”
+
+[[Shit she&#39;s right.|FailedBrockEnding]]</tw-passagedata>
+<tw-passagedata pid="311" name="BB3" tags="Act3 Rachel" position="4177,3222">Brock: You saw me right before you ran to your car! I was going to try to go after you right away but everyone else at the party made me stay and cool off first! By the time they’d let me leave I was too stoned to drive.”
+
+[[Fuck|FailedBrockEnding]] </tw-passagedata>
+<tw-passagedata pid="312" name="pic" tags="" position="1058,1409">&lt;&lt;audio &quot;pageTurn&quot; play&gt;&gt;&lt;&lt;back &quot;Back&quot;&gt;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/Hotchmoney/Stories/master/graphics/rachel%20evidence.jpg&quot; height=&quot;100%&quot; width=&quot;100%&quot;&gt;
+
+This is the last known picture of Rachel. She looks so beautiful, smiling here at the party. Did she know what was waiting for her that very same night?</tw-passagedata>
+<tw-passagedata pid="313" name="voicemail" tags="act2" position="5014,2305">RACHEL, PISSED:
+ 	@@color:#FB4F4F;Doug, Doug, I fucked up real bad, Doug. I know it’s like, three in the goddamn morning and you won’t get this until tomorrow, but I gotta talk to you, Doug. I fucked up real bad, At the party, this night, I just- but I had to do it, Doug. I had to prove I could do it. Please pick up, I gotta talk to you, Doug. –door slamming- This fucking town, Doug. You were right, we shoulda gotten the fuck out while we could, we could move to, I don’t know, fucking Chicago or something, a girl and her gay best friend against the big city, Doug, instead of this shit.
+
+I’m the best goddamn thing that’s happened to this town in years, and this is how they treat me? How fucking dare they, after all I’ve done for them? Who the fuck does he think he is, anyway? So I fucked him. Again. They don’t give a fuck about me, Doug. I’ll fucking show her. I’ll fucking tell her I slept with-
+-indistinct in the background. Voice, confused/soft, door creaking-
+
+Doug, I gotta go. Call me, when you get this.@@
+
+[[&gt;|dialogue15]]</tw-passagedata>
+</tw-storydata>
